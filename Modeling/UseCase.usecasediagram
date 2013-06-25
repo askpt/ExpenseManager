@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="64e5cb6d-bee2-4f48-8e76-685bc7f200c6" name="UseCase" linkedPackageId="f742b177-36ab-4ce3-b0ac-8007ab2670d7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="fa5b9f41-a0b8-44c1-abff-2d0555b52179">
+      <profileInstance Id="e5236b00-7cab-4887-989d-eb69f2f4834a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d4c8ddcb-16be-430c-ade0-bbd8f43eca86">
+      <profileInstance Id="a1a84732-e98d-497f-b35c-1cf263a2d5a4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="84056623-1c56-4913-b3cb-a262b045adf4" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83bcc991-e71c-40d2-8a40-c39e0f004943" />
+        <targetEnds>
+          <association Id="58995d75-ac12-43b5-9f64-f2f03f72c585" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register Expense" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c728855d-86f9-4a61-a178-f727805b59d6" LastKnownName="Register Expense" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eafef813-e9f7-4847-8471-a859039cb69a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="559a2ace-4411-4903-b9da-aa6a19a4ab5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6dc35f87-3661-4ee3-9ae9-22cad067515a" name="Register Expense" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2bcb2796-e08d-4bd4-aae8-52add2c1c7c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d249e5f0-6488-4632-8815-6db22d6824f7" />
+          </association>
+          <association Id="0f24435e-a88c-46f5-b9bb-2c260f14db04" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Import/Export to CSV" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e51f92fe-b986-42f0-a018-8fde6c736d0f" LastKnownName="Import/Export to CSV/XML" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e774e07-3297-48f7-acc3-4b2d187a8e80" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6bcf8282-5c48-4065-b1f4-8664bd96ff39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16daf915-82f4-4aa4-a758-3af6f341eaa4" name="Import/Export to CSV" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1568658e-ad91-479f-8470-de53f9f7a01b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95d35598-81f7-4f96-910f-7d021ff5b114" />
+          </association>
+          <association Id="d5c9c681-6b27-4299-b678-64a225b9e250" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register Saving" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a4ab81a1-9671-44ea-bd19-fcf2cd22c59f" LastKnownName="Register Incoming" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7eb2b3e-8144-4608-852f-61edfc74274b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dbc87791-ff43-4747-9cd0-994a76937355" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="62da4f9d-4378-4db5-afb2-f59a63b4e5b7" name="Register Saving" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4571f465-fffc-4487-b217-219767a84090" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b92305df-744a-4767-8854-cd5d3358fea4" />
+          </association>
+          <association Id="8486256b-e3a2-48b1-92bc-bde0abb41579" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register saving" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b168c963-7128-4eb6-a709-dc104a50f8a2" LastKnownName="Register saving" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4870451-aaa3-46c7-9d78-1c09379b287b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bd0aa6c6-4bce-4c80-84ee-8af2cd6be00a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7aebc3f-03cc-4729-be95-9345626c7ed2" name="Register saving" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="22d17421-3009-4509-865a-f3cc86b37050" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9afe3ce6-57b3-4996-aa0d-c5e8e4f5e332" />
+          </association>
+          <association Id="182f584a-e966-4a7b-a7c5-b4b42160839d" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Query Registry (Expenses, incomes, savings)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6b57a852-7789-4351-8c6d-7a5289d8b113" LastKnownName="Query Registry (Expenses, incomes, savings)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="897ccc0e-e2a4-4275-8cf0-062857687d09" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0eb60097-1b25-49f9-b303-384a4026d770" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d7a292e-87f4-40cb-889f-9003b9234ce9" name="Query Registry (Expenses, incomes, savings)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9748e9d8-7c8d-43b7-8fe3-67bc369f3ae7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c696091-5807-41ba-bfcf-12e11685b243" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c728855d-86f9-4a61-a178-f727805b59d6" name="Register Expense" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6872bd86-aa6c-412a-9625-2d451ca38b2e" />
+        <additions>
+          <include Id="3f1aa40f-0523-4769-a86c-e5b21044c2f4">
+            <useCaseMoniker Id="1e8b6624-9e15-45c7-8d87-9ceee9159fe0" LastKnownName="Define Expense Type" />
+            <elementDefinition Id="a1c91a65-fc59-49ae-be5c-1a1565eb4c19" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e51f92fe-b986-42f0-a018-8fde6c736d0f" name="Import/Export to CSV/XML" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bff8ea2b-559d-43cc-a667-e20f9cac9767" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a4ab81a1-9671-44ea-bd19-fcf2cd22c59f" name="Register Incoming" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b11e195-e823-4d52-998d-5487e242c2b2" />
+        <additions>
+          <include Id="2cf44a52-9e28-444e-b116-e7691bb3e670">
+            <useCaseMoniker Id="f31eb7ff-0299-45ef-8c14-563e5b7e755d" LastKnownName="Define Income type" />
+            <elementDefinition Id="65535b1f-63a8-4066-a8c1-1c7a966bb940" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f31eb7ff-0299-45ef-8c14-563e5b7e755d" name="Define Income type" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dc70272c-5798-4fee-986d-d0e3182a6d56" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1e8b6624-9e15-45c7-8d87-9ceee9159fe0" name="Define Expense Type" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83306312-4248-49f9-b70b-0370603f28c1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b13dfae-5951-4ee0-b904-6204dfb28831" name="System Alert" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88263ecf-dc51-4ce2-9ad7-dae94163ab98" />
+        <extendedCases>
+          <extend Id="051fc6e5-82db-4606-bfea-177093cc0a8c">
+            <useCaseMoniker Id="c728855d-86f9-4a61-a178-f727805b59d6" LastKnownName="Register Expense" />
+            <elementDefinition Id="43bc5600-872b-44ca-a28c-48c731ee243a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b168c963-7128-4eb6-a709-dc104a50f8a2" name="Register saving" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6bad46ca-c01b-40c6-837b-0bb6e1430fb4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b57a852-7789-4351-8c6d-7a5289d8b113" name="Query Registry (Expenses, incomes, savings)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6335d8ff-f3a7-477d-9799-abe4f4f4352a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="889add3a-724f-4a4d-a428-aefe0d458fe9" name="See in graphical form" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7bab5612-86d1-4c26-89d4-1766cf2f7193" />
+        <extendedCases>
+          <extend Id="feb9b648-9a84-460f-916e-8a17310047a7">
+            <useCaseMoniker Id="6b57a852-7789-4351-8c6d-7a5289d8b113" LastKnownName="Query Registry (Expenses, incomes, savings)" />
+            <elementDefinition Id="4b7b2421-7b26-4d2e-9bc8-ea6156b72f17" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f742b177-36ab-4ce3-b0ac-8007ab2670d7" name="Modeling">
+    <elementDefinition Id="8c62f0a2-792d-41fd-bc11-67fbd6bb195c" />
+  </package>
+</useCaseModelRoot>

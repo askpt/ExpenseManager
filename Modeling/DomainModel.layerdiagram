@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9f23d8ec-3763-4286-9f8d-b1539072947e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="cfe6b4f0-2774-46d7-bf93-cfbaa5772a5e" name="Current Account">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1e5879f6-6f3b-462b-a9bc-9cc83a488fce" direction="Bidirectional">
+          <layerMoniker Id="68788187-2a05-416b-9daa-b823a3ebc5b8" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="66147ead-db4d-4fba-be25-2509470142b0" direction="Bidirectional">
+          <layerMoniker Id="ad905d9c-c6de-41cb-bad5-596f300508cd" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="a9bea432-66e7-4931-8a0e-41fd77040a54" name="Income Registry">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4db6481d-3fe2-4fcf-bf8c-a14cbaed0874" direction="Bidirectional">
+          <layerMoniker Id="cfe6b4f0-2774-46d7-bf93-cfbaa5772a5e" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9801f7dd-507e-4932-8d41-5b3f97f4b19c" direction="Bidirectional">
+          <layerMoniker Id="6905b5d4-8579-4aaf-a365-2509f3a6cfe4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="be47157c-e6e0-4a42-bd16-c679f3645788" name="Saving Plan&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4793a51f-81d2-443e-9254-a86446750a90" direction="Bidirectional">
+          <layerMoniker Id="cfe6b4f0-2774-46d7-bf93-cfbaa5772a5e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="6905b5d4-8579-4aaf-a365-2509f3a6cfe4" name="Income &#xD;&#xA;&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ff61e9b9-10ac-41c8-ae2a-968e21aa51a7" direction="Bidirectional">
+          <layerMoniker Id="098278d4-0328-4d35-8f2f-b68d60221b41" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="098278d4-0328-4d35-8f2f-b68d60221b41" name="Income Type" />
+    <layer Id="a38718ab-4b44-48d0-8c9d-83a18730b9f1" name="Saving Objectives&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a54c7fe7-45f6-48ce-baeb-86bba71063cc" direction="Bidirectional">
+          <layerMoniker Id="be47157c-e6e0-4a42-bd16-c679f3645788" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="15bf4e86-930a-4c26-8080-1c803bce1d2e" direction="Bidirectional">
+          <layerMoniker Id="7d17dae7-4b03-4af5-90ce-330b3e117ffa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="7d17dae7-4b03-4af5-90ce-330b3e117ffa" name="Saving">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1b90a975-aea4-4636-8826-e3d11264338a" direction="Bidirectional">
+          <layerMoniker Id="ad905d9c-c6de-41cb-bad5-596f300508cd" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="ad905d9c-c6de-41cb-bad5-596f300508cd" name="Saving Registry&#xD;&#xA;" />
+    <layer Id="68788187-2a05-416b-9daa-b823a3ebc5b8" name="Alert&#xD;&#xA;" />
+    <layer Id="089ec65b-ef76-4d14-af16-c654feac4e77" name="Expense Registry&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="15334940-d56d-4354-9ef5-cdcceb7edfdd" direction="Bidirectional">
+          <layerMoniker Id="ea8bcc78-bdd6-42ba-aafa-2a8db728432a" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="7e196fb8-67d3-4146-9e38-f1a75692add3" direction="Bidirectional">
+          <layerMoniker Id="cfe6b4f0-2774-46d7-bf93-cfbaa5772a5e" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="e12f562e-0c81-4ed8-bee7-0a53f37006d4" direction="Bidirectional">
+          <layerMoniker Id="68788187-2a05-416b-9daa-b823a3ebc5b8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="ea8bcc78-bdd6-42ba-aafa-2a8db728432a" name="Expense">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="fd8c039d-2c97-4e3c-b22c-e52e110099c2" direction="Bidirectional">
+          <layerMoniker Id="067dd3e4-e767-4a96-90c6-7e0d9ec2d42d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="2afa367d-b106-46ef-bc6e-878428cd4f14" direction="Bidirectional">
+          <layerMoniker Id="00158e2c-dfb6-42b2-bf03-1dae12af53a2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="00158e2c-dfb6-42b2-bf03-1dae12af53a2" name="Expense Type&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0b6277fb-d251-4067-b1a4-e083102710df" direction="Bidirectional">
+          <layerMoniker Id="c130a7f3-2feb-420b-8887-d0b9196bbaee" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="c130a7f3-2feb-420b-8887-d0b9196bbaee" name="Expense Type Catalog&#xD;&#xA;" />
+    <layer Id="067dd3e4-e767-4a96-90c6-7e0d9ec2d42d" name="Payment Method">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="ba697149-33e7-471a-b2fd-0d1ecf76ab7a" direction="Bidirectional">
+          <layerMoniker Id="09268f2c-df44-4178-b3c7-492c3a8e219d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="09268f2c-df44-4178-b3c7-492c3a8e219d" name="Payment Type" />
+    <layer Id="65a08c8d-556f-4725-98c3-8b71822e5a46" name="Payment Type Catalog">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8a43ebd7-7863-463a-9cf1-7be212d9e6dd" direction="Bidirectional">
+          <layerMoniker Id="09268f2c-df44-4178-b3c7-492c3a8e219d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

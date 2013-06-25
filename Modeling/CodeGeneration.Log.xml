@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="High" Text="Code generation or text transformation started." />
+  <Error Timestamp="2013-06-26T00:05:06" Importance="High" Text="No templates were found to process.  Configure templates by choosing 'Configure Default Code Generation Settings...' from the 'Architecture' menu, or change the selection for which code generation is launched." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="The selection included 33 elements which were not bound to a template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Expense Registry' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Expense' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Payment Method' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Current Account' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Expense Type' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Income Registry' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Income' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Alerts' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Expense Type Catalog' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Payment Type' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Income Type' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Payment Type Catalog' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Saving Plan' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::N' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Saving Objectives' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Saving' -  (Class): no bound template." />
+  <Warning Timestamp="2013-06-26T00:05:06" Importance="Medium" Text="'Modeling::Saving Registry' -  (Class): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="Diagnostic" Text="'Modeling::' -  (Association): no bound template." />
+  <Message Timestamp="2013-06-26T00:05:06" Importance="High" Text="Code generation complete. Errors: 1. Warnings: 16." />
+</Log>

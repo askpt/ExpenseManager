@@ -629,24 +629,6 @@
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="1313b274-ec13-439b-ac00-a924d6bdadc8"
-            name="ExecutionOccurrenceSpecification25">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="7848b356-b910-4b89-bd82-1ab479bced13"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="Modeling.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="78378ece-744c-4389-94e0-c932af8c2280"
-                LastKnownName="RegisterExpenseController"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <executionOccurrenceSpecification
             Id="e50acd12-3aa4-42d3-a4cf-57e0eb04db16"
             name="ExecutionOccurrenceSpecification20">
             <event>
@@ -661,6 +643,24 @@
               <lifelineMoniker
                 Id="6a8b5a28-2424-478f-ab6f-8b9b6eecc307"
                 LastKnownName="ExpenseManagerUI"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1313b274-ec13-439b-ac00-a924d6bdadc8"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7848b356-b910-4b89-bd82-1ab479bced13"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="78378ece-744c-4389-94e0-c932af8c2280"
+                LastKnownName="RegisterExpenseController"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -755,22 +755,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="64a9913e-8986-496b-b3b6-5211dcad1b6f"
-            name="MessageOccurrenceSpecification39">
-            <covered>
-              <lifelineMoniker
-                Id="b1fa2d4c-d828-4268-b7c8-372f364ba66d"
-                LastKnownName="ExpenseTypeRepository"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="db90422a-8c98-4905-83a7-bba53f4e853c"
             name="MessageOccurrenceSpecification40">
             <covered>
               <lifelineMoniker
                 Id="78378ece-744c-4389-94e0-c932af8c2280"
                 LastKnownName="RegisterExpenseController"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="64a9913e-8986-496b-b3b6-5211dcad1b6f"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="b1fa2d4c-d828-4268-b7c8-372f364ba66d"
+                LastKnownName="ExpenseTypeRepository"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -914,7 +914,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-                LastKnownName="PaymentTypeRepository"
+                LastKnownName="PaymentMethodRepository"
                 LastKnownLocation="Modeling.uml" />
             </coveredLifelines>
             <finish>
@@ -954,7 +954,7 @@
             <covered>
               <lifelineMoniker
                 Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-                LastKnownName="PaymentTypeRepository"
+                LastKnownName="PaymentMethodRepository"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -964,7 +964,7 @@
             <covered>
               <lifelineMoniker
                 Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-                LastKnownName="PaymentTypeRepository"
+                LastKnownName="PaymentMethodRepository"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -994,7 +994,7 @@
             <covered>
               <lifelineMoniker
                 Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-                LastKnownName="PaymentTypeRepository"
+                LastKnownName="PaymentMethodRepository"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1012,7 +1012,7 @@
             <covered>
               <lifelineMoniker
                 Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-                LastKnownName="PaymentTypeRepository"
+                LastKnownName="PaymentMethodRepository"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -1183,22 +1183,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="13a2f039-4363-4a96-985a-2df5b43b003b"
-            name="MessageOccurrenceSpecification63">
-            <covered>
-              <lifelineMoniker
-                Id="78378ece-744c-4389-94e0-c932af8c2280"
-                LastKnownName="RegisterExpenseController"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="e842e5b2-f509-4e75-9d24-15019dd6c05d"
             name="MessageOccurrenceSpecification64">
             <covered>
               <lifelineMoniker
                 Id="aedb9d89-04cc-4199-99c4-09e9bb7ac984"
                 LastKnownName="Expense"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="13a2f039-4363-4a96-985a-2df5b43b003b"
+            name="MessageOccurrenceSpecification63">
+            <covered>
+              <lifelineMoniker
+                Id="78378ece-744c-4389-94e0-c932af8c2280"
+                LastKnownName="RegisterExpenseController"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1572,9 +1572,9 @@
           </lifeline>
           <lifeline
             Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa"
-            name="PaymentTypeRepository"
+            name="PaymentMethodRepository"
             isActor="false"
-            lifelineDisplayName="PaymentTypeRepository">
+            lifelineDisplayName="PaymentMethodRepository">
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="81e5ac6a-9610-4a77-a661-1a6857822634"
@@ -2962,6 +2962,16 @@
             </operands>
           </combinedFragment>
           <operandOccurrenceSpecification
+            Id="9a8c339a-79e3-4b5b-98e5-acc668cf18ca"
+            name="OperandOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="e100e1e2-de8f-4a31-bcb7-1d8ca80763f9"
+                LastKnownName="DebitCard"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
             Id="e1b6dd03-5401-496a-8d70-91f1a8a4bbde"
             name="OperandOccurrenceSpecification11">
             <covered>
@@ -2978,16 +2988,6 @@
               <lifelineMoniker
                 Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                 LastKnownName="RegisterPaymentMethodUI"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="9a8c339a-79e3-4b5b-98e5-acc668cf18ca"
-            name="OperandOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="e100e1e2-de8f-4a31-bcb7-1d8ca80763f9"
-                LastKnownName="DebitCard"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -3140,22 +3140,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="1f4df33d-27d5-4645-ada4-fd1167df5ba1"
-            name="MessageOccurrenceSpecification48">
-            <covered>
-              <lifelineMoniker
-                Id="2005b479-c0b3-4795-b734-60d604b49753"
-                LastKnownName="RegisterPaymentController"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="526aa5a3-1d33-4375-b4a9-e979aac6bae4"
             name="MessageOccurrenceSpecification47">
             <covered>
               <lifelineMoniker
                 Id="e100e1e2-de8f-4a31-bcb7-1d8ca80763f9"
                 LastKnownName="DebitCard"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1f4df33d-27d5-4645-ada4-fd1167df5ba1"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="2005b479-c0b3-4795-b734-60d604b49753"
+                LastKnownName="RegisterPaymentController"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3178,22 +3178,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="b7d07dfc-8c86-4956-9922-82340fd33f57"
-            name="MessageOccurrenceSpecification43">
-            <covered>
-              <lifelineMoniker
-                Id="2005b479-c0b3-4795-b734-60d604b49753"
-                LastKnownName="RegisterPaymentController"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="ddbfa674-e898-4a93-be21-63b7f448d521"
             name="MessageOccurrenceSpecification44">
             <covered>
               <lifelineMoniker
                 Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                 LastKnownName="RegisterPaymentMethodUI"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b7d07dfc-8c86-4956-9922-82340fd33f57"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="2005b479-c0b3-4795-b734-60d604b49753"
+                LastKnownName="RegisterPaymentController"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3251,12 +3251,12 @@
             interactionOperator="Opt">
             <coveredLifelines>
               <lifelineMoniker
-                Id="2005b479-c0b3-4795-b734-60d604b49753"
-                LastKnownName="RegisterPaymentController"
-                LastKnownLocation="Modeling.uml" />
-              <lifelineMoniker
                 Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                 LastKnownName="RegisterPaymentMethodUI"
+                LastKnownLocation="Modeling.uml" />
+              <lifelineMoniker
+                Id="2005b479-c0b3-4795-b734-60d604b49753"
+                LastKnownName="RegisterPaymentController"
                 LastKnownLocation="Modeling.uml" />
               <lifelineMoniker
                 Id="0a962b06-e5f3-426c-a864-0f5d72bc5146"
@@ -3269,12 +3269,12 @@
                 name="InteractionOperand1">
                 <coveredLifelines>
                   <lifelineMoniker
-                    Id="2005b479-c0b3-4795-b734-60d604b49753"
-                    LastKnownName="RegisterPaymentController"
-                    LastKnownLocation="Modeling.uml" />
-                  <lifelineMoniker
                     Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                     LastKnownName="RegisterPaymentMethodUI"
+                    LastKnownLocation="Modeling.uml" />
+                  <lifelineMoniker
+                    Id="2005b479-c0b3-4795-b734-60d604b49753"
+                    LastKnownName="RegisterPaymentController"
                     LastKnownLocation="Modeling.uml" />
                   <lifelineMoniker
                     Id="0a962b06-e5f3-426c-a864-0f5d72bc5146"
@@ -3605,12 +3605,12 @@
             interactionOperator="Opt">
             <coveredLifelines>
               <lifelineMoniker
-                Id="2005b479-c0b3-4795-b734-60d604b49753"
-                LastKnownName="RegisterPaymentController"
-                LastKnownLocation="Modeling.uml" />
-              <lifelineMoniker
                 Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                 LastKnownName="RegisterPaymentMethodUI"
+                LastKnownLocation="Modeling.uml" />
+              <lifelineMoniker
+                Id="2005b479-c0b3-4795-b734-60d604b49753"
+                LastKnownName="RegisterPaymentController"
                 LastKnownLocation="Modeling.uml" />
               <lifelineMoniker
                 Id="3fdce093-94a3-4a98-b4bc-d7f0dc3f5194"
@@ -3623,12 +3623,12 @@
                 name="InteractionOperand1">
                 <coveredLifelines>
                   <lifelineMoniker
-                    Id="2005b479-c0b3-4795-b734-60d604b49753"
-                    LastKnownName="RegisterPaymentController"
-                    LastKnownLocation="Modeling.uml" />
-                  <lifelineMoniker
                     Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
                     LastKnownName="RegisterPaymentMethodUI"
+                    LastKnownLocation="Modeling.uml" />
+                  <lifelineMoniker
+                    Id="2005b479-c0b3-4795-b734-60d604b49753"
+                    LastKnownName="RegisterPaymentController"
                     LastKnownLocation="Modeling.uml" />
                   <lifelineMoniker
                     Id="3fdce093-94a3-4a98-b4bc-d7f0dc3f5194"
@@ -3670,12 +3670,12 @@
             </operands>
           </combinedFragment>
           <operandOccurrenceSpecification
-            Id="fbf46667-992f-427d-b897-39164d06f60b"
-            name="OperandOccurrenceSpecification29">
+            Id="480fae21-f7ac-47bf-97c8-7e4f7ebc60f5"
+            name="OperandOccurrenceSpecification33">
             <covered>
               <lifelineMoniker
-                Id="2005b479-c0b3-4795-b734-60d604b49753"
-                LastKnownName="RegisterPaymentController"
+                Id="3fdce093-94a3-4a98-b4bc-d7f0dc3f5194"
+                LastKnownName="Cheque"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -3690,12 +3690,12 @@
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="480fae21-f7ac-47bf-97c8-7e4f7ebc60f5"
-            name="OperandOccurrenceSpecification33">
+            Id="fbf46667-992f-427d-b897-39164d06f60b"
+            name="OperandOccurrenceSpecification29">
             <covered>
               <lifelineMoniker
-                Id="3fdce093-94a3-4a98-b4bc-d7f0dc3f5194"
-                LastKnownName="Cheque"
+                Id="2005b479-c0b3-4795-b734-60d604b49753"
+                LastKnownName="RegisterPaymentController"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -3886,22 +3886,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="0abc0e62-ad5b-4867-9d43-e262a0028c98"
-            name="MessageOccurrenceSpecification60">
-            <covered>
-              <lifelineMoniker
-                Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
-                LastKnownName="RegisterPaymentMethodUI"
-                LastKnownLocation="Modeling.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="a7bf4ab3-a0a8-4e25-82f3-4d370ba35268"
             name="MessageOccurrenceSpecification59">
             <covered>
               <lifelineMoniker
                 Id="2005b479-c0b3-4795-b734-60d604b49753"
                 LastKnownName="RegisterPaymentController"
+                LastKnownLocation="Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0abc0e62-ad5b-4867-9d43-e262a0028c98"
+            name="MessageOccurrenceSpecification60">
+            <covered>
+              <lifelineMoniker
+                Id="e4c884a5-39b3-434a-b30c-48a931986eb1"
+                LastKnownName="RegisterPaymentMethodUI"
                 LastKnownLocation="Modeling.uml" />
             </covered>
           </messageOccurrenceSpecification>

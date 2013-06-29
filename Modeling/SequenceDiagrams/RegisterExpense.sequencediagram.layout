@@ -149,14 +149,14 @@
       </nodes>
     </returnMessageConnector>
     <lifelineShape Id="424bb845-8050-4fd1-b9e6-069872b74784" absoluteBounds="15.156249999999998, 1, 0.15, 8.2395833333333357" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+      <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="0e068617-6904-42aa-a931-cfaa4dcce0eb" absoluteBounds="14.405555934906005, 0.6, 1.6513881301879883, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+        <umlLifelineHeadShape Id="0e068617-6904-42aa-a931-cfaa4dcce0eb" absoluteBounds="14.326698513031005, 0.6, 1.8091029739379883, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
         <lifelineHoverShape Id="745b0f9d-dd0d-4236-9f70-fcfd6e0c03f3" absoluteBounds="15.156249999999998, 1, 0, 8.25">
-          <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+          <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
         </lifelineHoverShape>
         <umlExecutionSpecificationShape Id="52b21dcc-3f07-452d-acdd-3832174f8860" absoluteBounds="15.156249999999998, 4.7499999999999991, 0.15, 0.55" customColor="184, 204, 215" visualStyleMode="Modified">
           <behaviorExecutionSpecificationMoniker Id="ba0442a6-0605-42c2-8678-94980e520ea2" LastKnownName="BehaviorExecutionSpecification16" />

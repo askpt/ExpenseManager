@@ -157,17 +157,6 @@
               <messageOccurrenceSpecificationMoniker Id="e730cbd0-b867-434f-b15f-463afb6e0d32" LastKnownName="MessageOccurrenceSpecification35" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
-          <executionOccurrenceSpecification Id="07f7f8e0-42e0-4c7c-a5e2-d5ea8351fb08" name="ExecutionOccurrenceSpecification25">
-            <elementDefinition Id="1313b274-ec13-439b-ac00-a924d6bdadc8" />
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker Id="1e2761b4-3766-40db-a89d-e60fdce26a55" LastKnownName="ExecutionEvent" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
-            </covered>
-          </executionOccurrenceSpecification>
           <executionOccurrenceSpecification Id="fdeea518-d434-4193-b63f-089aca1c7e8d" name="ExecutionOccurrenceSpecification20">
             <elementDefinition Id="e50acd12-3aa4-42d3-a4cf-57e0eb04db16" />
             <event>
@@ -177,6 +166,17 @@
             </event>
             <covered>
               <lifelineMoniker Id="95bfdef8-e69c-4d08-b5c9-0eff2c87fd67" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="07f7f8e0-42e0-4c7c-a5e2-d5ea8351fb08" name="ExecutionOccurrenceSpecification25">
+            <elementDefinition Id="1313b274-ec13-439b-ac00-a924d6bdadc8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1e2761b4-3766-40db-a89d-e60fdce26a55" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6f3bcbef-2c6d-4b38-8e80-9b443bd1a483" name="MessageOccurrenceSpecification34">
@@ -230,16 +230,16 @@
               <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="b8e85d82-a8cb-4930-a25a-fbe4c507ed45" name="MessageOccurrenceSpecification39">
-            <elementDefinition Id="64a9913e-8986-496b-b3b6-5211dcad1b6f" />
-            <covered>
-              <lifelineMoniker Id="d96ae6f0-6c7d-4304-bfc6-8d2c606cb002" LastKnownName="ExpenseTypeRepository" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="5f8a93b1-75f5-4201-951a-2bcb8ff34b00" name="MessageOccurrenceSpecification40">
             <elementDefinition Id="db90422a-8c98-4905-83a7-bba53f4e853c" />
             <covered>
               <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b8e85d82-a8cb-4930-a25a-fbe4c507ed45" name="MessageOccurrenceSpecification39">
+            <elementDefinition Id="64a9913e-8986-496b-b3b6-5211dcad1b6f" />
+            <covered>
+              <lifelineMoniker Id="d96ae6f0-6c7d-4304-bfc6-8d2c606cb002" LastKnownName="ExpenseTypeRepository" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="666ff0ce-bcc5-4dad-9a60-dd47b5331e0b" name="ExecutionOccurrenceSpecification28">
@@ -320,7 +320,7 @@
           <behaviorExecutionSpecification Id="ba0442a6-0605-42c2-8678-94980e520ea2" name="BehaviorExecutionSpecification16">
             <elementDefinition Id="00a7f74c-00a4-4c49-aa12-23b421729dd5" />
             <coveredLifelines>
-              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="4d938dc9-0dd0-4ee7-82c8-66b3009f3867" LastKnownName="ExecutionOccurrenceSpecification32" />
@@ -341,13 +341,13 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="4ddab947-2e4e-43f1-a6c2-0b7dace70d86" name="MessageOccurrenceSpecification46">
             <elementDefinition Id="c52e9aac-6ecb-4f29-909e-c0dec55a1955" />
             <covered>
-              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="cbcc8c6b-c9a6-4db4-839d-038a4fdf6458" name="MessageOccurrenceSpecification45">
@@ -365,7 +365,7 @@
           <messageOccurrenceSpecification Id="aa048ac5-b640-43e1-99cd-e1f0dec88bd3" name="MessageOccurrenceSpecification47">
             <elementDefinition Id="dbb22be0-c2ec-4dfd-bc6c-a0030bab310c" />
             <covered>
-              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="4d938dc9-0dd0-4ee7-82c8-66b3009f3867" name="ExecutionOccurrenceSpecification32">
@@ -376,7 +376,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentTypeRepository" />
+              <lifelineMoniker Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" LastKnownName="PaymentMethodRepository" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="66c46b7a-8cec-4b27-aa96-2467b3d7256f" name="MessageOccurrenceSpecification44">
@@ -470,16 +470,16 @@
               <lifelineMoniker Id="aa47e8a1-247e-4205-ad3c-53e27d9f24d1" LastKnownName="Expense" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="3081160b-e656-43fa-9405-310657ba2658" name="MessageOccurrenceSpecification63">
-            <elementDefinition Id="13a2f039-4363-4a96-985a-2df5b43b003b" />
-            <covered>
-              <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="7fb1e526-dc19-4d87-ad52-919bef88ae7d" name="MessageOccurrenceSpecification64">
             <elementDefinition Id="e842e5b2-f509-4e75-9d24-15019dd6c05d" />
             <covered>
               <lifelineMoniker Id="aa47e8a1-247e-4205-ad3c-53e27d9f24d1" LastKnownName="Expense" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3081160b-e656-43fa-9405-310657ba2658" name="MessageOccurrenceSpecification63">
+            <elementDefinition Id="13a2f039-4363-4a96-985a-2df5b43b003b" />
+            <covered>
+              <lifelineMoniker Id="9a89e6c8-4867-4c02-aca8-c2e5bfa818ac" LastKnownName="RegisterExpenseController" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="79ebdb2c-75a9-4bea-b056-276e2332208d" name="ExecutionOccurrenceSpecification24">
@@ -680,7 +680,7 @@
               <executionOccurrenceSpecificationMoniker Id="666ff0ce-bcc5-4dad-9a60-dd47b5331e0b" LastKnownName="ExecutionOccurrenceSpecification28" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" name="PaymentTypeRepository" isActor="false" lifelineDisplayName="PaymentTypeRepository">
+          <lifeline Id="d1c96519-0d9d-4e87-b4c0-e7d3d314a16b" name="PaymentMethodRepository" isActor="false" lifelineDisplayName="PaymentMethodRepository">
             <elementDefinition Id="58e139a2-a104-41d6-8bd0-bf64f0a8bffa" />
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="123e70a0-f8e4-4814-bf95-f875eab32e8f" LastKnownName="ExecutionOccurrenceSpecification31" />

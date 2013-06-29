@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>SequenceDiagrams\RegisterExpense.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="SequenceDiagrams\RegisterExpenseType.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\RegisterExpenseType.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\RegisterExpenseType.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="SequenceDiagrams\RegisterPaymentMethod.sequencediagram">
       <SubType>Content</SubType>
     </Content>

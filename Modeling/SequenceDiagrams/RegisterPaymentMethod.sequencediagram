@@ -1,0 +1,1548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a69cdcca-73f2-478c-8063-d0a37bee4166" name="RegisterPaymentMethod" linkedPackageId="fe905236-fa0e-4426-9c9e-2c2dbdff08f0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="be65af47-d7c6-4cd9-a631-6a02cbdceb7b" name="RegisterPaymentMethod" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="4d581576-27ea-4102-bdc4-c38bcf4bd329" />
+        <fragments>
+          <behaviorExecutionSpecification Id="63ec7a09-e63d-4e44-8554-970ea136410a" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="457071e3-6c10-46b7-865f-3dc3c64e9ae5" />
+            <coveredLifelines>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="d7a093dc-06e7-44bf-a1b3-5d494e992685" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ab296037-beda-4955-a541-1d9219b0deb9" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="de26439e-4067-4c6a-a412-d532f95e52be" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="282dcf6b-6858-46d3-9c94-ccfec9de92d0" LastKnownName="MessageOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="1ef79189-1e69-484e-93b8-4aa6dcafe53c" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="ee639863-312e-4a59-afd7-32de23a5be2a" LastKnownName="ExecutionOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="e5ac7b19-f4c1-4d6e-a70d-b8f57a3c598a" LastKnownName="MessageOccurrenceSpecification5" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ab296037-beda-4955-a541-1d9219b0deb9" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="96c11308-22a7-49ee-9b22-4729bbbb711c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4ca3dd3f-6eb1-4e22-9502-cfd73f3b0c89" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="84b783ae-4325-4370-bdc0-732d49f939bd" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="c6ab14f8-14ce-4650-b6b2-dfbefe3438e8" />
+            <covered>
+              <lifelineMoniker Id="9c722cc9-4c2d-4a35-9955-651dd80c3f0c" LastKnownName="ExpenseManager" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="de26439e-4067-4c6a-a412-d532f95e52be" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="d123c284-0c55-4546-a78f-930b3cc6dd0a" />
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="282dcf6b-6858-46d3-9c94-ccfec9de92d0" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="933e493f-0fe9-4b0b-952a-0e6e1af81f9e" />
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="3675b473-a28d-4e81-b8d8-bd5575421aa1" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="b345ec76-67fa-493c-a8cc-a88b50ba5cc8" />
+            <coveredLifelines>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ee639863-312e-4a59-afd7-32de23a5be2a" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="1ef79189-1e69-484e-93b8-4aa6dcafe53c" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="bb31c73d-4f5d-475e-a82b-d6715fbe5bf7" LastKnownName="MessageOccurrenceSpecification4" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="1ef79189-1e69-484e-93b8-4aa6dcafe53c" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="87896fb9-0de0-4dbf-936f-2bf60abcb9b3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f895ff27-5c58-44db-9e21-ef2464690120" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bb31c73d-4f5d-475e-a82b-d6715fbe5bf7" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="abdd4940-9fda-42a0-ac62-0dcc47b865f2" />
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ee639863-312e-4a59-afd7-32de23a5be2a" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="7dc6834c-58fd-406e-ad7b-d7d800a3c4b8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="65f44d53-6dba-4c31-820f-5593cbbe1ac2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="b9657182-8861-4fab-9199-16eb72e8bace" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="0d8f010f-45b1-49f5-ac06-5932ef5c2e28" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="9f6544ac-738e-47cd-8b20-d8ba7f196dfa" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="00d7e2b8-45ce-4d6b-af3d-b89a86f07159" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="b5f0a3d7-ae76-4887-ba65-6e01c6393760" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="4899ceea-ff81-4997-bacf-c99e8bd2c402" LastKnownName="MessageOccurrenceSpecification11" />
+              <executionOccurrenceSpecificationMoniker Id="65d5c3c3-da6c-4102-9158-f168da1f7b6e" LastKnownName="ExecutionOccurrenceSpecification9" />
+              <executionOccurrenceSpecificationMoniker Id="6b349619-2b29-4b7c-8f82-987e2b45bb40" LastKnownName="ExecutionOccurrenceSpecification10" />
+              <operandOccurrenceSpecificationMoniker Id="683087be-49aa-4197-bc3c-0c86d30a2715" LastKnownName="OperandOccurrenceSpecification1" />
+              <messageOccurrenceSpecificationMoniker Id="89908829-d9fb-4901-bedd-d30dd193e954" LastKnownName="MessageOccurrenceSpecification33" />
+              <messageOccurrenceSpecificationMoniker Id="2b6860c7-f5a3-401a-af96-b704ebcd38d8" LastKnownName="MessageOccurrenceSpecification36" />
+              <operandOccurrenceSpecificationMoniker Id="ddaf59a7-015f-4fc4-9d52-c9e6c337d5c7" LastKnownName="OperandOccurrenceSpecification2" />
+              <operandOccurrenceSpecificationMoniker Id="1273b200-6c52-4bac-aa8e-0d9cc03d6ac5" LastKnownName="OperandOccurrenceSpecification9" />
+              <messageOccurrenceSpecificationMoniker Id="143e6478-f285-4fe0-85f7-cbb6ce244262" LastKnownName="MessageOccurrenceSpecification41" />
+              <messageOccurrenceSpecificationMoniker Id="e65b50bc-59a9-41a4-925a-74f5fa5167f5" LastKnownName="MessageOccurrenceSpecification44" />
+              <operandOccurrenceSpecificationMoniker Id="c43543a3-2231-4df8-8421-2e63b9197b93" LastKnownName="OperandOccurrenceSpecification10" />
+              <operandOccurrenceSpecificationMoniker Id="474b886d-b8b0-41e4-819a-656db2517be6" LastKnownName="OperandOccurrenceSpecification19" />
+              <messageOccurrenceSpecificationMoniker Id="5cad75c4-2b34-444d-a337-89355ecdc171" LastKnownName="MessageOccurrenceSpecification49" />
+              <messageOccurrenceSpecificationMoniker Id="395b498d-ea52-4a3b-9f94-3bbb9f162652" LastKnownName="MessageOccurrenceSpecification52" />
+              <operandOccurrenceSpecificationMoniker Id="a5591204-cc01-4e44-bfff-58c856158bc4" LastKnownName="OperandOccurrenceSpecification20" />
+              <operandOccurrenceSpecificationMoniker Id="c36b02d9-88fe-4452-a696-49f0f108ed39" LastKnownName="OperandOccurrenceSpecification31" />
+              <messageOccurrenceSpecificationMoniker Id="49536373-9151-403d-bc65-0b09071d45bb" LastKnownName="MessageOccurrenceSpecification57" />
+              <messageOccurrenceSpecificationMoniker Id="cffe5eb4-ea26-49bd-b1c4-f08dd364a6c2" LastKnownName="MessageOccurrenceSpecification60" />
+              <operandOccurrenceSpecificationMoniker Id="34e7141f-f2a9-4d46-be41-322399ff9003" LastKnownName="OperandOccurrenceSpecification32" />
+              <messageOccurrenceSpecificationMoniker Id="36244c39-2907-4f6b-9d67-6f8f089e0746" LastKnownName="MessageOccurrenceSpecification65" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="00d7e2b8-45ce-4d6b-af3d-b89a86f07159" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="75c2a100-2790-4440-9aa7-f895e04292b8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5dcfff21-15d5-409c-a321-1fdf8a1b0068" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b5f0a3d7-ae76-4887-ba65-6e01c6393760" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="f6af7296-29bd-4848-b9ee-72eab4a3a7da" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e5ac7b19-f4c1-4d6e-a70d-b8f57a3c598a" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="039e8849-bf27-4b6d-b4b9-392891386983" />
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="d7a093dc-06e7-44bf-a1b3-5d494e992685" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="387c6755-b08c-407f-bb26-d84b5df89bcb" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f1c32972-4850-4be6-8921-80b7d7565e4a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" LastKnownName="ExpenseManagerUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4899ceea-ff81-4997-bacf-c99e8bd2c402" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="352feb46-c53a-492a-8c36-88f0e5704fde" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="6837421b-5cc6-432e-a506-871ad0c79aef" name="BehaviorExecutionSpecification5">
+            <elementDefinition Id="4bbc0e71-7570-4ee6-9f9d-23511a9bec07" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="6b349619-2b29-4b7c-8f82-987e2b45bb40" LastKnownName="ExecutionOccurrenceSpecification10" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="65d5c3c3-da6c-4102-9158-f168da1f7b6e" LastKnownName="ExecutionOccurrenceSpecification9" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="d145224c-2e9a-4af2-a82d-60c2605ff6ca" LastKnownName="MessageOccurrenceSpecification12" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="65d5c3c3-da6c-4102-9158-f168da1f7b6e" name="ExecutionOccurrenceSpecification9">
+            <elementDefinition Id="10e3ca98-7d83-4a35-b7ef-efa317c5f015" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ee86d074-a104-486b-ad21-beb175cbb1db" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="d145224c-2e9a-4af2-a82d-60c2605ff6ca" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="372f6c2d-1ca1-4f44-b5d7-18afe29f0674" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="6b349619-2b29-4b7c-8f82-987e2b45bb40" name="ExecutionOccurrenceSpecification10">
+            <elementDefinition Id="04119a26-6e98-4814-8bd5-a49fc86d639f" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c9167c5f-1353-48d8-a33c-ea2d3f1945d7" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment Id="e22f6e75-8d3b-45f5-900c-1db8f76484ed" name="CombinedFragment1" interactionOperator="Opt">
+            <elementDefinition Id="b3b42830-5c90-418f-bbfe-66717644a60c" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="feb1ed2f-2ee3-4e3b-9063-563927a274ad" name="InteractionOperand1">
+                <elementDefinition Id="e75311a0-5b13-48ab-9777-490ff2dab23f" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+                  <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+                  <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="baa1b9b3-a435-41c9-86d9-a25e93b08bfb" guardText="payment == credit card">
+                    <elementDefinition Id="66a3cbfd-c8fd-4b79-9865-145681345456" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="683087be-49aa-4197-bc3c-0c86d30a2715" LastKnownName="OperandOccurrenceSpecification1" />
+                  <operandOccurrenceSpecificationMoniker Id="ddaf59a7-015f-4fc4-9d52-c9e6c337d5c7" LastKnownName="OperandOccurrenceSpecification2" />
+                  <operandOccurrenceSpecificationMoniker Id="9ec809e9-db4f-4f15-aeda-c90f448c885b" LastKnownName="OperandOccurrenceSpecification3" />
+                  <operandOccurrenceSpecificationMoniker Id="ccc9cd3a-0f3d-450b-b1ff-ba4a1cddb06c" LastKnownName="OperandOccurrenceSpecification4" />
+                  <operandOccurrenceSpecificationMoniker Id="9f4d41f2-bad0-4a2c-bcaa-3fdf2fcbbf88" LastKnownName="OperandOccurrenceSpecification7" />
+                  <operandOccurrenceSpecificationMoniker Id="6dea4a2f-91ff-4687-86ca-ca65dfaf9380" LastKnownName="OperandOccurrenceSpecification8" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="683087be-49aa-4197-bc3c-0c86d30a2715" name="OperandOccurrenceSpecification1">
+            <elementDefinition Id="e601ed62-25bf-47c1-bbc0-9f01ef11f765" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9f4d41f2-bad0-4a2c-bcaa-3fdf2fcbbf88" name="OperandOccurrenceSpecification7">
+            <elementDefinition Id="9c06a698-8bab-4dd2-9245-df38fd18eb16" />
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9ec809e9-db4f-4f15-aeda-c90f448c885b" name="OperandOccurrenceSpecification3">
+            <elementDefinition Id="11943f80-7f5c-4991-93eb-375cc6008104" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="face7b15-9420-4270-9e49-025f9db46c46" name="BehaviorExecutionSpecification12">
+            <elementDefinition Id="7ebb9178-339c-4d76-9ac1-9427d077f8cf" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="a8b87d6b-78cc-4f26-8f3c-517b276f0951" LastKnownName="ExecutionOccurrenceSpecification24" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e67f9d78-9d50-4a52-9ba8-23cf0092a739" LastKnownName="ExecutionOccurrenceSpecification23" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="38b90ffe-373c-42b1-b8b7-43d2fb8a295e" LastKnownName="MessageOccurrenceSpecification34" />
+              <messageOccurrenceSpecificationMoniker Id="b54eea28-dea2-43f1-aaff-65f8669becd6" LastKnownName="MessageOccurrenceSpecification37" />
+              <messageOccurrenceSpecificationMoniker Id="82b86ba5-ddf4-4aaa-9ab7-9ec6b7c0847e" LastKnownName="MessageOccurrenceSpecification40" />
+              <messageOccurrenceSpecificationMoniker Id="938968fd-78c5-47d1-bee2-96a9ae7a11f7" LastKnownName="MessageOccurrenceSpecification35" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e67f9d78-9d50-4a52-9ba8-23cf0092a739" name="ExecutionOccurrenceSpecification23">
+            <elementDefinition Id="615651fc-1ea8-4806-80c0-7bd834336c3d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="297608dd-f6f4-47e2-8db8-9d37b8f71d76" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="89908829-d9fb-4901-bedd-d30dd193e954" name="MessageOccurrenceSpecification33">
+            <elementDefinition Id="eb462568-ab27-411c-b841-6db1cca5cfdf" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="38b90ffe-373c-42b1-b8b7-43d2fb8a295e" name="MessageOccurrenceSpecification34">
+            <elementDefinition Id="3914e4d3-bbeb-4b53-b4dc-8479666b4654" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="63e8aae6-004d-401e-af41-c7a5467c41b2" name="BehaviorExecutionSpecification13">
+            <elementDefinition Id="c7f6a153-0d14-42d3-bcea-5a3b804d17b8" />
+            <coveredLifelines>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="52bdb378-0bc9-4a1b-bbe1-41f07048fb76" LastKnownName="ExecutionOccurrenceSpecification26" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="60555f0c-2c21-4e01-8aae-8415c03c9637" LastKnownName="ExecutionOccurrenceSpecification25" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="722ba418-80f8-4652-b495-e79eb9e5d70b" LastKnownName="MessageOccurrenceSpecification38" />
+              <messageOccurrenceSpecificationMoniker Id="111841e0-2aef-416f-8d4d-b6287c63b14e" LastKnownName="MessageOccurrenceSpecification39" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="60555f0c-2c21-4e01-8aae-8415c03c9637" name="ExecutionOccurrenceSpecification25">
+            <elementDefinition Id="0eee08fe-7c18-4ae1-82ae-570ada123dc0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="702c30a7-b0d4-496f-8ae8-b0142bc4c7c2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="722ba418-80f8-4652-b495-e79eb9e5d70b" name="MessageOccurrenceSpecification38">
+            <elementDefinition Id="e4efcf8b-2906-4af1-8375-2b7bd11ee584" />
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b54eea28-dea2-43f1-aaff-65f8669becd6" name="MessageOccurrenceSpecification37">
+            <elementDefinition Id="b4cf7335-bf34-45d4-a93b-f465e8440532" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="82b86ba5-ddf4-4aaa-9ab7-9ec6b7c0847e" name="MessageOccurrenceSpecification40">
+            <elementDefinition Id="91da01e0-4574-48a3-8bf9-bb8d258b4544" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="111841e0-2aef-416f-8d4d-b6287c63b14e" name="MessageOccurrenceSpecification39">
+            <elementDefinition Id="5c183e4f-8329-491e-a6f4-b1e6a3706f4c" />
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="52bdb378-0bc9-4a1b-bbe1-41f07048fb76" name="ExecutionOccurrenceSpecification26">
+            <elementDefinition Id="dc2efa54-7a75-4b17-91ed-bce8d2268af2" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="65519e4a-ba4d-4cb4-9a9f-f9c81c72040c" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="938968fd-78c5-47d1-bee2-96a9ae7a11f7" name="MessageOccurrenceSpecification35">
+            <elementDefinition Id="7ecf9809-ee01-4cc0-9a03-9d8d6ed2b536" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2b6860c7-f5a3-401a-af96-b704ebcd38d8" name="MessageOccurrenceSpecification36">
+            <elementDefinition Id="542eb305-cd3d-4a50-992f-511d04d36335" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="a8b87d6b-78cc-4f26-8f3c-517b276f0951" name="ExecutionOccurrenceSpecification24">
+            <elementDefinition Id="909368f4-122c-4853-a378-413f666226da" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d780cc89-1058-4f33-9269-4e5ae44e21bf" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ccc9cd3a-0f3d-450b-b1ff-ba4a1cddb06c" name="OperandOccurrenceSpecification4">
+            <elementDefinition Id="f229be58-e07a-4d3f-ad02-b6c2fe586d45" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6dea4a2f-91ff-4687-86ca-ca65dfaf9380" name="OperandOccurrenceSpecification8">
+            <elementDefinition Id="551d9229-db64-4f26-b137-e82d167e5670" />
+            <covered>
+              <lifelineMoniker Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" LastKnownName="CreditCard" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ddaf59a7-015f-4fc4-9d52-c9e6c337d5c7" name="OperandOccurrenceSpecification2">
+            <elementDefinition Id="6e4db5ad-8886-4cf4-957f-b7c9563c4ca4" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <combinedFragment Id="7a1707c4-5b78-493d-952e-780cb13169cb" name="CombinedFragment2" interactionOperator="Opt">
+            <elementDefinition Id="9335235b-f199-4bc5-9163-c4075d17fa4a" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="988d0fdc-25c8-479b-9e76-01ea8bc05180" name="InteractionOperand1">
+                <elementDefinition Id="a04320dc-8c7d-469a-a41e-f0caad8e2fe7" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+                  <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+                  <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="6618a672-79e5-43a3-82ba-8470fe6bde96" guardText="payment == credit card">
+                    <elementDefinition Id="a007b159-90e8-4a84-b10e-c28f26dbcea4" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="1273b200-6c52-4bac-aa8e-0d9cc03d6ac5" LastKnownName="OperandOccurrenceSpecification9" />
+                  <operandOccurrenceSpecificationMoniker Id="c43543a3-2231-4df8-8421-2e63b9197b93" LastKnownName="OperandOccurrenceSpecification10" />
+                  <operandOccurrenceSpecificationMoniker Id="6c8dcabd-bdb3-4150-87d7-361902c9fa24" LastKnownName="OperandOccurrenceSpecification11" />
+                  <operandOccurrenceSpecificationMoniker Id="9de206f5-bd57-4805-a38a-342718ca72bd" LastKnownName="OperandOccurrenceSpecification12" />
+                  <operandOccurrenceSpecificationMoniker Id="97c831ef-2aaa-44f7-8477-4afaf88a4a0e" LastKnownName="OperandOccurrenceSpecification15" />
+                  <operandOccurrenceSpecificationMoniker Id="69c66d39-aef7-4a17-bd0a-03622c378c1d" LastKnownName="OperandOccurrenceSpecification16" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="6c8dcabd-bdb3-4150-87d7-361902c9fa24" name="OperandOccurrenceSpecification11">
+            <elementDefinition Id="e1b6dd03-5401-496a-8d70-91f1a8a4bbde" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="1273b200-6c52-4bac-aa8e-0d9cc03d6ac5" name="OperandOccurrenceSpecification9">
+            <elementDefinition Id="b07aece4-6682-4c03-9c52-82f07e29a0cf" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="97c831ef-2aaa-44f7-8477-4afaf88a4a0e" name="OperandOccurrenceSpecification15">
+            <elementDefinition Id="9a8c339a-79e3-4b5b-98e5-acc668cf18ca" />
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="04e34eb6-63c1-4fe1-92d8-1c05df8c98fa" name="BehaviorExecutionSpecification14">
+            <elementDefinition Id="79e1bee9-09ce-43cb-9173-e5f9711ba8a1" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="fd052655-049f-4029-8120-aa8761690d5b" LastKnownName="ExecutionOccurrenceSpecification28" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="851db6e2-801b-42f1-9197-79b2528bd5bf" LastKnownName="ExecutionOccurrenceSpecification27" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="be50ebf6-d637-4146-9d31-16ff229ff5c4" LastKnownName="MessageOccurrenceSpecification42" />
+              <messageOccurrenceSpecificationMoniker Id="8f0592ee-f45f-43fe-8b57-73b9944abed2" LastKnownName="MessageOccurrenceSpecification45" />
+              <messageOccurrenceSpecificationMoniker Id="e715eb56-2c8c-46e5-9b1c-6fb6eab89cc6" LastKnownName="MessageOccurrenceSpecification48" />
+              <messageOccurrenceSpecificationMoniker Id="14688e81-b7ee-4e49-aa37-08cf49d95119" LastKnownName="MessageOccurrenceSpecification43" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="851db6e2-801b-42f1-9197-79b2528bd5bf" name="ExecutionOccurrenceSpecification27">
+            <elementDefinition Id="f520074c-c3d0-4928-8c39-6f798106320c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1b0544b1-e1da-4dd7-bd6f-592b52be6dd5" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="143e6478-f285-4fe0-85f7-cbb6ce244262" name="MessageOccurrenceSpecification41">
+            <elementDefinition Id="77b1ab1d-a555-491d-8169-d2338ae1ec86" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="be50ebf6-d637-4146-9d31-16ff229ff5c4" name="MessageOccurrenceSpecification42">
+            <elementDefinition Id="b57d4c43-fb58-4f6a-80d7-a6517fba2afa" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="4d710fc9-668b-41f8-acd2-3bbfaa464188" name="BehaviorExecutionSpecification15">
+            <elementDefinition Id="f9579e26-c5c6-4c21-bafc-7c7f8e6a1677" />
+            <coveredLifelines>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="243e0872-b3cf-4003-a611-190879a977d0" LastKnownName="ExecutionOccurrenceSpecification30" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="461a007e-61d2-473e-9bea-f0e927653024" LastKnownName="ExecutionOccurrenceSpecification29" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="f361ee38-8ef7-4a16-9d60-8b1f946df69d" LastKnownName="MessageOccurrenceSpecification46" />
+              <messageOccurrenceSpecificationMoniker Id="1f9c2d41-50b2-4620-ac30-866bdd19f4f7" LastKnownName="MessageOccurrenceSpecification47" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="461a007e-61d2-473e-9bea-f0e927653024" name="ExecutionOccurrenceSpecification29">
+            <elementDefinition Id="c91f9ce0-23b6-4b62-a8c7-796b3dbf53a6" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4fac6ab5-1823-4cd0-9165-fa5c65b6d34a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f361ee38-8ef7-4a16-9d60-8b1f946df69d" name="MessageOccurrenceSpecification46">
+            <elementDefinition Id="030958df-db6e-4639-b3d1-43d473626dc2" />
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8f0592ee-f45f-43fe-8b57-73b9944abed2" name="MessageOccurrenceSpecification45">
+            <elementDefinition Id="b5839be2-55ed-4e65-a901-8aa4867843db" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e715eb56-2c8c-46e5-9b1c-6fb6eab89cc6" name="MessageOccurrenceSpecification48">
+            <elementDefinition Id="1f4df33d-27d5-4645-ada4-fd1167df5ba1" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1f9c2d41-50b2-4620-ac30-866bdd19f4f7" name="MessageOccurrenceSpecification47">
+            <elementDefinition Id="526aa5a3-1d33-4375-b4a9-e979aac6bae4" />
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="243e0872-b3cf-4003-a611-190879a977d0" name="ExecutionOccurrenceSpecification30">
+            <elementDefinition Id="846a2124-c831-4474-a769-16dff8ec11c0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3cc74d4d-c67f-41b9-b723-005f161bb2fd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="14688e81-b7ee-4e49-aa37-08cf49d95119" name="MessageOccurrenceSpecification43">
+            <elementDefinition Id="b7d07dfc-8c86-4956-9922-82340fd33f57" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="e65b50bc-59a9-41a4-925a-74f5fa5167f5" name="MessageOccurrenceSpecification44">
+            <elementDefinition Id="ddbfa674-e898-4a93-be21-63b7f448d521" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="fd052655-049f-4029-8120-aa8761690d5b" name="ExecutionOccurrenceSpecification28">
+            <elementDefinition Id="d618b85a-1eae-4b84-9196-f92cb3898178" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ea78e310-19ae-4c14-b6c2-f7b96ecef921" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="9de206f5-bd57-4805-a38a-342718ca72bd" name="OperandOccurrenceSpecification12">
+            <elementDefinition Id="9d06a967-4cde-49ea-b84d-007361713512" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="69c66d39-aef7-4a17-bd0a-03622c378c1d" name="OperandOccurrenceSpecification16">
+            <elementDefinition Id="ac5909bd-4c3f-4e04-b12a-2a5413249a44" />
+            <covered>
+              <lifelineMoniker Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" LastKnownName="DebitCard" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c43543a3-2231-4df8-8421-2e63b9197b93" name="OperandOccurrenceSpecification10">
+            <elementDefinition Id="c540f751-8898-4b8f-9239-a0bcb3212df0" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <combinedFragment Id="6c62faeb-8b59-48f2-b6c6-7296ab336a07" name="CombinedFragment3" interactionOperator="Opt">
+            <elementDefinition Id="20f29d05-55d0-42a5-9c8a-b7e9a22c4b8c" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="61a7b17e-9ab8-4dff-987e-366fb5f4150e" name="InteractionOperand1">
+                <elementDefinition Id="45ba5e9a-368d-43b6-a206-6e5192074e11" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+                  <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+                  <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="bba2a139-94df-49b6-8cf4-a20e4029804c" guardText="payment == cash">
+                    <elementDefinition Id="2442657a-1354-4c4e-87d1-e3ae2c3278b0" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="e1bac067-6fa5-4108-8cba-462be885a376" LastKnownName="OperandOccurrenceSpecification17" />
+                  <operandOccurrenceSpecificationMoniker Id="054573a0-ff83-4bd8-9e75-b8b6c76aa3ee" LastKnownName="OperandOccurrenceSpecification18" />
+                  <operandOccurrenceSpecificationMoniker Id="474b886d-b8b0-41e4-819a-656db2517be6" LastKnownName="OperandOccurrenceSpecification19" />
+                  <operandOccurrenceSpecificationMoniker Id="a5591204-cc01-4e44-bfff-58c856158bc4" LastKnownName="OperandOccurrenceSpecification20" />
+                  <operandOccurrenceSpecificationMoniker Id="11a4622b-31bf-4e3f-8f2c-9dfef195cf71" LastKnownName="OperandOccurrenceSpecification21" />
+                  <operandOccurrenceSpecificationMoniker Id="70264d06-f767-44d9-bcf4-1170fa033701" LastKnownName="OperandOccurrenceSpecification22" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="474b886d-b8b0-41e4-819a-656db2517be6" name="OperandOccurrenceSpecification19">
+            <elementDefinition Id="b9e26604-7631-4ce6-acda-8726c1da41cc" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="e1bac067-6fa5-4108-8cba-462be885a376" name="OperandOccurrenceSpecification17">
+            <elementDefinition Id="a219b927-4dc8-497a-a27e-b48969a49c53" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="11a4622b-31bf-4e3f-8f2c-9dfef195cf71" name="OperandOccurrenceSpecification21">
+            <elementDefinition Id="fe74d598-c411-4b4d-be7f-6c7594380741" />
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="70488c7c-3d20-4307-b6ba-99226aa441c1" name="BehaviorExecutionSpecification16">
+            <elementDefinition Id="714098b5-5956-4a52-8301-e90e48d1566b" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="afd77187-22bb-4aa8-88d5-05b8b38d8a75" LastKnownName="ExecutionOccurrenceSpecification32" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="22bd93a9-c02f-4733-936e-0eae10d6bab6" LastKnownName="ExecutionOccurrenceSpecification31" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fc9f865d-d508-459e-a980-18c9781ab8e0" LastKnownName="MessageOccurrenceSpecification50" />
+              <messageOccurrenceSpecificationMoniker Id="14c0687b-2a8f-4d25-a561-d22bff1ad5ad" LastKnownName="MessageOccurrenceSpecification53" />
+              <messageOccurrenceSpecificationMoniker Id="5383ef81-3882-4808-9bdd-9f5d4d33c97f" LastKnownName="MessageOccurrenceSpecification56" />
+              <messageOccurrenceSpecificationMoniker Id="7082191d-d4ca-4b42-8c69-df8e6a2c4578" LastKnownName="MessageOccurrenceSpecification51" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="22bd93a9-c02f-4733-936e-0eae10d6bab6" name="ExecutionOccurrenceSpecification31">
+            <elementDefinition Id="d7dffc47-1404-4bd9-b2bc-2e8738742dca" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f6c61cda-c694-4325-b53f-4bcb508056ec" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5cad75c4-2b34-444d-a337-89355ecdc171" name="MessageOccurrenceSpecification49">
+            <elementDefinition Id="f5c57954-b196-45b4-abcf-d455501b6519" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fc9f865d-d508-459e-a980-18c9781ab8e0" name="MessageOccurrenceSpecification50">
+            <elementDefinition Id="acb65b7b-ad4e-46e1-9de7-d9585ac07703" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="267ecbfb-e57a-4a05-bf94-990720a8c5e9" name="BehaviorExecutionSpecification17">
+            <elementDefinition Id="691ea800-836c-40b3-8a65-89a057b17205" />
+            <coveredLifelines>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="1081c80a-7eda-474f-aca6-a4dba7672510" LastKnownName="ExecutionOccurrenceSpecification34" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="af10e60d-0a60-48e7-b024-3eaa22cae647" LastKnownName="ExecutionOccurrenceSpecification33" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="be884346-c342-4678-b455-0fac2e98ba22" LastKnownName="MessageOccurrenceSpecification54" />
+              <messageOccurrenceSpecificationMoniker Id="ba45793e-1da4-4e73-84f9-52829c4ad222" LastKnownName="MessageOccurrenceSpecification55" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="af10e60d-0a60-48e7-b024-3eaa22cae647" name="ExecutionOccurrenceSpecification33">
+            <elementDefinition Id="aa4f2988-6daf-47b9-95ca-e4e2975ed250" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="57b71f80-1a38-436c-932c-c9364e6757be" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="14c0687b-2a8f-4d25-a561-d22bff1ad5ad" name="MessageOccurrenceSpecification53">
+            <elementDefinition Id="09289cff-4021-4dcc-a034-36474ea8ba55" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="be884346-c342-4678-b455-0fac2e98ba22" name="MessageOccurrenceSpecification54">
+            <elementDefinition Id="54da853d-3d95-4eee-8014-79ce07fb03f3" />
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="ba45793e-1da4-4e73-84f9-52829c4ad222" name="MessageOccurrenceSpecification55">
+            <elementDefinition Id="09ad68c7-f95f-4817-9227-91dcee4ec2cc" />
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5383ef81-3882-4808-9bdd-9f5d4d33c97f" name="MessageOccurrenceSpecification56">
+            <elementDefinition Id="3d78c0a0-3ee9-4708-903c-770e51451db5" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="1081c80a-7eda-474f-aca6-a4dba7672510" name="ExecutionOccurrenceSpecification34">
+            <elementDefinition Id="17e2677a-efa9-4843-8cbc-71a7dce07e74" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="4a7b58da-70d5-4494-9bf4-93a4ba135b5a" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="395b498d-ea52-4a3b-9f94-3bbb9f162652" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="09dd5b8e-ccac-40d6-b47f-40be5d5963db" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7082191d-d4ca-4b42-8c69-df8e6a2c4578" name="MessageOccurrenceSpecification51">
+            <elementDefinition Id="baa654df-6b33-42b1-aec0-e7fd60983a20" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="afd77187-22bb-4aa8-88d5-05b8b38d8a75" name="ExecutionOccurrenceSpecification32">
+            <elementDefinition Id="6d4e009c-2308-414f-8b90-670a06ef1824" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ec8ba9aa-d35c-4099-971b-fb70e10625a9" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a5591204-cc01-4e44-bfff-58c856158bc4" name="OperandOccurrenceSpecification20">
+            <elementDefinition Id="85d6b7e3-fcc6-46d3-9892-0c4116c35e06" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="054573a0-ff83-4bd8-9e75-b8b6c76aa3ee" name="OperandOccurrenceSpecification18">
+            <elementDefinition Id="feca863e-6e3c-4879-835f-d6b0db8a8792" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="70264d06-f767-44d9-bcf4-1170fa033701" name="OperandOccurrenceSpecification22">
+            <elementDefinition Id="92bed261-1401-48d4-bed5-0756f24b2728" />
+            <covered>
+              <lifelineMoniker Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" LastKnownName="Cash" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <combinedFragment Id="f738e73a-198f-4947-a574-7249736f86b5" name="CombinedFragment4" interactionOperator="Opt">
+            <elementDefinition Id="23092699-4d65-4416-aa8f-78401c07aa21" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="606aaed2-db1f-401a-ae36-09d37aaf58ad" name="InteractionOperand1">
+                <elementDefinition Id="97af6012-72f7-4956-9fbf-41b6e98ead10" />
+                <coveredLifelines>
+                  <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+                  <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+                  <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="4945529a-2ca6-41a8-934f-f359a7ee835a" guardText="payment == cheque">
+                    <elementDefinition Id="361948bc-946a-42e7-8f12-9b11d6dbc87f" />
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="9f2f593a-de80-49d6-a92a-e00f83183741" LastKnownName="OperandOccurrenceSpecification29" />
+                  <operandOccurrenceSpecificationMoniker Id="838cb3a8-2825-4851-84af-852daa77ec97" LastKnownName="OperandOccurrenceSpecification30" />
+                  <operandOccurrenceSpecificationMoniker Id="c36b02d9-88fe-4452-a696-49f0f108ed39" LastKnownName="OperandOccurrenceSpecification31" />
+                  <operandOccurrenceSpecificationMoniker Id="34e7141f-f2a9-4d46-be41-322399ff9003" LastKnownName="OperandOccurrenceSpecification32" />
+                  <operandOccurrenceSpecificationMoniker Id="96905056-ec87-4560-898b-1a152489e393" LastKnownName="OperandOccurrenceSpecification33" />
+                  <operandOccurrenceSpecificationMoniker Id="99429924-e945-45de-9dcd-c812fd9f2e6c" LastKnownName="OperandOccurrenceSpecification34" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="9f2f593a-de80-49d6-a92a-e00f83183741" name="OperandOccurrenceSpecification29">
+            <elementDefinition Id="fbf46667-992f-427d-b897-39164d06f60b" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c36b02d9-88fe-4452-a696-49f0f108ed39" name="OperandOccurrenceSpecification31">
+            <elementDefinition Id="b0c6b935-d750-4a49-be9c-60be5876c1e1" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="96905056-ec87-4560-898b-1a152489e393" name="OperandOccurrenceSpecification33">
+            <elementDefinition Id="480fae21-f7ac-47bf-97c8-7e4f7ebc60f5" />
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1da51b91-73d2-48cd-b9e6-d86f23876405" name="BehaviorExecutionSpecification18">
+            <elementDefinition Id="20c9d21a-cd9e-4977-b09f-d465120cf3e8" />
+            <coveredLifelines>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="9be9dda7-d4a5-4832-a36d-da8f9f2c7da7" LastKnownName="ExecutionOccurrenceSpecification36" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8a675d94-0ca7-4536-9f36-c5e5f9cab88b" LastKnownName="ExecutionOccurrenceSpecification35" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="12878d67-8211-478d-92c7-dbb6eb5e5d27" LastKnownName="MessageOccurrenceSpecification58" />
+              <messageOccurrenceSpecificationMoniker Id="53c6ae4c-dd81-49e8-8a9e-a3c9f3703ca8" LastKnownName="MessageOccurrenceSpecification61" />
+              <messageOccurrenceSpecificationMoniker Id="b93b0284-7fd4-4286-83f2-c76621bf1f81" LastKnownName="MessageOccurrenceSpecification64" />
+              <messageOccurrenceSpecificationMoniker Id="5145c845-b265-41bc-a77b-912fe8ded3d7" LastKnownName="MessageOccurrenceSpecification59" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8a675d94-0ca7-4536-9f36-c5e5f9cab88b" name="ExecutionOccurrenceSpecification35">
+            <elementDefinition Id="05e5fa7f-7fdc-44ad-ab85-e22c7fa61c6e" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ba782582-c036-4a02-bccb-0ffd7752f2b2" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="49536373-9151-403d-bc65-0b09071d45bb" name="MessageOccurrenceSpecification57">
+            <elementDefinition Id="fdaac19a-6af3-4e7f-80e5-eb16f0d832fd" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="12878d67-8211-478d-92c7-dbb6eb5e5d27" name="MessageOccurrenceSpecification58">
+            <elementDefinition Id="0d04792f-9b12-4a90-8e07-28b724440718" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="41e53c53-5453-492a-9687-639ddfa0a528" name="BehaviorExecutionSpecification19">
+            <elementDefinition Id="880c4ec8-cc0d-461c-8b94-efa47384f337" />
+            <coveredLifelines>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c8c415f6-07fd-4069-9c17-8d3fa9d138e4" LastKnownName="ExecutionOccurrenceSpecification38" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="2a35f2fd-1d07-4a20-a0e9-0211bb2e63f7" LastKnownName="ExecutionOccurrenceSpecification37" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="5a045fa3-b843-4346-bf2e-7f8602d4d474" LastKnownName="MessageOccurrenceSpecification62" />
+              <messageOccurrenceSpecificationMoniker Id="3324db95-d16e-45d9-895b-d985081bcf5d" LastKnownName="MessageOccurrenceSpecification63" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="2a35f2fd-1d07-4a20-a0e9-0211bb2e63f7" name="ExecutionOccurrenceSpecification37">
+            <elementDefinition Id="8a73ef98-4cd8-45d9-a94b-685c32705e7e" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="d45cef12-c8b0-4274-b188-a9ba32d121ec" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5a045fa3-b843-4346-bf2e-7f8602d4d474" name="MessageOccurrenceSpecification62">
+            <elementDefinition Id="effef628-5cce-42e7-8c73-1cb2f77916ed" />
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="53c6ae4c-dd81-49e8-8a9e-a3c9f3703ca8" name="MessageOccurrenceSpecification61">
+            <elementDefinition Id="cdb0c055-fe74-418c-b7a7-6ab1788e2de6" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3324db95-d16e-45d9-895b-d985081bcf5d" name="MessageOccurrenceSpecification63">
+            <elementDefinition Id="baea0bd6-3478-4bbb-b05d-8f6b22399425" />
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b93b0284-7fd4-4286-83f2-c76621bf1f81" name="MessageOccurrenceSpecification64">
+            <elementDefinition Id="89419c56-d372-4de3-a383-9bc766757fd9" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c8c415f6-07fd-4069-9c17-8d3fa9d138e4" name="ExecutionOccurrenceSpecification38">
+            <elementDefinition Id="53e6244a-ecf3-4124-ae5c-a96628a36dc0" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e028176a-616a-4862-bf31-df3261d0e9d5" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="cffe5eb4-ea26-49bd-b1c4-f08dd364a6c2" name="MessageOccurrenceSpecification60">
+            <elementDefinition Id="0abc0e62-ad5b-4867-9d43-e262a0028c98" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5145c845-b265-41bc-a77b-912fe8ded3d7" name="MessageOccurrenceSpecification59">
+            <elementDefinition Id="a7bf4ab3-a0a8-4e25-82f3-4d370ba35268" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="9be9dda7-d4a5-4832-a36d-da8f9f2c7da7" name="ExecutionOccurrenceSpecification36">
+            <elementDefinition Id="9c768542-c557-463a-946a-7ca283b2874e" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="66d054ca-b355-4fd6-b4f2-ed7c276a10f1" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="34e7141f-f2a9-4d46-be41-322399ff9003" name="OperandOccurrenceSpecification32">
+            <elementDefinition Id="7416a1a4-7b66-48fb-946e-b9e506818435" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="99429924-e945-45de-9dcd-c812fd9f2e6c" name="OperandOccurrenceSpecification34">
+            <elementDefinition Id="79b72cbf-d35a-43bc-967a-d6e246b568f5" />
+            <covered>
+              <lifelineMoniker Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" LastKnownName="Cheque" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="838cb3a8-2825-4851-84af-852daa77ec97" name="OperandOccurrenceSpecification30">
+            <elementDefinition Id="a1de8638-ffda-45d8-9739-7b2af0aec44c" />
+            <covered>
+              <lifelineMoniker Id="55879596-adf4-4052-87db-2aed7685d106" LastKnownName="RegisterPaymentController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="3522ec4c-0b3e-431f-9528-725936703968" name="BehaviorExecutionSpecification20">
+            <elementDefinition Id="4ee49ad1-827e-4072-a142-dddcdf6d7582" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="e5848120-62cb-4728-afbe-172d380c99fe" LastKnownName="ExecutionOccurrenceSpecification40" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="fa40d0b5-d62d-495a-8710-3c991d07ce57" LastKnownName="ExecutionOccurrenceSpecification39" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="7598571a-98a8-4c8a-a9ae-f686b537a0dd" LastKnownName="MessageOccurrenceSpecification66" />
+              <messageOccurrenceSpecificationMoniker Id="dd0b58aa-f937-4530-87c2-f1869bd7ae76" LastKnownName="MessageOccurrenceSpecification67" />
+              <executionOccurrenceSpecificationMoniker Id="955887f6-ef92-4a5b-9c67-4789a72c4f7a" LastKnownName="ExecutionOccurrenceSpecification41" />
+              <executionOccurrenceSpecificationMoniker Id="4f1318f8-f1af-4c9c-98b0-229ba93972e6" LastKnownName="ExecutionOccurrenceSpecification42" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="fa40d0b5-d62d-495a-8710-3c991d07ce57" name="ExecutionOccurrenceSpecification39">
+            <elementDefinition Id="6726db9f-5041-44b0-8b6c-ebff184d4beb" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e1714586-25b0-414e-a8f0-a24da5c5e484" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="36244c39-2907-4f6b-9d67-6f8f089e0746" name="MessageOccurrenceSpecification65">
+            <elementDefinition Id="00b9710c-5861-4207-b5fb-5bf2e832d0a9" />
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="7598571a-98a8-4c8a-a9ae-f686b537a0dd" name="MessageOccurrenceSpecification66">
+            <elementDefinition Id="26833de8-0726-4b96-b351-f538d9c3f27d" />
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="9f6544ac-738e-47cd-8b20-d8ba7f196dfa" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="9a86843b-23d7-4c7d-afc8-dcbe54374352" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="9cf8df4a-e7d4-4a09-a71c-91f2b924dd79" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" LastKnownName="RegisterPaymentMethodUI" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="dd0b58aa-f937-4530-87c2-f1869bd7ae76" name="MessageOccurrenceSpecification67">
+            <elementDefinition Id="bded2b65-cc49-46a4-a8a1-7120a325d5dc" />
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="b16f77f0-48a3-4256-adcc-5a5f675ba9f8" name="BehaviorExecutionSpecification21">
+            <elementDefinition Id="63f65a5a-40f4-41f1-8f84-b890bae1ee5e" />
+            <coveredLifelines>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="4f1318f8-f1af-4c9c-98b0-229ba93972e6" LastKnownName="ExecutionOccurrenceSpecification42" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="955887f6-ef92-4a5b-9c67-4789a72c4f7a" LastKnownName="ExecutionOccurrenceSpecification41" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="37bc3ed6-12c4-428d-a8ef-713f926129be" LastKnownName="MessageOccurrenceSpecification68" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="955887f6-ef92-4a5b-9c67-4789a72c4f7a" name="ExecutionOccurrenceSpecification41">
+            <elementDefinition Id="fc9cd941-aa49-4a33-bf69-599b55864ba1" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="724f1234-b7dc-4437-9852-50afc8fc25ea" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="37bc3ed6-12c4-428d-a8ef-713f926129be" name="MessageOccurrenceSpecification68">
+            <elementDefinition Id="61b04b46-ca07-49e4-ac83-0546f0c367a0" />
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="4f1318f8-f1af-4c9c-98b0-229ba93972e6" name="ExecutionOccurrenceSpecification42">
+            <elementDefinition Id="2fa69f84-7e4d-4e41-b394-7f8e3047d9ab" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="a05b0f74-5d31-4816-a8e1-26809f929458" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="e5848120-62cb-4728-afbe-172d380c99fe" name="ExecutionOccurrenceSpecification40">
+            <elementDefinition Id="97bd4f9e-7b42-485c-92a7-5b19dfbf7b64" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5ba9aa19-334d-4f42-a43c-9a5a15936ee3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" LastKnownName="PaymentMethodRepository" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="9c722cc9-4c2d-4a35-9955-651dd80c3f0c" name="ExpenseManager" isActor="false" lifelineDisplayName="ExpenseManager">
+            <elementDefinition Id="f8b7a9d9-a4d1-4bad-9eb0-bb1aabcce6c7" />
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="84b783ae-4325-4370-bdc0-732d49f939bd" LastKnownName="MessageOccurrenceSpecification1" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="184af33c-ed6b-4ebb-ab36-cd905cada81b" name="ExpenseManagerUI" isActor="false" lifelineDisplayName="ExpenseManagerUI">
+            <elementDefinition Id="38cbe5a5-b717-42a9-8941-0e87d70a2b3e" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="ab296037-beda-4955-a541-1d9219b0deb9" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="d7a093dc-06e7-44bf-a1b3-5d494e992685" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="1ef46b9b-e3d7-4377-b402-6ee814c50ac8" name="RegisterPaymentMethodUI" isActor="false" lifelineDisplayName="RegisterPaymentMethodUI">
+            <elementDefinition Id="e4c884a5-39b3-434a-b30c-48a931986eb1" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="00d7e2b8-45ce-4d6b-af3d-b89a86f07159" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="9f6544ac-738e-47cd-8b20-d8ba7f196dfa" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="55879596-adf4-4052-87db-2aed7685d106" name="RegisterPaymentController" isActor="false" lifelineDisplayName="RegisterPaymentController">
+            <elementDefinition Id="2005b479-c0b3-4795-b734-60d604b49753" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="9ec809e9-db4f-4f15-aeda-c90f448c885b" LastKnownName="OperandOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="e67f9d78-9d50-4a52-9ba8-23cf0092a739" LastKnownName="ExecutionOccurrenceSpecification23" />
+              <executionOccurrenceSpecificationMoniker Id="a8b87d6b-78cc-4f26-8f3c-517b276f0951" LastKnownName="ExecutionOccurrenceSpecification24" />
+              <operandOccurrenceSpecificationMoniker Id="ccc9cd3a-0f3d-450b-b1ff-ba4a1cddb06c" LastKnownName="OperandOccurrenceSpecification4" />
+              <operandOccurrenceSpecificationMoniker Id="6c8dcabd-bdb3-4150-87d7-361902c9fa24" LastKnownName="OperandOccurrenceSpecification11" />
+              <executionOccurrenceSpecificationMoniker Id="851db6e2-801b-42f1-9197-79b2528bd5bf" LastKnownName="ExecutionOccurrenceSpecification27" />
+              <executionOccurrenceSpecificationMoniker Id="fd052655-049f-4029-8120-aa8761690d5b" LastKnownName="ExecutionOccurrenceSpecification28" />
+              <operandOccurrenceSpecificationMoniker Id="9de206f5-bd57-4805-a38a-342718ca72bd" LastKnownName="OperandOccurrenceSpecification12" />
+              <operandOccurrenceSpecificationMoniker Id="e1bac067-6fa5-4108-8cba-462be885a376" LastKnownName="OperandOccurrenceSpecification17" />
+              <executionOccurrenceSpecificationMoniker Id="22bd93a9-c02f-4733-936e-0eae10d6bab6" LastKnownName="ExecutionOccurrenceSpecification31" />
+              <executionOccurrenceSpecificationMoniker Id="afd77187-22bb-4aa8-88d5-05b8b38d8a75" LastKnownName="ExecutionOccurrenceSpecification32" />
+              <operandOccurrenceSpecificationMoniker Id="054573a0-ff83-4bd8-9e75-b8b6c76aa3ee" LastKnownName="OperandOccurrenceSpecification18" />
+              <operandOccurrenceSpecificationMoniker Id="9f2f593a-de80-49d6-a92a-e00f83183741" LastKnownName="OperandOccurrenceSpecification29" />
+              <executionOccurrenceSpecificationMoniker Id="8a675d94-0ca7-4536-9f36-c5e5f9cab88b" LastKnownName="ExecutionOccurrenceSpecification35" />
+              <executionOccurrenceSpecificationMoniker Id="9be9dda7-d4a5-4832-a36d-da8f9f2c7da7" LastKnownName="ExecutionOccurrenceSpecification36" />
+              <operandOccurrenceSpecificationMoniker Id="838cb3a8-2825-4851-84af-852daa77ec97" LastKnownName="OperandOccurrenceSpecification30" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="e2fe700e-0f4f-496d-8494-c945d8979fe4" name="CreditCard" isActor="false" lifelineDisplayName="CreditCard">
+            <elementDefinition Id="028c2f2c-ee6e-4b6e-901d-e0882efe418b" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="9f4d41f2-bad0-4a2c-bcaa-3fdf2fcbbf88" LastKnownName="OperandOccurrenceSpecification7" />
+              <executionOccurrenceSpecificationMoniker Id="60555f0c-2c21-4e01-8aae-8415c03c9637" LastKnownName="ExecutionOccurrenceSpecification25" />
+              <executionOccurrenceSpecificationMoniker Id="52bdb378-0bc9-4a1b-bbe1-41f07048fb76" LastKnownName="ExecutionOccurrenceSpecification26" />
+              <operandOccurrenceSpecificationMoniker Id="6dea4a2f-91ff-4687-86ca-ca65dfaf9380" LastKnownName="OperandOccurrenceSpecification8" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="b5bdadaa-6113-4b31-95e0-be36a512a43e" name="DebitCard" isActor="false" lifelineDisplayName="DebitCard">
+            <elementDefinition Id="e100e1e2-de8f-4a31-bcb7-1d8ca80763f9" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="97c831ef-2aaa-44f7-8477-4afaf88a4a0e" LastKnownName="OperandOccurrenceSpecification15" />
+              <executionOccurrenceSpecificationMoniker Id="461a007e-61d2-473e-9bea-f0e927653024" LastKnownName="ExecutionOccurrenceSpecification29" />
+              <executionOccurrenceSpecificationMoniker Id="243e0872-b3cf-4003-a611-190879a977d0" LastKnownName="ExecutionOccurrenceSpecification30" />
+              <operandOccurrenceSpecificationMoniker Id="69c66d39-aef7-4a17-bd0a-03622c378c1d" LastKnownName="OperandOccurrenceSpecification16" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="481f89db-8fe2-4f8b-acce-9c3d866769fc" name="Cash" isActor="false" lifelineDisplayName="Cash">
+            <elementDefinition Id="0a962b06-e5f3-426c-a864-0f5d72bc5146" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="11a4622b-31bf-4e3f-8f2c-9dfef195cf71" LastKnownName="OperandOccurrenceSpecification21" />
+              <executionOccurrenceSpecificationMoniker Id="af10e60d-0a60-48e7-b024-3eaa22cae647" LastKnownName="ExecutionOccurrenceSpecification33" />
+              <executionOccurrenceSpecificationMoniker Id="1081c80a-7eda-474f-aca6-a4dba7672510" LastKnownName="ExecutionOccurrenceSpecification34" />
+              <operandOccurrenceSpecificationMoniker Id="70264d06-f767-44d9-bcf4-1170fa033701" LastKnownName="OperandOccurrenceSpecification22" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="33823ebc-45c5-46dc-ac94-9ed708f93ef0" name="Cheque" isActor="false" lifelineDisplayName="Cheque">
+            <elementDefinition Id="3fdce093-94a3-4a98-b4bc-d7f0dc3f5194" />
+            <topLevelOccurrences>
+              <operandOccurrenceSpecificationMoniker Id="96905056-ec87-4560-898b-1a152489e393" LastKnownName="OperandOccurrenceSpecification33" />
+              <executionOccurrenceSpecificationMoniker Id="2a35f2fd-1d07-4a20-a0e9-0211bb2e63f7" LastKnownName="ExecutionOccurrenceSpecification37" />
+              <executionOccurrenceSpecificationMoniker Id="c8c415f6-07fd-4069-9c17-8d3fa9d138e4" LastKnownName="ExecutionOccurrenceSpecification38" />
+              <operandOccurrenceSpecificationMoniker Id="99429924-e945-45de-9dcd-c812fd9f2e6c" LastKnownName="OperandOccurrenceSpecification34" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="1004fa10-cfd3-4411-970c-40b08bc2b3d2" name="PaymentMethodRepository" isActor="false" lifelineDisplayName="PaymentMethodRepository">
+            <elementDefinition Id="f08addab-d40f-4279-84f8-2dca263c8535" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="fa40d0b5-d62d-495a-8710-3c991d07ce57" LastKnownName="ExecutionOccurrenceSpecification39" />
+              <executionOccurrenceSpecificationMoniker Id="e5848120-62cb-4728-afbe-172d380c99fe" LastKnownName="ExecutionOccurrenceSpecification40" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="6f328f84-6b76-4d6d-bc5c-d4ce674eed31" name="show();" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="d10f25b9-12b9-4824-8a6e-b3a7e2277539" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="84b783ae-4325-4370-bdc0-732d49f939bd" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="de26439e-4067-4c6a-a412-d532f95e52be" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="24ac84cb-1545-48a4-80c8-631de5e7a6bf" name="menu();" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+            <elementDefinition Id="da30a5dc-7e17-47fa-a661-88d6df8417d9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="282dcf6b-6858-46d3-9c94-ccfec9de92d0" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="bb31c73d-4f5d-475e-a82b-d6715fbe5bf7" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="28b13f3e-8015-4350-a264-9a2b8572d6bd" name="show();" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="25742864-7851-43c0-812c-e9ce89cf9e53" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="e5ac7b19-f4c1-4d6e-a70d-b8f57a3c598a" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b5f0a3d7-ae76-4887-ba65-6e01c6393760" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="ae47aa77-98d5-4419-9ee4-7024d37f8dea" name="listPaymentTypes();" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+            <elementDefinition Id="41f4765f-b031-4766-a951-3491b5707c5d" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="4899ceea-ff81-4997-bacf-c99e8bd2c402" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="d145224c-2e9a-4af2-a82d-60c2605ff6ca" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+          <message Id="508c354f-5da9-470f-b7e5-3036536f0f28" name="registerCreditCard(cardName, bank, cardNumber, name, validUntil, limit)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="36d6c97a-98dc-44b3-84f4-93b42e521168" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="89908829-d9fb-4901-bedd-d30dd193e954" LastKnownName="MessageOccurrenceSpecification33" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="38b90ffe-373c-42b1-b8b7-43d2fb8a295e" LastKnownName="MessageOccurrenceSpecification34" />
+            </receiveEvent>
+          </message>
+          <message Id="236e119e-c381-4bdf-930c-8594cfa544b0" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="da711ef8-619e-4d60-8cbe-90cc728c8a46" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b54eea28-dea2-43f1-aaff-65f8669becd6" LastKnownName="MessageOccurrenceSpecification37" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="722ba418-80f8-4652-b495-e79eb9e5d70b" LastKnownName="MessageOccurrenceSpecification38" />
+            </receiveEvent>
+          </message>
+          <message Id="98431e01-6c4e-4351-bdf8-a24eae1704f6" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="f77e8adb-3056-4b18-a221-37f5a47f9c4f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="111841e0-2aef-416f-8d4d-b6287c63b14e" LastKnownName="MessageOccurrenceSpecification39" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="82b86ba5-ddf4-4aaa-9ab7-9ec6b7c0847e" LastKnownName="MessageOccurrenceSpecification40" />
+            </receiveEvent>
+          </message>
+          <message Id="a68a5762-732a-4cbf-8722-ecd175dabfab" name="&lt;&lt;return paymentMethod&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="366edc90-8189-4df4-9214-5c8646c69e23" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="938968fd-78c5-47d1-bee2-96a9ae7a11f7" LastKnownName="MessageOccurrenceSpecification35" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="2b6860c7-f5a3-401a-af96-b704ebcd38d8" LastKnownName="MessageOccurrenceSpecification36" />
+            </receiveEvent>
+          </message>
+          <message Id="65c3377f-d421-44f2-8200-a1f4644baa22" name="registerDebitCard(cardName, bank, cardNumber, name, validUntil)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="c1696951-d041-4518-959b-3fc974f1828f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="143e6478-f285-4fe0-85f7-cbb6ce244262" LastKnownName="MessageOccurrenceSpecification41" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="be50ebf6-d637-4146-9d31-16ff229ff5c4" LastKnownName="MessageOccurrenceSpecification42" />
+            </receiveEvent>
+          </message>
+          <message Id="f6347ef3-45ed-464a-b03e-c53e7f91393c" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="c655bfde-118a-49cb-bd76-9f4c5262dd37" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8f0592ee-f45f-43fe-8b57-73b9944abed2" LastKnownName="MessageOccurrenceSpecification45" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="f361ee38-8ef7-4a16-9d60-8b1f946df69d" LastKnownName="MessageOccurrenceSpecification46" />
+            </receiveEvent>
+          </message>
+          <message Id="0313ae54-020c-4d13-81b7-45649312e365" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="f4acae23-1ad7-4897-b8c8-207fdfab5afa" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1f9c2d41-50b2-4620-ac30-866bdd19f4f7" LastKnownName="MessageOccurrenceSpecification47" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e715eb56-2c8c-46e5-9b1c-6fb6eab89cc6" LastKnownName="MessageOccurrenceSpecification48" />
+            </receiveEvent>
+          </message>
+          <message Id="a11fe295-d496-459c-bb4c-35f0efb3c570" name="&lt;&lt;return paymentMethod&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="cc506f97-fe84-464e-8afa-8f4674e2a8c1" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="14688e81-b7ee-4e49-aa37-08cf49d95119" LastKnownName="MessageOccurrenceSpecification43" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="e65b50bc-59a9-41a4-925a-74f5fa5167f5" LastKnownName="MessageOccurrenceSpecification44" />
+            </receiveEvent>
+          </message>
+          <message Id="c6120f56-2141-47f3-a823-e543b978f007" name="registerCash(amount)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="490dd07b-577f-45c0-8c46-8736ca440da1" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5cad75c4-2b34-444d-a337-89355ecdc171" LastKnownName="MessageOccurrenceSpecification49" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fc9f865d-d508-459e-a980-18c9781ab8e0" LastKnownName="MessageOccurrenceSpecification50" />
+            </receiveEvent>
+          </message>
+          <message Id="57cfbc89-88a6-4e74-9537-269af2051382" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="5025a787-c4ff-4642-94a3-f24a7a6cf93f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="14c0687b-2a8f-4d25-a561-d22bff1ad5ad" LastKnownName="MessageOccurrenceSpecification53" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="be884346-c342-4678-b455-0fac2e98ba22" LastKnownName="MessageOccurrenceSpecification54" />
+            </receiveEvent>
+          </message>
+          <message Id="fd073e78-de68-462d-9553-29d9de9ed949" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="2abfe3b7-e6b5-4a02-9078-bbd54e4686fb" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="ba45793e-1da4-4e73-84f9-52829c4ad222" LastKnownName="MessageOccurrenceSpecification55" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="5383ef81-3882-4808-9bdd-9f5d4d33c97f" LastKnownName="MessageOccurrenceSpecification56" />
+            </receiveEvent>
+          </message>
+          <message Id="0379254c-e4d8-43a2-83b4-33b77b2c7245" name="&lt;&lt;return paymentMethod&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="488ae145-8efc-4106-b16b-e767f1d19eb8" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="7082191d-d4ca-4b42-8c69-df8e6a2c4578" LastKnownName="MessageOccurrenceSpecification51" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="395b498d-ea52-4a3b-9f94-3bbb9f162652" LastKnownName="MessageOccurrenceSpecification52" />
+            </receiveEvent>
+          </message>
+          <message Id="9b28ddc6-893c-419a-bf85-113df16e823c" name="registerCheque(name, back, accountNumber, chequeNumber)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="a4e6c75a-d245-41e2-8acf-e640231e62cf" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="49536373-9151-403d-bc65-0b09071d45bb" LastKnownName="MessageOccurrenceSpecification57" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="12878d67-8211-478d-92c7-dbb6eb5e5d27" LastKnownName="MessageOccurrenceSpecification58" />
+            </receiveEvent>
+          </message>
+          <message Id="eb05fd95-dc7b-47d2-9fd1-ccec0977b170" name="&lt;&lt;create&gt;&gt;" messageKind="Complete" messageSort="CreateMessage" createSelfMessage="false">
+            <elementDefinition Id="6eb48ebc-58d3-4a4e-91f7-9b0059c3fd4b" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="53c6ae4c-dd81-49e8-8a9e-a3c9f3703ca8" LastKnownName="MessageOccurrenceSpecification61" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="5a045fa3-b843-4346-bf2e-7f8602d4d474" LastKnownName="MessageOccurrenceSpecification62" />
+            </receiveEvent>
+          </message>
+          <message Id="4e8a3572-8aa6-49cd-af94-f5c05925ed41" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="e8680bd2-e4f7-402a-9322-138194a5f5ac" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="3324db95-d16e-45d9-895b-d985081bcf5d" LastKnownName="MessageOccurrenceSpecification63" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b93b0284-7fd4-4286-83f2-c76621bf1f81" LastKnownName="MessageOccurrenceSpecification64" />
+            </receiveEvent>
+          </message>
+          <message Id="e8cba544-2f6f-4bde-9923-3c9c60e0f34e" name="&lt;&lt;return paymentMethod&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="510a62ab-68e1-4674-ac65-aae52175281f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5145c845-b265-41bc-a77b-912fe8ded3d7" LastKnownName="MessageOccurrenceSpecification59" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="cffe5eb4-ea26-49bd-b1c4-f08dd364a6c2" LastKnownName="MessageOccurrenceSpecification60" />
+            </receiveEvent>
+          </message>
+          <message Id="740d2562-00d0-4d0e-9b5c-d4adc64dbc12" name="save(paymentMethod)" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="2c1f1bd5-2886-4924-954d-d2197d086e3c" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="36244c39-2907-4f6b-9d67-6f8f089e0746" LastKnownName="MessageOccurrenceSpecification65" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="7598571a-98a8-4c8a-a9ae-f686b537a0dd" LastKnownName="MessageOccurrenceSpecification66" />
+            </receiveEvent>
+          </message>
+          <message Id="795f04b2-eefd-4a6b-8d5c-e150a1685a06" name="persist(paymentMethod)" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="true">
+            <elementDefinition Id="7c8675bf-601c-4193-b68d-c9f39f9c990b" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="dd0b58aa-f937-4530-87c2-f1869bd7ae76" LastKnownName="MessageOccurrenceSpecification67" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="37bc3ed6-12c4-428d-a8ef-713f926129be" LastKnownName="MessageOccurrenceSpecification68" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4ca3dd3f-6eb1-4e22-9502-cfd73f3b0c89" name="ExecutionEvent">
+        <elementDefinition Id="9c6fd8a8-d1f5-4068-89d2-0516992ef82e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f1c32972-4850-4be6-8921-80b7d7565e4a" name="ExecutionEvent">
+        <elementDefinition Id="4c074d53-9fd1-48ef-84cb-8a0287ff48c0" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f895ff27-5c58-44db-9e21-ef2464690120" name="ExecutionEvent">
+        <elementDefinition Id="c21d7d33-3a83-414f-b34e-1efa54c201cb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="65f44d53-6dba-4c31-820f-5593cbbe1ac2" name="ExecutionEvent">
+        <elementDefinition Id="b7f274e7-298f-4675-8cd4-c375579be1de" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5dcfff21-15d5-409c-a321-1fdf8a1b0068" name="ExecutionEvent">
+        <elementDefinition Id="e3bc0a7e-e717-4fa5-9ee3-c1e8592bed2a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="9cf8df4a-e7d4-4a09-a71c-91f2b924dd79" name="ExecutionEvent">
+        <elementDefinition Id="e98d3a6b-ea52-43e7-8d70-62730670ee40" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ee86d074-a104-486b-ad21-beb175cbb1db" name="ExecutionEvent">
+        <elementDefinition Id="92f3dded-e00a-4a2a-b96e-55a41be045dd" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c9167c5f-1353-48d8-a33c-ea2d3f1945d7" name="ExecutionEvent">
+        <elementDefinition Id="1a71e14c-619c-4e4a-bac7-c2af5d6081f4" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="297608dd-f6f4-47e2-8db8-9d37b8f71d76" name="ExecutionEvent">
+        <elementDefinition Id="a3bc577d-81b9-45b3-8e51-9a57829469d1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d780cc89-1058-4f33-9269-4e5ae44e21bf" name="ExecutionEvent">
+        <elementDefinition Id="246781b0-ff2d-422c-bcd5-0911c747157a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="702c30a7-b0d4-496f-8ae8-b0142bc4c7c2" name="ExecutionEvent">
+        <elementDefinition Id="52793205-e3fb-4a39-971b-d36d2fbe50b4" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="65519e4a-ba4d-4cb4-9a9f-f9c81c72040c" name="ExecutionEvent">
+        <elementDefinition Id="bac65ce4-1e6f-48a1-80c1-4fc24bd5dae1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1b0544b1-e1da-4dd7-bd6f-592b52be6dd5" name="ExecutionEvent">
+        <elementDefinition Id="ab39d6d9-607c-4b2d-820f-0cda170a04be" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ea78e310-19ae-4c14-b6c2-f7b96ecef921" name="ExecutionEvent">
+        <elementDefinition Id="8fe890e1-8d0e-4722-8a27-8d684e80b199" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4fac6ab5-1823-4cd0-9165-fa5c65b6d34a" name="ExecutionEvent">
+        <elementDefinition Id="eb2709ec-70ef-4fa1-87ed-2700693c38e2" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3cc74d4d-c67f-41b9-b723-005f161bb2fd" name="ExecutionEvent">
+        <elementDefinition Id="28485b0d-9692-4f41-b3f5-2d3ce0d587c2" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f6c61cda-c694-4325-b53f-4bcb508056ec" name="ExecutionEvent">
+        <elementDefinition Id="7b3d4847-df47-49e8-bcd3-9753eb3503f1" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ec8ba9aa-d35c-4099-971b-fb70e10625a9" name="ExecutionEvent">
+        <elementDefinition Id="d71dd71e-8e95-4533-98d9-2fbb337997ef" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="57b71f80-1a38-436c-932c-c9364e6757be" name="ExecutionEvent">
+        <elementDefinition Id="023cd793-4a67-4036-9f29-d8e17d0a0477" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="4a7b58da-70d5-4494-9bf4-93a4ba135b5a" name="ExecutionEvent">
+        <elementDefinition Id="83b24391-11a8-4555-94b2-bd0be334c8e3" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ba782582-c036-4a02-bccb-0ffd7752f2b2" name="ExecutionEvent">
+        <elementDefinition Id="e032ddf7-0fa7-4f9e-8c34-01ae458aeae2" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="66d054ca-b355-4fd6-b4f2-ed7c276a10f1" name="ExecutionEvent">
+        <elementDefinition Id="9787a450-0c52-4e1f-b5f9-04824890ad4a" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="d45cef12-c8b0-4274-b188-a9ba32d121ec" name="ExecutionEvent">
+        <elementDefinition Id="95f3e8d4-2f07-47d2-b010-c402f17ed1e6" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e028176a-616a-4862-bf31-df3261d0e9d5" name="ExecutionEvent">
+        <elementDefinition Id="36d91907-4c38-4f7d-93b0-74a18741a9ad" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e1714586-25b0-414e-a8f0-a24da5c5e484" name="ExecutionEvent">
+        <elementDefinition Id="0dc21dc9-f043-42d7-badd-9a3c464f0889" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5ba9aa19-334d-4f42-a43c-9a5a15936ee3" name="ExecutionEvent">
+        <elementDefinition Id="fe8d7754-a5f2-499a-8372-211c5dfe1674" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="724f1234-b7dc-4437-9852-50afc8fc25ea" name="ExecutionEvent">
+        <elementDefinition Id="5db4f4fa-7f78-44fb-a8b8-56140ff96714" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="a05b0f74-5d31-4816-a8e1-26809f929458" name="ExecutionEvent">
+        <elementDefinition Id="31f57483-f17f-42bc-8d29-fe51e3834d0f" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="fe905236-fa0e-4426-9c9e-2c2dbdff08f0" name="Modeling">
+    <elementDefinition Id="8c62f0a2-792d-41fd-bc11-67fbd6bb195c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1beed6e2-f3d7-4cc9-b327-15248f83f291">
+        <profileInstance Id="69a7c2df-0937-4443-8021-e770c8f3160b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bbc5b1cf-40f5-4bac-b222-6458ddef9afd">
+        <profileInstance Id="cef00b15-c2b7-4c00-8560-4a94989caba8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>

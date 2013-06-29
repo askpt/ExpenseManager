@@ -22,12 +22,19 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="RegisterExpense.sequencediagram">
+    <Content Include="SequenceDiagrams\RegisterExpense.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="RegisterExpense.sequencediagram.layout">
+    <Content Include="SequenceDiagrams\RegisterExpense.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>RegisterExpense.sequencediagram</DependentUpon>
+      <DependentUpon>SequenceDiagrams\RegisterExpense.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SequenceDiagrams\RegisterPaymentMethod.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SequenceDiagrams\RegisterPaymentMethod.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SequenceDiagrams\RegisterPaymentMethod.sequencediagram</DependentUpon>
     </Content>
     <Content Include="UseCase.usecasediagram">
       <SubType>Content</SubType>
@@ -40,6 +47,7 @@
     <Content Include="ModelDefinition\Modeling.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="SequenceDiagrams" />
   </ItemGroup>
   <ItemGroup>
     <Validate Include="DomainModel.layerdiagram">

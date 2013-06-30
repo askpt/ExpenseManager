@@ -7,9 +7,15 @@ using ExpenseManager.Persistence;
 
 namespace Test.Function
 {
+    /// <summary>
+    /// The test class for the expense type functions
+    /// </summary>
     [TestClass]
     public class ExpenseTypeTest
     {
+        /// <summary>
+        /// The test method for the register expense type
+        /// </summary>
         [TestMethod]
         public void TestRegisterExpense()
         {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ExpenseManager.Persistence.InMemory;
+using ExpenseManager.Persistence;
 
 namespace ExpenseManager.ViewModel
 {
@@ -21,7 +21,7 @@ namespace ExpenseManager.ViewModel
         {
             ExpenseType expType = new ExpenseType(key, description);
 
-            ExpenseTypeRepository.GetInstance().Save(expType);
+            PersistenceFactory.GetFactory().GetRepository().GetExpenseTypeRepository().Save(expType);
         }
     }
 }

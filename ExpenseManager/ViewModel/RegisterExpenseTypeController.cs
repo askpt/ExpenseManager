@@ -10,7 +10,7 @@ namespace ExpenseManager.ViewModel
     /// <summary>
     /// The controller class to the register expense type function
     /// </summary>
-    class RegisterExpenseTypeController
+    public class RegisterExpenseTypeController
     {
         /// <summary>
         /// The method that will share data between ui, model and persistance

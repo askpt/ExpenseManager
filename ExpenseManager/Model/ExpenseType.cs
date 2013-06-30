@@ -8,7 +8,7 @@ namespace ExpenseManager.Model
     /// <summary>
     /// The class of the expense types
     /// </summary>
-    class ExpenseType
+    public class ExpenseType
     {
         /// <summary>
         /// the key of expense type

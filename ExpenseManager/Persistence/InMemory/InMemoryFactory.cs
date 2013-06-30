@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence.InMemory
     /// <summary>
     /// The in memory factory
     /// </summary>
-    class InMemoryFactory : IPersistenceFactory
+    public class InMemoryFactory : IPersistenceFactory
     {
         /// <summary>
         /// the singleton instance of persistence factory

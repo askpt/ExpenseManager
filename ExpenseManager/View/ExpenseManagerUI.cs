@@ -9,7 +9,7 @@ namespace ExpenseManager.View
     /// <summary>
     /// The main menu of the program
     /// </summary>
-    class ExpenseManagerUI
+    public class ExpenseManagerUI
     {
         /// <summary>
         /// The method where we will choose the correct option to go

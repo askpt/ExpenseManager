@@ -9,7 +9,7 @@ namespace ExpenseManager.Persistence
     /// <summary>
     /// The Persistence Factory
     /// </summary>
-    interface IPersistenceFactory
+    public interface IPersistenceFactory
     {
         /// <summary>
         /// Gets the Expense Type Repository

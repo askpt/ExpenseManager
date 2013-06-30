@@ -9,7 +9,7 @@ namespace ExpenseManager.View
     /// <summary>
     /// The specific register expense type ui
     /// </summary>
-    class RegisterExpenseTypeUI
+    public class RegisterExpenseTypeUI
     {
         /// <summary>
         /// The specific method to the register expense type ui

@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence.InMemory
     /// <summary>
     /// The expense type in memory repository
     /// </summary>
-    class ExpenseTypeRepository : IExpenseTypeRepository
+    public class ExpenseTypeRepository : IExpenseTypeRepository
     {
         /// <summary>
         /// the singleton instance of expense type

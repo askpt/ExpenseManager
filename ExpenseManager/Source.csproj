@@ -45,6 +45,9 @@
     <Compile Include="ExpenseManager.cs" />
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />
+    <Compile Include="Persistence\InMemory\InMemoryFactory.cs" />
+    <Compile Include="Persistence\IPersistenceFactory.cs" />
+    <Compile Include="Persistence\PersistenceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="Model\ExpenseType.cs" />

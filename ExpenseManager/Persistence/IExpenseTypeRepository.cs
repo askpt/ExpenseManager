@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence
     /// <summary>
     /// The interface for the expense type repository
     /// </summary>
-    interface IExpenseTypeRepository
+    public interface IExpenseTypeRepository
     {
         /// <summary>
         /// Saves an expense type object in the repository

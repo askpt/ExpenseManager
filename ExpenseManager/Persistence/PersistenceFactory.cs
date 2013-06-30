@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence
     /// <summary>
     /// The Persistence Factory for the repository types
     /// </summary>
-    class PersistenceFactory
+    public class PersistenceFactory
     {
         /// <summary>
         /// the singleton instance of persistence factory

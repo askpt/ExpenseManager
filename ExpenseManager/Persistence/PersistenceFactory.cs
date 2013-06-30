@@ -56,15 +56,7 @@ namespace ExpenseManager.Persistence
         /// <returns>a string with choosed configuration</returns>
         private string GetRepositoryConfiguration()
         {
-            //TODO add file config
-            int opt = 1;
-
-            if (opt == 1)
-            {
-                return "InMemory";
-            }
-
-            return null;
+            return Properties.GetInstance().repositorySource;
         }
     }
 }

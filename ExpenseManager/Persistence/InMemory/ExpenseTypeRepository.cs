@@ -13,7 +13,7 @@ namespace ExpenseManager.Persistence.InMemory
     class ExpenseTypeRepository : IExpenseTypeRepository
     {
         /// <summary>
-        /// the singleton instance of expense tupe
+        /// the singleton instance of expense type
         /// </summary>
         private static ExpenseTypeRepository instance = null;
         /// <summary>

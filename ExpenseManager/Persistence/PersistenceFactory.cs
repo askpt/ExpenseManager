@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExpenseManager.Persistence.InMemory;
+using ExpenseManager.Persistence.Linq;
 
 namespace ExpenseManager.Persistence
 {
@@ -36,6 +37,9 @@ namespace ExpenseManager.Persistence
                 repositoryConfigString = GetRepositoryConfiguration();
             if (repositoryConfigString.Equals("InMemory"))
                 return InMemoryFactory.GetInstance();
+            if (repositoryConfigString.Equals("Linq"))
+                return LinqFactory.GetInstance();
+            
             return null;
         }
 

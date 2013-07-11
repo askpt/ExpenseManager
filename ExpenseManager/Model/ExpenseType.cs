@@ -11,6 +11,10 @@ namespace ExpenseManager.Model
     public class ExpenseType
     {
         /// <summary>
+        /// the generated id for databases
+        /// </summary>
+        private int id { get; set; }
+        /// <summary>
         /// the key of expense type
         /// </summary>
         private string key;
@@ -29,6 +33,11 @@ namespace ExpenseManager.Model
             this.key = key;
             this.description = description;
         }
+
+        /// <summary>
+        /// The default constructor
+        /// </summary>
+        public ExpenseType() { }
 
         /// <summary>
         /// The ToString Method that will show the content of the expense type

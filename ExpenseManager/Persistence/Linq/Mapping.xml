@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Database Name="ExpenseManager" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="ExpenseType" Member="ExpenseManager.Model.ExpenseType">
+    <Type Name="ExpenseManager.Model.ExpenseType">
+      <Column Name="TypeId" Member="id" IsDbGenerated="true" IsPrimaryKey="true"/>
+      <Column Name="Key" Member="key"/>
+      <Column Name="Description" Member="description"/>
+    </Type>   
+  </Table>  
+</Database>

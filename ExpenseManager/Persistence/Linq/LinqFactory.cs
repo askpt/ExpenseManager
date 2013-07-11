@@ -3,33 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ExpenseManager.Persistence;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
+using ExpenseManager.Model;
 
-namespace ExpenseManager.Persistence.InMemory
+namespace ExpenseManager.Persistence.Linq
 {
     /// <summary>
-    /// The in memory factory
+    /// The factory for the Linq save method
     /// </summary>
-    public class InMemoryFactory : IPersistenceFactory
+    public class LinqFactory : IPersistenceFactory
     {
         /// <summary>
-        /// the singleton instance of persistence factory
+        /// the singleton instance of linq factory
         /// </summary>
-        private static InMemoryFactory instance = null;
+        private static IPersistenceFactory instance = null;
 
         /// <summary>
-        /// the private constructor of the repository
+        /// Constructor of the Linq Factory
         /// </summary>
-        private InMemoryFactory() { }
+        private LinqFactory() { }
 
         /// <summary>
         /// the method that will access the instance of repository
         /// </summary>
         /// <returns>the running instance of repository</returns>
-        public static InMemoryFactory GetInstance()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static IPersistenceFactory GetInstance()
         {
             if (instance == null)
-                instance = new InMemoryFactory();
+            {
+                instance = new LinqFactory();
+            }
             return instance;
         }
 
@@ -39,7 +47,7 @@ namespace ExpenseManager.Persistence.InMemory
         /// <returns>the instance of this repository</returns>
         public IExpenseTypeRepository GetExpenseTypeRepository()
         {
-            return ExpenseTypeRepository.GetInstance();
+            return new ExpenseTypeRepository();
         }
     }
 }

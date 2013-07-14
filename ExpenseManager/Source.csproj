@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExpenseManager.cs" />
+    <Compile Include="Model\PaymentMethod.cs" />
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\InMemoryFactory.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Model\ExpenseType.cs" />
     <Compile Include="ViewModel\RegisterExpenseTypeController.cs" />
     <Compile Include="View\RegisterExpenseTypeUI.cs" />
+    <Compile Include="View\RegisterPaymentMethodUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

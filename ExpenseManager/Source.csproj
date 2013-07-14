@@ -59,6 +59,7 @@
     <Compile Include="Persistence\Linq\LinqFactory.cs" />
     <Compile Include="Persistence\PersistenceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\RegisterPaymentMethodController.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="Model\ExpenseType.cs" />
     <Compile Include="ViewModel\RegisterExpenseTypeController.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExpenseManager.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,16 +28,16 @@ namespace ExpenseManager.View
                     switch (option)
                     {
                         case CREDIT_CARD:
-                            //TODO some code
+                            CreateCreditCard();
                             break;
                         case DEBIT_CARD:
-                            //TODO some code
+                            CreateDebitCard();
                             break;
                         case CHEQUE:
-                            //TODO some code
+                            CreateCheque();
                             break;
                         case MONEY:
-                            //TODO some code
+                            CreateMoney();
                             break;
                         case EXIT:
                             Console.WriteLine("Exiting");
@@ -66,5 +67,103 @@ namespace ExpenseManager.View
 
             Console.WriteLine("0. Exit\n");
         }
+
+        /// <summary>
+        /// Shows the interface to create a credit card
+        /// </summary>
+        private void CreateCreditCard()
+        {
+            String cardName, bank, owner;
+            DateTime valid;
+            int number, yearTemp, monthTemp;
+            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+
+            Console.WriteLine("Enter the card name");
+            cardName = Console.ReadLine();
+
+            Console.WriteLine("Enter the bank");
+            bank = Console.ReadLine();
+
+            Console.WriteLine("Enter the owner of the credit card");
+            owner = Console.ReadLine();
+
+            Console.WriteLine("Enter the expire year");
+            yearTemp = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the expire month");
+            monthTemp = int.Parse(Console.ReadLine());
+            valid = new DateTime(yearTemp, monthTemp, 1);
+
+            Console.WriteLine("Enter the card number");
+            number = int.Parse(Console.ReadLine());
+
+            rc.CreateCreditCard(cardName, bank, owner, valid, number);
+        }
+
+        /// <summary>
+        /// Shows the interface to create a debit card
+        /// </summary>
+        private void CreateDebitCard()
+        {
+            String cardName, bank, owner;
+            DateTime valid;
+            int number, yearTemp, monthTemp;
+            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+
+            Console.WriteLine("Enter the card name");
+            cardName = Console.ReadLine();
+
+            Console.WriteLine("Enter the bank");
+            bank = Console.ReadLine();
+
+            Console.WriteLine("Enter the owner of the debit card");
+            owner = Console.ReadLine();
+
+            Console.WriteLine("Enter the expire year");
+            yearTemp = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the expire month");
+            monthTemp = int.Parse(Console.ReadLine());
+            valid = new DateTime(yearTemp, monthTemp, 1);
+
+            Console.WriteLine("Enter the card number");
+            number = int.Parse(Console.ReadLine());
+
+            rc.CreateDebitCard(cardName, bank, owner, valid, number);
+        }
+
+        /// <summary>
+        /// Shows the interface to create a cheque
+        /// </summary>
+        private void CreateCheque()
+        {
+            String chequeBook, bank;
+            int accountNumber;
+            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+
+            Console.WriteLine("Insert a cheque book name");
+            chequeBook = Console.ReadLine();
+
+            Console.WriteLine("Insert the bank name.");
+            bank = Console.ReadLine();
+
+            Console.WriteLine("Insert the account number");
+            accountNumber = int.Parse(Console.ReadLine());
+
+            rc.CreateCheque(chequeBook, bank, accountNumber);
+        }
+
+        /// <summary>
+        /// Shows the interface to create money
+        /// </summary>
+        private void CreateMoney()
+        {
+            String currency;
+            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+
+            Console.WriteLine("Insert the currency");
+            currency = Console.ReadLine();
+
+            rc.CreateMoney(currency);
+        }
+
     }
 }

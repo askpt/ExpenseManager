@@ -57,7 +57,7 @@ namespace ExpenseManager
         /// </summary>
         private Properties()
         {
-            repositorySource = "Linq";
+            repositorySource = "InMemory";
             useBootstrap = false;
         }
         /// <summary>

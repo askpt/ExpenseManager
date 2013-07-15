@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ExpenseManager.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExpenseManager.Persistence;
 
 namespace ExpenseManager.ViewModel
 {
@@ -22,6 +24,9 @@ namespace ExpenseManager.ViewModel
         /// <param name="limit">the card limit</param>
         public void CreateCreditCard(string cardName, string bank, string owner, DateTime valid, int number, int limit)
         {
+            CreditCard cc = new CreditCard(cardName, bank, owner, valid, number, limit);
+
+            //TODO add factory
             throw new NotImplementedException();
         }
 
@@ -35,6 +40,9 @@ namespace ExpenseManager.ViewModel
         /// <param name="number">the card number</param>
         public void CreateDebitCard(string cardName, string bank, string owner, DateTime valid, int number)
         {
+            DebitCard dc = new DebitCard(cardName, bank, owner, valid, number);
+
+            //TODO add factory
             throw new NotImplementedException();
         }
 
@@ -46,6 +54,9 @@ namespace ExpenseManager.ViewModel
         /// <param name="accountNumber">the account number of the cheque book</param>
         public void CreateCheque(string chequeBook, string bank, int accountNumber)
         {
+            Cheque cc = new Cheque(chequeBook, bank, accountNumber);
+
+            //TODO add factory
             throw new NotImplementedException();
         }
 
@@ -55,6 +66,9 @@ namespace ExpenseManager.ViewModel
         /// <param name="currency">the currency of the money</param>
         public void CreateMoney(string currency)
         {
+            Money mc = new Money(currency);
+
+            //TODO add factory
             throw new NotImplementedException();
         }
     }

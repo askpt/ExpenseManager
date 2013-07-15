@@ -49,6 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExpenseManager.cs" />
+    <Compile Include="Model\Card.cs" />
+    <Compile Include="Model\Cheque.cs" />
+    <Compile Include="Model\CreditCard.cs" />
+    <Compile Include="Model\DebitCard.cs" />
+    <Compile Include="Model\Money.cs" />
     <Compile Include="Model\PaymentMethod.cs" />
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />

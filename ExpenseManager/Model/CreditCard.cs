@@ -30,5 +30,14 @@ namespace ExpenseManager.Model
         {
             this.limit = limit;
         }
+
+        /// <summary>
+        /// The ToString Method that will show the content of the credit card
+        /// </summary>
+        /// <returns>the content of expense type in this format: Credit Card\nCard Name: cardName\nCard Number: number\nOwner: owner\nBank: bank\nValidity: valid\nLimit: limit</returns>
+        public override string ToString()
+        {
+            return "Credit Card\n" + base.ToString() + "\nLimit: " + limit;
+        }
     }
 }

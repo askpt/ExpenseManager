@@ -36,5 +36,14 @@ namespace ExpenseManager.Model
             this.bank = bank;
             this.accountNumber = accountNumber;
         }
+
+        /// <summary>
+        /// The ToString Method that will show the content of the cheque
+        /// </summary>
+        /// <returns>the content of expense type in this format: Cheque\nCheque Book Name: chequeBook\nBank: bank\nAccount Number: accountNumber</returns>
+        public override string ToString()
+        {
+            return "Cheque\nCheque Book Name: " + chequeBook + "\nBank: " + bank + "\nAccount Number: " + accountNumber;
+        }
     }
 }

@@ -41,5 +41,14 @@ namespace ExpenseManager.Persistence.InMemory
         {
             return ExpenseTypeRepository.GetInstance();
         }
+
+        /// <summary>
+        /// Gets the payment method Repository
+        /// </summary>
+        /// <returns>the instance of this repository</returns>
+        public IPaymentMethodRepository GetPaymentMethodRepository()
+        {
+            return PaymentMethodRepository.GetInstance();
+        }
     }
 }

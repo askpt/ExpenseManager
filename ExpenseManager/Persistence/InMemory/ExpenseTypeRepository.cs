@@ -46,16 +46,7 @@ namespace ExpenseManager.Persistence.InMemory
         /// <param name="expType">the object of expense type</param>
         public void Save(ExpenseType expType)
         {
-            Persist(expType);
-        }
-        /// <summary>
-        /// Saves an expense type object in the repository
-        /// </summary>
-        /// <param name="expType">the object of expense type</param>
-        private void Persist(ExpenseType expType)
-        {
             types.Add(expType);
-
         }
 
         /// <summary>

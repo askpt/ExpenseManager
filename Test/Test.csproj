@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Function\ExpenseTypeTest.cs" />
+    <Compile Include="Function\PaymentMethodTest.cs" />
     <Compile Include="Model\ExpenseTypeTest.cs" />
     <Compile Include="Model\MoneyTest.cs" />
     <Compile Include="Model\DebitCardTest.cs" />

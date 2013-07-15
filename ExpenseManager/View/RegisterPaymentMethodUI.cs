@@ -75,7 +75,7 @@ namespace ExpenseManager.View
         {
             String cardName, bank, owner;
             DateTime valid;
-            int number, yearTemp, monthTemp;
+            int number, yearTemp, monthTemp, limit;
             RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
 
             Console.WriteLine("Enter the card name");
@@ -96,7 +96,10 @@ namespace ExpenseManager.View
             Console.WriteLine("Enter the card number");
             number = int.Parse(Console.ReadLine());
 
-            rc.CreateCreditCard(cardName, bank, owner, valid, number);
+            Console.WriteLine("Enter the credit limit");
+            limit = int.Parse(Console.ReadLine());
+
+            rc.CreateCreditCard(cardName, bank, owner, valid, number, limit);
         }
 
         /// <summary>

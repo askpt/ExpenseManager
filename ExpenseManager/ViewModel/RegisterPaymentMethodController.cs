@@ -19,7 +19,8 @@ namespace ExpenseManager.ViewModel
         /// <param name="owner">the card owner</param>
         /// <param name="valid">the card validity</param>
         /// <param name="number">the card number</param>
-        public void CreateCreditCard(string cardName, string bank, string owner, DateTime valid, int number)
+        /// <param name="limit">the card limit</param>
+        public void CreateCreditCard(string cardName, string bank, string owner, DateTime valid, int number, int limit)
         {
             throw new NotImplementedException();
         }

@@ -25,5 +25,14 @@ namespace ExpenseManager.Model
             this.currency = currency;
         }
 
+        /// <summary>
+        /// The ToString Method that will show the content of the money
+        /// </summary>
+        /// <returns>the content of expense type in this format: Money\nCurrency: currency</returns>
+        public override string ToString()
+        {
+            return "Money\nCurrency: " + currency;
+        }
+
     }
 }

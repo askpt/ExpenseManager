@@ -48,5 +48,14 @@ namespace ExpenseManager.Model
             this.number = number;
         }
 
+        /// <summary>
+        /// The ToString Method that will show the content of the card
+        /// </summary>
+        /// <returns>the content of expense type in this format: Card Name: cardName\nCard Number: number\nOwner: owner\nBank: bank\nValidity: valid</returns>
+        public override string ToString()
+        {
+            return "Card Name: " + cardName + "\nCard Number: " + number + "\nOwner: " + owner + "\nBank: " + bank + "\nValidity: " + valid.Year + "/" + valid.Month;
+        }
+
     }
 }

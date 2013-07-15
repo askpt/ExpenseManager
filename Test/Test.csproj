@@ -52,6 +52,10 @@
   <ItemGroup>
     <Compile Include="Function\ExpenseTypeTest.cs" />
     <Compile Include="Model\ExpenseTypeTest.cs" />
+    <Compile Include="Model\MoneyTest.cs" />
+    <Compile Include="Model\DebitCardTest.cs" />
+    <Compile Include="Model\CreditCardTest.cs" />
+    <Compile Include="Model\ChequeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

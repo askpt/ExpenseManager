@@ -58,6 +58,8 @@
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\InMemoryFactory.cs" />
+    <Compile Include="Persistence\InMemory\PaymentMethodRepository.cs" />
+    <Compile Include="Persistence\IPaymentMethodRepository.cs" />
     <Compile Include="Persistence\IPersistenceFactory.cs" />
     <Compile Include="Persistence\Linq\ExpenseTypeRepository.cs" />
     <Compile Include="Persistence\Linq\LinqDataContext.cs" />

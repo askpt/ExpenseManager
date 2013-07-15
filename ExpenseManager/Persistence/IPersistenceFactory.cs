@@ -16,5 +16,11 @@ namespace ExpenseManager.Persistence
         /// </summary>
         /// <returns>the instance of this repository</returns>
         IExpenseTypeRepository GetExpenseTypeRepository();
+
+        /// <summary>
+        /// Gets the Payment Method Repository
+        /// </summary>
+        /// <returns>the instance of this repository</returns>
+        IPaymentMethodRepository GetPaymentMethodRepository();
     }
 }

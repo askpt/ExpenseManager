@@ -26,8 +26,7 @@ namespace ExpenseManager.ViewModel
         {
             CreditCard cc = new CreditCard(cardName, bank, owner, valid, number, limit);
 
-            //TODO add factory
-            throw new NotImplementedException();
+            PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().Save(cc);
         }
 
         /// <summary>
@@ -42,8 +41,7 @@ namespace ExpenseManager.ViewModel
         {
             DebitCard dc = new DebitCard(cardName, bank, owner, valid, number);
 
-            //TODO add factory
-            throw new NotImplementedException();
+            PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().Save(dc);
         }
 
         /// <summary>
@@ -56,8 +54,7 @@ namespace ExpenseManager.ViewModel
         {
             Cheque cc = new Cheque(chequeBook, bank, accountNumber);
 
-            //TODO add factory
-            throw new NotImplementedException();
+            PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().Save(cc);
         }
 
         /// <summary>
@@ -68,8 +65,7 @@ namespace ExpenseManager.ViewModel
         {
             Money mc = new Money(currency);
 
-            //TODO add factory
-            throw new NotImplementedException();
+            PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().Save(mc);
         }
     }
 }

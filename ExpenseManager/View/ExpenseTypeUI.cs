@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ExpenseManager.Model;
 
 namespace ExpenseManager.View
 {
@@ -32,8 +33,8 @@ namespace ExpenseManager.View
                             ShowRegisterExpenseType();
                             break;
                         case LIST:
-                            //TODO add list code
-                            throw new NotImplementedException();
+                            List();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -73,8 +74,25 @@ namespace ExpenseManager.View
             Console.WriteLine("Insert the description fot the expense type");
             description = Console.ReadLine();
 
-            RegisterExpenseTypeController retC = new RegisterExpenseTypeController();
+            ExpenseTypeController retC = new ExpenseTypeController();
             retC.RegisterExpenseType(key, description);
+        }
+
+        /// <summary>
+        /// Method that will list all of expense types in repository
+        /// </summary>
+        public void List()
+        {
+            ExpenseTypeController etC = new ExpenseTypeController();
+
+            Console.WriteLine(" === Expense Type List ===");
+
+            List<ExpenseType> list = etC.GetAllExpenseTypes();
+
+            foreach (ExpenseType item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

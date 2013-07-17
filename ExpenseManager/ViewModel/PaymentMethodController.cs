@@ -9,9 +9,9 @@ using ExpenseManager.Persistence;
 namespace ExpenseManager.ViewModel
 {
     /// <summary>
-    /// The controller for the register payment function
+    /// The controller for the payment method functions
     /// </summary>
-    public class RegisterPaymentMethodController
+    public class PaymentMethodController
     {
         /// <summary>
         /// The controller method to create the credit card
@@ -66,6 +66,15 @@ namespace ExpenseManager.ViewModel
             Money mc = new Money(currency);
 
             PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().Save(mc);
+        }
+
+        /// <summary>
+        /// The method that will return the list with all payment methods.
+        /// </summary>
+        /// <returns>a list with all payment methods</returns>
+        public List<PaymentMethod> GetAllPaymentMethods()
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().All();
         }
     }
 }

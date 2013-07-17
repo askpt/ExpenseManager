@@ -19,7 +19,7 @@ namespace Test.Function
         [TestMethod]
         public void TestRegisterPaymentMethod()
         {
-            RegisterPaymentMethodController rpmC = new RegisterPaymentMethodController();
+            PaymentMethodController rpmC = new PaymentMethodController();
 
             rpmC.CreateCreditCard("AA", "hi", "Me", new DateTime(2012, 12, 1), 1165131, 15);
             rpmC.CreateCreditCard("BB", "oi", "you", new DateTime(2013, 09, 1), 156135, 17);

@@ -12,10 +12,6 @@ namespace ExpenseManager.Persistence.Linq
     /// </summary>
     public class ExpenseTypeRepository : IExpenseTypeRepository
     {
-        /// <summary>
-        /// The data context of linq connection
-        /// </summary>
-        LinqDataContext db = new LinqDataContext();
 
         /// <summary>
         /// Saves an expense type object in the repository
@@ -23,8 +19,8 @@ namespace ExpenseManager.Persistence.Linq
         /// <param name="expType">the object of expense type</param>
         public void Save(ExpenseType expType)
         {
-            db.ExpenseType.InsertOnSubmit(expType);
-            db.SubmitChanges();
+            LinqDataContext.GetInstance().ExpenseType.InsertOnSubmit(expType);
+            LinqDataContext.GetInstance().SubmitChanges();
         }
 
         /// <summary>
@@ -33,7 +29,7 @@ namespace ExpenseManager.Persistence.Linq
         /// <returns>the list of expense types</returns>
         public List<ExpenseType> All()
         {
-            return db.ExpenseType.ToList();
+            return LinqDataContext.GetInstance().ExpenseType.ToList();
         }
     }
 }

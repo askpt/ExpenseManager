@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ExpenseManager.Model;
 
 namespace ExpenseManager.View
 {
@@ -32,8 +33,8 @@ namespace ExpenseManager.View
                             ShowRegisterPayment();
                             break;
                         case LIST:
-                            //TODO add list code
-                            throw new NotImplementedException();
+                            List();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -125,7 +126,7 @@ namespace ExpenseManager.View
             String cardName, bank, owner;
             DateTime valid;
             int number, yearTemp, monthTemp, limit;
-            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+            PaymentMethodController rc = new PaymentMethodController();
 
             Console.WriteLine("Enter the card name");
             cardName = Console.ReadLine();
@@ -159,7 +160,7 @@ namespace ExpenseManager.View
             String cardName, bank, owner;
             DateTime valid;
             int number, yearTemp, monthTemp;
-            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+            PaymentMethodController rc = new PaymentMethodController();
 
             Console.WriteLine("Enter the card name");
             cardName = Console.ReadLine();
@@ -189,7 +190,7 @@ namespace ExpenseManager.View
         {
             String chequeBook, bank;
             int accountNumber;
-            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+            PaymentMethodController rc = new PaymentMethodController();
 
             Console.WriteLine("Insert a cheque book name");
             chequeBook = Console.ReadLine();
@@ -209,7 +210,7 @@ namespace ExpenseManager.View
         private void CreateMoney()
         {
             String currency;
-            RegisterPaymentMethodController rc = new RegisterPaymentMethodController();
+            PaymentMethodController rc = new PaymentMethodController();
 
             Console.WriteLine("Insert the currency");
             currency = Console.ReadLine();
@@ -217,5 +218,21 @@ namespace ExpenseManager.View
             rc.CreateMoney(currency);
         }
         #endregion
+
+        /// <summary>
+        /// Method that will list all of payment methods in repository
+        /// </summary>
+        public void List() {
+            PaymentMethodController pmC = new PaymentMethodController();
+
+            Console.WriteLine(" === Payment Method List ===");
+
+            List<PaymentMethod> list = pmC.GetAllPaymentMethods();
+
+            foreach (PaymentMethod item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }

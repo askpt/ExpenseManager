@@ -19,7 +19,7 @@ namespace Test.Function
         [TestMethod]
         public void TestRegisterExpense()
         {
-            RegisterExpenseTypeController retC = new RegisterExpenseTypeController();
+            ExpenseTypeController retC = new ExpenseTypeController();
             retC.RegisterExpenseType("AAA", "aaa");
             retC.RegisterExpenseType("A1B1", "testes");
 

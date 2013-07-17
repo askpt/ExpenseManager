@@ -28,10 +28,6 @@ namespace ExpenseManager.Persistence.Linq
         /// the method that will access the instance of repository
         /// </summary>
         /// <returns>the running instance of repository</returns>
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         public static IPersistenceFactory GetInstance()
         {
             if (instance == null)
@@ -56,8 +52,7 @@ namespace ExpenseManager.Persistence.Linq
         /// <returns>the instance of this repository</returns>
         public IPaymentMethodRepository GetPaymentMethodRepository()
         {
-            //TODO add linq access
-            throw new NotImplementedException();
+            return new PaymentMethodRepository();
         }
     }
 }

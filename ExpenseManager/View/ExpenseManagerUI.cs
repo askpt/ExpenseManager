@@ -17,7 +17,7 @@ namespace ExpenseManager.View
         public void Show()
         {
             int option;
-            const int EXIT = 0, REGISTER_EXPENSE = 1, REGISTER_EXPENSE_TYPE = 2, REGISTER_PAYMENT_METHOD = 3;
+            const int EXIT = 0, EXPENSE = 1, EXPENSE_TYPE = 2, PAYMENT_METHOD = 3;
             do
             {
                 Menu();
@@ -27,15 +27,15 @@ namespace ExpenseManager.View
                 {
                     switch (option)
                     {
-                        case REGISTER_EXPENSE:
+                        case EXPENSE:
                             //TODO some code
                             break;
-                        case REGISTER_EXPENSE_TYPE:
-                            RegisterExpenseTypeUI retUI = new RegisterExpenseTypeUI();
+                        case EXPENSE_TYPE:
+                            ExpenseTypeUI retUI = new ExpenseTypeUI();
                             retUI.Show();
                             break;
-                        case REGISTER_PAYMENT_METHOD:
-                            RegisterPaymentMethodUI metUI = new RegisterPaymentMethodUI();
+                        case PAYMENT_METHOD:
+                            PaymentMethodUI metUI = new PaymentMethodUI();
                             metUI.Show();
                             break;
                         case EXIT:
@@ -58,9 +58,9 @@ namespace ExpenseManager.View
         private void Menu()
         {
             Console.WriteLine(" === Main Menu ===");
-            Console.WriteLine("1. Register Expense");
-            Console.WriteLine("2. Register Expense Type");
-            Console.WriteLine("3. Register Payment Method");
+            Console.WriteLine("1. Expense");
+            Console.WriteLine("2. Expense Type");
+            Console.WriteLine("3. Payment Method");
 
             Console.WriteLine("0. Exit\n");
         }

@@ -73,8 +73,8 @@
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="Model\ExpenseType.cs" />
     <Compile Include="ViewModel\RegisterExpenseTypeController.cs" />
-    <Compile Include="View\RegisterExpenseTypeUI.cs" />
-    <Compile Include="View\RegisterPaymentMethodUI.cs" />
+    <Compile Include="View\ExpenseTypeUI.cs" />
+    <Compile Include="View\PaymentMethodUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

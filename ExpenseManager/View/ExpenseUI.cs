@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExpenseManager.Model;
+using ExpenseManager.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +42,7 @@ namespace ExpenseManager.View
                             break;
                     }
                 }
-                
+
             } while (option != 0);
         }
 
@@ -52,13 +54,60 @@ namespace ExpenseManager.View
             throw new NotImplementedException();
         }
 
+        #region Register Expense
         /// <summary>
         /// The specific method to the register expense ui
         /// </summary>
         private void ShowRegisterExpense()
         {
-            throw new NotImplementedException();
+            ExpenseController ec = new ExpenseController();
+
+            // Expense Type
+            ExpenseType type = GetExpenseType();
+
+            //TODO: Finish the code
         }
+
+        /// <summary>
+        /// The method that will choose a expense type in the repository
+        /// </summary>
+        /// <returns>A expense type</returns>
+        private ExpenseType GetExpenseType()
+        {
+            ExpenseType type = null;
+            ExpenseController ec = new ExpenseController();
+            ExpenseTypeUI etUI = new ExpenseTypeUI();
+
+            int numExpType = ec.GetExpenseTypeRepositorySize();
+            if (numExpType == 0)
+            {
+                Console.WriteLine("Create a new Expense Type");
+                etUI.ShowRegisterExpenseType();
+                type = ec.GetLastExpenseType();
+            }
+            else
+            {
+                int option = 999;
+                Console.WriteLine("Choose a Expense Type");
+                etUI.List();
+
+                do
+                {
+                    if (int.TryParse(Console.ReadLine(), out option))
+                    {
+                        type = ec.GetExpenseType(option);
+                    }
+                    else
+                    {
+                        option = -1;
+                    }
+                } while (option < 0 || option > numExpType);
+            }
+
+            return type;
+        }
+
+        #endregion
 
         /// <summary>
         /// The visual main menu of expense

@@ -69,11 +69,13 @@
     <Compile Include="Persistence\Linq\PaymentMethodRepository.cs" />
     <Compile Include="Persistence\PersistenceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ExpenseController.cs" />
     <Compile Include="ViewModel\PaymentMethodController.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="Model\ExpenseType.cs" />
     <Compile Include="ViewModel\ExpenseTypeController.cs" />
     <Compile Include="View\ExpenseTypeUI.cs" />
+    <Compile Include="View\ExpenseUI.cs" />
     <Compile Include="View\PaymentMethodUI.cs" />
   </ItemGroup>
   <ItemGroup>

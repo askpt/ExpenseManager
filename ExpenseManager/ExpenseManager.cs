@@ -88,6 +88,7 @@ namespace ExpenseManager
         public void StartBootstrap()
         {
             ExpenseTypeBoot();
+            PaymentMethodBoot();
         }
 
         /// <summary>
@@ -99,6 +100,18 @@ namespace ExpenseManager
             repo.Save(new ExpenseType("FOO", "Food"));
             repo.Save(new ExpenseType("CLO", "Cloths"));
             repo.Save(new ExpenseType("SPO", "Sports"));    
+        }
+
+        /// <summary>
+        /// Bootstrapper for the payment method
+        /// </summary>
+        private void PaymentMethodBoot() {
+            IPaymentMethodRepository repo = PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository();
+        
+            repo.Save(new CreditCard("VISA", "BES", "Silva", new DateTime(2014, 12, 31), 115313858, 57));
+            repo.Save(new DebitCard("Maestro", "CGD", "Brown", new DateTime(2013, 12, 31), 135151681));
+            repo.Save(new Cheque("ChequeBook A1", "Totta", 234348384));
+            repo.Save(new Money("EUR"));
         }
 
     }

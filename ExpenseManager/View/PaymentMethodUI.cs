@@ -228,10 +228,14 @@ namespace ExpenseManager.View
             Console.WriteLine(" === Payment Method List ===");
 
             List<PaymentMethod> list = pmC.GetAllPaymentMethods();
+            int i = 0;
 
             foreach (PaymentMethod item in list)
             {
+                Console.WriteLine(i);
                 Console.WriteLine(item);
+                Console.WriteLine("---\n");
+                i++;
             }
         }
     }

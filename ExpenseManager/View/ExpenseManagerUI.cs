@@ -28,7 +28,8 @@ namespace ExpenseManager.View
                     switch (option)
                     {
                         case EXPENSE:
-                            //TODO some code
+                            ExpenseUI expUI = new ExpenseUI();
+                            expUI.Show();
                             break;
                         case EXPENSE_TYPE:
                             ExpenseTypeUI retUI = new ExpenseTypeUI();

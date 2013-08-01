@@ -88,10 +88,14 @@ namespace ExpenseManager.View
             Console.WriteLine(" === Expense Type List ===");
 
             List<ExpenseType> list = etC.GetAllExpenseTypes();
+            int i = 0;
 
             foreach (ExpenseType item in list)
             {
+                Console.WriteLine(i);
                 Console.WriteLine(item);
+                Console.WriteLine("---\n");
+                i++;
             }
         }
     }

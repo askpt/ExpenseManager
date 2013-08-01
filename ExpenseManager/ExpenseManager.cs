@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExpenseManager.View;
+using ExpenseManager.Persistence;
+using ExpenseManager.Model;
 
 namespace ExpenseManager
 {
@@ -18,11 +20,17 @@ namespace ExpenseManager
         public static void Main()
         {
             Properties.GetInstance().Load();
+
+            if (Properties.GetInstance().useBootstrap)
+            {
+                Bootstrapper bs = new Bootstrapper();
+                bs.StartBootstrap();
+            }
             ExpenseManagerUI emUI = new ExpenseManagerUI();
             emUI.Show();
         }
     }
-
+    
     /// <summary>
     /// The properties class where will be written te main configuration
     /// </summary>
@@ -58,7 +66,7 @@ namespace ExpenseManager
         private Properties()
         {
             repositorySource = "InMemory";
-            useBootstrap = false;
+            useBootstrap = true;
         }
         /// <summary>
         /// this method will load the user file configuration properties
@@ -66,6 +74,31 @@ namespace ExpenseManager
         public void Load()
         {
             //TODO add the file to be read
+        }
+    }
+
+    /// <summary>
+    /// The bootstrap class for the expenses
+    /// </summary>
+    public class Bootstrapper
+    {
+        /// <summary>
+        /// Method that will call all the bootstrappers
+        /// </summary>
+        public void StartBootstrap()
+        {
+            ExpenseTypeBoot();
+        }
+
+        /// <summary>
+        /// Bootstrapper for the expense type
+        /// </summary>
+        private void ExpenseTypeBoot(){
+            IExpenseTypeRepository repo = PersistenceFactory.GetFactory().GetRepository().GetExpenseTypeRepository();
+
+            repo.Save(new ExpenseType("FOO", "Food"));
+            repo.Save(new ExpenseType("CLO", "Cloths"));
+            repo.Save(new ExpenseType("SPO", "Sports"));    
         }
 
     }

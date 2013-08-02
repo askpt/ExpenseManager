@@ -51,7 +51,19 @@ namespace ExpenseManager.View
         /// </summary>
         private void List()
         {
-            throw new NotImplementedException();
+            ExpenseController ec = new ExpenseController();
+
+            Console.WriteLine(" === Expense List ===");
+
+            List<Expense> expenses = ec.GetAllExpenses();
+            int i = 0;
+            foreach (Expense item in expenses)
+            {
+                Console.WriteLine(i);
+                Console.WriteLine(item);
+                Console.WriteLine("---\n");
+                i++;
+            }
         }
 
         #region Register Expense

@@ -105,5 +105,14 @@ namespace ExpenseManager.ViewModel
 
             PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().Save(exp);
         }
+
+        /// <summary>
+        /// The method that will return the list with all expenses.
+        /// </summary>
+        /// <returns>a list with all expenses</returns>
+        public List<Expense> GetAllExpenses()
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().All();
+        }
     }
 }

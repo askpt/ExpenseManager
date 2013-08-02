@@ -64,7 +64,34 @@ namespace ExpenseManager.View
 
             ExpenseType type = GetExpenseType();
             Payment pay = GetPayment();
+            DateTime date = GetDate();
             //TODO: Finish the code
+        }
+
+        /// <summary>
+        /// The method that will create a new date for the expense
+        /// </summary>
+        /// <returns>a expense date</returns>
+        private DateTime GetDate()
+        {
+            int year, month, day, hour, minute;
+
+            Console.WriteLine("Insert the year");
+            while (!int.TryParse(Console.ReadLine(), out year) || !((year < 99999) && (year > -1))) ;
+
+            Console.WriteLine("Insert the month");
+            while (!int.TryParse(Console.ReadLine(), out month) || !((month < 13) && (month > 0))) ;
+
+            Console.WriteLine("Insert the day");
+            while (!int.TryParse(Console.ReadLine(), out day) || !((day < 32) && (day > 0))) ;
+
+            Console.WriteLine("Insert the hour");
+            while (!int.TryParse(Console.ReadLine(), out hour) || !((hour < 24) && (hour > -1))) ;
+
+            Console.WriteLine("Insert the minutes");
+            while (!int.TryParse(Console.ReadLine(), out minute) || !((minute < 60) && (minute > -1))) ;
+
+            return new DateTime(year, month, day, hour, minute, 0);
         }
 
         /// <summary>

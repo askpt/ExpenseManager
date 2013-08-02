@@ -17,7 +17,7 @@ namespace Test.Function
         /// The test method for the register expense type
         /// </summary>
         [TestMethod]
-        public void TestRegisterExpense()
+        public void TestRegisterExpenseType()
         {
             ExpenseTypeController retC = new ExpenseTypeController();
             retC.RegisterExpenseType("AAA", "aaa");

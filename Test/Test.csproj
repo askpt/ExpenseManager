@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Function\ExpenseTest.cs" />
     <Compile Include="Function\ExpenseTypeTest.cs" />
     <Compile Include="Function\PaymentMethodTest.cs" />
     <Compile Include="Model\ExpenseTypeTest.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Model\CreditCardTest.cs" />
     <Compile Include="Model\ChequeTest.cs" />
     <Compile Include="Model\PaymentTest.cs" />
+    <Compile Include="Model\ExpenseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

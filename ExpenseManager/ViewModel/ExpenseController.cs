@@ -103,8 +103,7 @@ namespace ExpenseManager.ViewModel
         {
             Expense exp = new Expense(type, payment, date, description);
 
-            //TODO finish code
-            throw new NotImplementedException();
+            PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().Save(exp);
         }
     }
 }

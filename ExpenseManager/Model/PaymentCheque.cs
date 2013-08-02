@@ -22,7 +22,7 @@ namespace ExpenseManager.Model
         /// <param name="method">the payment method</param>
         /// <param name="amount">the payment amount</param>
         /// <param name="chequeNumber">the cheque number</param>
-        public PaymentCheque(PaymentMethod method, float amount, int chequeNumber)
+        public PaymentCheque(PaymentMethod method, double amount, int chequeNumber)
             : base(method, amount)
         {
             this.chequeNumber = chequeNumber;

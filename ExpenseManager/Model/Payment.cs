@@ -18,14 +18,14 @@ namespace ExpenseManager.Model
         /// <summary>
         /// The payment amount
         /// </summary>
-        private float amount;
+        private double amount;
 
         /// <summary>
         /// The main constructor for the payment
         /// </summary>
         /// <param name="method">the payment method</param>
         /// <param name="amount">the payment amount</param>
-        public Payment(PaymentMethod method, float amount)
+        public Payment(PaymentMethod method, double amount)
         {
             this.method = method;
             this.amount = amount;

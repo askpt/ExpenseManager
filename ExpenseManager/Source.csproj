@@ -55,6 +55,7 @@
     <Compile Include="Model\Cheque.cs" />
     <Compile Include="Model\CreditCard.cs" />
     <Compile Include="Model\DebitCard.cs" />
+    <Compile Include="Model\Expense.cs" />
     <Compile Include="Model\Money.cs" />
     <Compile Include="Model\Payment.cs" />
     <Compile Include="Model\PaymentCheque.cs" />

@@ -68,5 +68,28 @@ namespace ExpenseManager.ViewModel
         {
             return PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().All()[option];
         }
+
+        /// <summary>
+        /// Creates a new cheque payment 
+        /// </summary>
+        /// <param name="method">the payment method</param>
+        /// <param name="amount">the payment amount</param>
+        /// <param name="chequeNumber">the cheque number</param>
+        /// <returns>the payment cheque</returns>
+        public Payment CreatePayment(PaymentMethod method, double amount, int chequeNumber)
+        {
+            return new PaymentCheque(method, amount, chequeNumber);
+        }
+
+        /// <summary>
+        /// Creates a new payment 
+        /// </summary>
+        /// <param name="method">the payment method</param>
+        /// <param name="amount">the payment amount</param>
+        /// <returns>the payment </returns>
+        public Payment CreatePayment(PaymentMethod method, double amount)
+        {
+            return new Payment(method, amount);
+        }
     }
 }

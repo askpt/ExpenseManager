@@ -62,10 +62,8 @@ namespace ExpenseManager.View
         {
             ExpenseController ec = new ExpenseController();
 
-            // Expense Type
             ExpenseType type = GetExpenseType();
-
-            PaymentMethod method = GetPaymentMethod();
+            Payment pay = GetPayment();
             //TODO: Finish the code
         }
 
@@ -145,6 +143,32 @@ namespace ExpenseManager.View
             }
 
             return method;
+        }
+
+        /// <summary>
+        /// The method that will create a new payment
+        /// </summary>
+        /// <returns>A payment</returns>
+        private Payment GetPayment()
+        {
+            ExpenseController ec = new ExpenseController();
+            PaymentMethod method = GetPaymentMethod();
+            double amount;
+
+            Console.WriteLine("Insert Amount:");
+            while (!double.TryParse(Console.ReadLine(), out amount)) ;
+
+            if (method is Cheque)
+            {
+                int chequeNumber;
+                Console.WriteLine("Insert Cheque Number:");
+                while (!int.TryParse(Console.ReadLine(), out chequeNumber)) ;
+                return ec.CreatePayment(method, amount, chequeNumber);
+            }
+            else
+            {
+                return ec.CreatePayment(method, amount);
+            }
         }
 
         #endregion

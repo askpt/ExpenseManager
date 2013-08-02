@@ -65,6 +65,7 @@ namespace ExpenseManager.View
             // Expense Type
             ExpenseType type = GetExpenseType();
 
+            PaymentMethod method = GetPaymentMethod();
             //TODO: Finish the code
         }
 
@@ -105,6 +106,45 @@ namespace ExpenseManager.View
             }
 
             return type;
+        }
+
+        /// <summary>
+        /// The method that will choose a payment method in the repository
+        /// </summary>
+        /// <returns>A payment method</returns>
+        private PaymentMethod GetPaymentMethod()
+        {
+            PaymentMethod method = null;
+            ExpenseController ec = new ExpenseController();
+            PaymentMethodUI pmUI = new PaymentMethodUI();
+
+            int numPayMeth = ec.GetPaymentMethodRepositorySize();
+            if (numPayMeth == 0)
+            {
+                Console.WriteLine("Create a new Payment Method");
+                pmUI.ShowRegisterPayment();
+                method = ec.GetLastPaymentMethod();
+            }
+            else
+            {
+                int option = 999;
+                Console.WriteLine("Choose a Payment Method");
+                pmUI.List();
+
+                do
+                {
+                    if (int.TryParse(Console.ReadLine(), out option))
+                    {
+                        method = ec.GetPaymentMethod(option);
+                    }
+                    else
+                    {
+                        option = -1;
+                    }
+                } while (option < 0 || option > numPayMeth);
+            }
+
+            return method;
         }
 
         #endregion

@@ -49,5 +49,24 @@ namespace ExpenseManager.ViewModel
         {
             return PersistenceFactory.GetFactory().GetRepository().GetExpenseTypeRepository().All()[option];
         }
+
+        /// <summary>
+        /// The method that will return the last payment method in the repository
+        /// </summary>
+        /// <returns>A payment method</returns>
+        public PaymentMethod GetLastPaymentMethod()
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().All().Last();
+        }
+
+        /// <summary>
+        /// The method that will return a choosen payment method
+        /// </summary>
+        /// <param name="option">the index of the choosen payment method</param>
+        /// <returns>A payment method</returns>
+        public PaymentMethod GetPaymentMethod(int option)
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().All()[option];
+        }
     }
 }

@@ -54,5 +54,14 @@ namespace ExpenseManager.Persistence.Linq
         {
             return new PaymentMethodRepository();
         }
+
+        /// <summary>
+        /// Gets the expense repository
+        /// </summary>
+        /// <returns>the instance of this repository</returns>
+        public IExpenseRepository GetExpenseRepository()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

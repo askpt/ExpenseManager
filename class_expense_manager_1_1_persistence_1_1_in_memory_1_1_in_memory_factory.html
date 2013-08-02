@@ -105,6 +105,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8a690f72b64afb26493748c1504df39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_expense_type_repository.html">IExpenseTypeRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expense_manager_1_1_persistence_1_1_in_memory_1_1_in_memory_factory.html#aa8a690f72b64afb26493748c1504df39">GetExpenseTypeRepository</a> ()</td></tr>
 <tr class="memdesc:aa8a690f72b64afb26493748c1504df39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Expense Type Repository  <a href="#aa8a690f72b64afb26493748c1504df39">More...</a><br/></td></tr>
 <tr class="separator:aa8a690f72b64afb26493748c1504df39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ca454b43b618d2a601ba40a4c28b9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_payment_method_repository.html">IPaymentMethodRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expense_manager_1_1_persistence_1_1_in_memory_1_1_in_memory_factory.html#ad2ca454b43b618d2a601ba40a4c28b9f">GetPaymentMethodRepository</a> ()</td></tr>
+<tr class="memdesc:ad2ca454b43b618d2a601ba40a4c28b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the payment method Repository  <a href="#ad2ca454b43b618d2a601ba40a4c28b9f">More...</a><br/></td></tr>
+<tr class="separator:ad2ca454b43b618d2a601ba40a4c28b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6136272edf9d3be22a7e5de85d514d9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_expense_repository.html">IExpenseRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expense_manager_1_1_persistence_1_1_in_memory_1_1_in_memory_factory.html#a6136272edf9d3be22a7e5de85d514d9f">GetExpenseRepository</a> ()</td></tr>
+<tr class="memdesc:a6136272edf9d3be22a7e5de85d514d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the expense repository  <a href="#a6136272edf9d3be22a7e5de85d514d9f">More...</a><br/></td></tr>
+<tr class="separator:a6136272edf9d3be22a7e5de85d514d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -115,6 +121,34 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The in memory factory </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6136272edf9d3be22a7e5de85d514d9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_expense_repository.html">IExpenseRepository</a> ExpenseManager.Persistence.InMemory.InMemoryFactory.GetExpenseRepository </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the expense repository </p>
+<dl class="section return"><dt>Returns</dt><dd>the instance of this repository</dd></dl>
+
+<p>Implements <a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_persistence_factory.html#a667ff92c7a40f520843eebc74207d7aa">ExpenseManager.Persistence.IPersistenceFactory</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa8a690f72b64afb26493748c1504df39"></a>
 <div class="memitem">
 <div class="memproto">
@@ -169,13 +203,41 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad2ca454b43b618d2a601ba40a4c28b9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_payment_method_repository.html">IPaymentMethodRepository</a> ExpenseManager.Persistence.InMemory.InMemoryFactory.GetPaymentMethodRepository </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the payment method Repository </p>
+<dl class="section return"><dt>Returns</dt><dd>the instance of this repository</dd></dl>
+
+<p>Implements <a class="el" href="interface_expense_manager_1_1_persistence_1_1_i_persistence_factory.html#a70fa9d9794efbee4e9499b9079cfd699">ExpenseManager.Persistence.IPersistenceFactory</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>ExpenseManager/Persistence/InMemory/InMemoryFactory.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 14 2013 21:29:33 for Expense Manager by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 2 2013 22:06:24 for Expense Manager by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -65,7 +65,10 @@ namespace ExpenseManager.View
             ExpenseType type = GetExpenseType();
             Payment pay = GetPayment();
             DateTime date = GetDate();
-            //TODO: Finish the code
+            Console.WriteLine("Insert a description");
+            string description = Console.ReadLine();
+
+            ec.RegisterExpense(type, pay, date, description);
         }
 
         /// <summary>

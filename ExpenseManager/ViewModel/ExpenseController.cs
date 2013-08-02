@@ -91,5 +91,20 @@ namespace ExpenseManager.ViewModel
         {
             return new Payment(method, amount);
         }
+
+        /// <summary>
+        /// Method that will save an expense
+        /// </summary>
+        /// <param name="type">expense type</param>
+        /// <param name="payment">expense payment</param>
+        /// <param name="date">expense date</param>
+        /// <param name="description">expense description</param>
+        public void RegisterExpense(ExpenseType type, Payment payment, DateTime date, string description)
+        {
+            Expense exp = new Expense(type, payment, date, description);
+
+            //TODO finish code
+            throw new NotImplementedException();
+        }
     }
 }

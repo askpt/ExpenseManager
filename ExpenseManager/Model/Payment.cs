@@ -37,7 +37,7 @@ namespace ExpenseManager.Model
         /// <returns>the content of payment in this format: Payment: method\nAmount: amount</returns>
         public override string ToString()
         {
-            return base.ToString();
+            return "Payment: " + method + "\nAmount: " + amount;
         }
     }
 }

@@ -30,7 +30,7 @@ namespace ExpenseManager
             emUI.Show();
         }
     }
-    
+
     /// <summary>
     /// The properties class where will be written te main configuration
     /// </summary>
@@ -89,29 +89,48 @@ namespace ExpenseManager
         {
             ExpenseTypeBoot();
             PaymentMethodBoot();
+            ExpenseBoot();
         }
 
         /// <summary>
         /// Bootstrapper for the expense type
         /// </summary>
-        private void ExpenseTypeBoot(){
+        private void ExpenseTypeBoot()
+        {
             IExpenseTypeRepository repo = PersistenceFactory.GetFactory().GetRepository().GetExpenseTypeRepository();
 
             repo.Save(new ExpenseType("FOO", "Food"));
             repo.Save(new ExpenseType("CLO", "Cloths"));
-            repo.Save(new ExpenseType("SPO", "Sports"));    
+            repo.Save(new ExpenseType("SPO", "Sports"));
         }
 
         /// <summary>
         /// Bootstrapper for the payment method
         /// </summary>
-        private void PaymentMethodBoot() {
+        private void PaymentMethodBoot()
+        {
             IPaymentMethodRepository repo = PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository();
-        
+
             repo.Save(new CreditCard("VISA", "BES", "Silva", new DateTime(2014, 12, 31), 115313858, 57));
             repo.Save(new DebitCard("Maestro", "CGD", "Brown", new DateTime(2013, 12, 31), 135151681));
             repo.Save(new Cheque("ChequeBook A1", "Totta", 234348384));
             repo.Save(new Money("EUR"));
+        }
+
+        /// <summary>
+        /// Bootstrapper for the expense
+        /// </summary>
+        private void ExpenseBoot()
+        {
+            List<ExpenseType> types = PersistenceFactory.GetFactory().GetRepository().GetExpenseTypeRepository().All();
+            List<PaymentMethod> methods = PersistenceFactory.GetFactory().GetRepository().GetPaymentMethodRepository().All();
+            IExpenseRepository repo = PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository();
+
+            Payment pay1 = new Payment(methods[0], 15);
+            repo.Save(new Expense(types[0], pay1, new DateTime(2012, 12, 1, 15, 30, 00), "MacDonalds"));
+
+            PaymentCheque pay2 = new PaymentCheque(methods[2], 23, 1257);
+            repo.Save(new Expense(types[2], pay2, new DateTime(2013, 08, 03, 10, 58, 00), "Soccer"));
         }
 
     }

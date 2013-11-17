@@ -63,9 +63,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExpenseManager\Source.csproj">
+    <ProjectReference Include="..\ExpenseManager\ConsoleView.csproj">
       <Project>{a3dcbc87-9a50-4e13-acd3-4dfdc1d61421}</Project>
-      <Name>Source</Name>
+      <Name>ConsoleView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{f62b62bd-2ee9-4e8c-b9e2-bcf25159ff9b}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

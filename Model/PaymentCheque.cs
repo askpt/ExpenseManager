@@ -14,7 +14,7 @@ namespace ExpenseManager.Model
         /// <summary>
         /// The cheque number
         /// </summary>
-        private int chequeNumber;
+        public int chequeNumber { get; set; }
 
         /// <summary>
         /// The main constructor for the cheque payment

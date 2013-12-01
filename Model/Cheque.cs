@@ -14,15 +14,15 @@ namespace ExpenseManager.Model
         /// <summary>
         /// the cheque book name
         /// </summary>
-        private string chequeBook;
+        public string chequeBook { get; set; }
         /// <summary>
         /// the cheque book bank
         /// </summary>
-        private string bank;
+        public string bank { get; set; }
         /// <summary>
         /// the account number of the cheque book
         /// </summary>
-        private int accountNumber;
+        public int accountNumber { get; set; }
 
         /// <summary>
         /// The main constructor for the cheque

@@ -13,23 +13,23 @@ namespace ExpenseManager.Model
         /// <summary>
         /// the card name
         /// </summary>
-        private string cardName;
+        public string cardName { get; set; }
         /// <summary>
         /// the bank of the card
         /// </summary>
-        private string bank;
+        public string bank { get; set; }
         /// <summary>
         /// the owner of the card
         /// </summary>
-        private string owner;
+        public string owner { get; set; }
         /// <summary>
         /// the validity of the card
         /// </summary>
-        private DateTime valid;
+        public DateTime valid { get; set; }
         /// <summary>
         /// the number of the card
         /// </summary>
-        private int number;
+        public int number { get; set; }
 
         /// <summary>
         /// The main constructor for the card

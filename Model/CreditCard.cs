@@ -14,7 +14,7 @@ namespace ExpenseManager.Model
         /// <summary>
         /// The limit of credit card
         /// </summary>
-        private int limit;
+        public int limit { get; set; }
 
         /// <summary>
         /// The main constructor for the credit card

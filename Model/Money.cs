@@ -14,7 +14,7 @@ namespace ExpenseManager.Model
         /// <summary>
         /// the currency of the money
         /// </summary>
-        private string currency;
+        public string currency { get; set; }
 
         /// <summary>
         /// The main constructor for the money

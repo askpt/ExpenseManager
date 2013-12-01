@@ -17,11 +17,11 @@ namespace ExpenseManager.Model
         /// <summary>
         /// the key of expense type
         /// </summary>
-        private string key;
+        public string key { get; set; }
         /// <summary>
         /// the description of expense type
         /// </summary>
-        private string description;
+        public string description { get; set; }
 
         /// <summary>
         /// the full constructor of expense type

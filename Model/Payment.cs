@@ -14,11 +14,11 @@ namespace ExpenseManager.Model
         /// <summary>
         /// The payment method
         /// </summary>
-        private PaymentMethod method;
+        public PaymentMethod method { get; set; }
         /// <summary>
         /// The payment amount
         /// </summary>
-        private double amount;
+        public double amount { get; set; }
 
         /// <summary>
         /// The main constructor for the payment

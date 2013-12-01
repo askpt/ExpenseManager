@@ -14,19 +14,19 @@ namespace ExpenseManager.Model
         /// <summary>
         /// Expense type
         /// </summary>
-        private ExpenseType type;
+        public ExpenseType type { get; set; }
         /// <summary>
         /// Payment Type
         /// </summary>
-        private Payment payment;
+        public Payment payment { get; set; }
         /// <summary>
         /// Payment Date
         /// </summary>
-        private DateTime date;
+        public DateTime date { get; set; }
         /// <summary>
         /// Payment Description
         /// </summary>
-        private string description;
+        public string description { get; set; }
 
         /// <summary>
         /// The main constructor of the expense

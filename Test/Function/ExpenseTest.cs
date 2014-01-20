@@ -115,5 +115,30 @@ namespace Test.Function
             double amount2 = ec.GetMonthStats();
             Assert.AreEqual(5, amount2);
         }
+
+        /// <summary>
+        /// The test method to get the week stats
+        /// </summary>
+        [TestMethod]
+        public void TestGetWeekStats()
+        {
+            ExpenseController ec = new ExpenseController();
+            ExpenseType type = new ExpenseType("AAA", "aaa");
+            Money money1 = new Money("EUR");
+            Payment pay1 = new Payment(money1, 15);
+            DateTime date = DateTime.Now;
+            date.Subtract(new TimeSpan(5, 0, 0, 0));
+            ec.RegisterExpense(type, pay1, date, "AAA");
+
+            double amount1 = ec.GetWeekStats();
+            Assert.AreEqual(-15, amount1);
+
+            Payment pay2 = new Payment(money1, 20);
+            DateTime date2 = DateTime.Now.Subtract(new TimeSpan(10, 0, 0, 0));
+            ec.RegisterExpense(type, pay2, date2, "BBB");
+
+            double amount2 = ec.GetWeekStats();
+            Assert.AreEqual(5, amount2);
+        }
     }
 }

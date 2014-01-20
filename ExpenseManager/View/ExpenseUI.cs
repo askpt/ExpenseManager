@@ -111,6 +111,44 @@ namespace ExpenseManager.View
 
                 if (year > 0)
                 {
+                    List<string> typeStr = new List<string>();
+                    List<double> sums = new List<double>();
+                    double max = 0;
+
+                    ExpenseTypeController etc = new ExpenseTypeController();
+                    List<ExpenseType> expenseTypes = etc.GetAllExpenseTypes();
+
+                    ExpenseController ec = new ExpenseController();
+                    foreach (ExpenseType type in expenseTypes)
+                    {
+                        List<Expense> expenses = ec.GetExpensesByTypeAndMonth(type, month, year);
+                        if (expenses.Count > 0)
+                        {
+                            typeStr.Add(type.key);
+                            double tmpAmount = 0;
+                            foreach (Expense exp in expenses)
+                            {
+                                tmpAmount += exp.payment.amount;   
+                            }
+                            if (tmpAmount > max)
+                            {
+                                max = tmpAmount;
+                            }
+
+                            sums.Add(tmpAmount);
+                        }
+                    }
+
+                    for (int i = 0; i < typeStr.Count; i++)
+                    {
+                        Console.Write(typeStr[i] + "\t");
+                        int nrStar = (int)sums[i] * 10 / (int)max;
+                        for (int j = 0; j < nrStar; j++)
+                        {
+                            Console.Write("*");
+                        }
+                        Console.WriteLine();
+                    }
                 }
             }
         }
@@ -207,6 +245,7 @@ namespace ExpenseManager.View
             Console.WriteLine("1. Last Week");
             Console.WriteLine("2. Last Month");
             Console.WriteLine("3. Expense Type by Month");
+            Console.WriteLine("4. Graph for Expense Type by Given Month");
 
             Console.WriteLine("0. Exit\n");
         }

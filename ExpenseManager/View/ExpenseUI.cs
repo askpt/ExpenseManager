@@ -54,7 +54,35 @@ namespace ExpenseManager.View
         /// </summary>
         private void ListAvailableQueries()
         {
+            int option = 999;
+            const int EXIT = 0;
+            do
+            {
+                QueryMenu();
+
+                if (int.TryParse(Console.ReadLine(), out option))
+                {
+                    switch (option)
+                    {
+                        case EXIT:
+                            Console.WriteLine("Exiting");
+                            break;
+                        default:
+                            Console.WriteLine("Unknown option\nPlease try again!");
+                            break;
+                    }
+                }
+            } while (option != 0);
+        }
+
+        /// <summary>
+        /// The visual main menu of expense queries
+        /// </summary>
+        private void QueryMenu()
+        {
             Console.WriteLine(" === Queries ===");
+
+            Console.WriteLine("0. Exit\n");
         }
 
         /// <summary>

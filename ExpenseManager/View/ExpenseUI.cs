@@ -91,7 +91,42 @@ namespace ExpenseManager.View
         /// </summary>
         private void ListByTypeAndMonth()
         {
-            throw new NotImplementedException();
+            int month = 99, year = 99;
+            do
+            {
+                Console.WriteLine("Choose a month.\nPress 0 to exit.");
+                int.TryParse(Console.ReadLine(), out month);
+            } while (month > 12 || month < 0);
+
+            if (month > 0)
+            {
+                do
+                {
+                    Console.WriteLine("Choose a year.\nPress 0 to exit.");
+                    int.TryParse(Console.ReadLine(), out year);
+                } while (year > DateTime.Now.Year || year < 0);
+
+                if (year > 0)
+                {
+                    ExpenseTypeController etc = new ExpenseTypeController();
+                    List<ExpenseType> expenseTypes = etc.GetAllExpenseTypes();
+
+                    ExpenseController ec = new ExpenseController();
+                    foreach (ExpenseType type in expenseTypes)
+                    {
+                        List<Expense> expenses = ec.GetExpensesByTypeAndMonth(type, month, year);
+                        if (expenses.Count > 0)
+                        {
+                            Console.WriteLine(type.ToString());
+                            foreach (Expense exp in expenses)
+                            {
+                                Console.WriteLine(exp.ToString());
+                            }
+                        }
+                    }
+                }
+
+            }
         }
 
         /// <summary>

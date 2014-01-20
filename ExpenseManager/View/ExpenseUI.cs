@@ -92,9 +92,18 @@ namespace ExpenseManager.View
             } while (option != 0);
         }
 
+        /// <summary>
+        /// Show the stats of the previous week and month
+        /// </summary>
         private void ShowLastMonthAndWeekStats()
         {
-            throw new NotImplementedException();
+            ExpenseController ec = new ExpenseController();
+
+            double monthStats = ec.GetMonthStats();
+            double weekStats = ec.GetWeekStats();
+
+            Console.WriteLine("Month stats: {0}", monthStats);
+            Console.WriteLine("Week stats: {0}", weekStats);
         }
 
         /// <summary>

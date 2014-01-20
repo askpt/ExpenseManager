@@ -49,21 +49,26 @@ namespace ExpenseManager.View
             } while (option != 0);
         }
 
+        #region Queries
         /// <summary>
         /// Method that will list all of available queries for expenses
         /// </summary>
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0;
+            const int EXIT = 0, WEEK = 1;
             do
             {
                 QueryMenu();
+                Console.WriteLine("Choose an option.");
 
                 if (int.TryParse(Console.ReadLine(), out option))
                 {
                     switch (option)
                     {
+                        case WEEK:
+                            ListLastWeek();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -76,15 +81,37 @@ namespace ExpenseManager.View
         }
 
         /// <summary>
+        /// List the expenses from last week
+        /// </summary>
+        private void ListLastWeek()
+        {
+            ExpenseController ec = new ExpenseController();
+
+            Console.WriteLine(" === Expense List ===");
+
+            List<Expense> expenses = ec.GetExpensesFromLastWeek();
+            int i = 0;
+            foreach (Expense item in expenses)
+            {
+                Console.WriteLine(i);
+                Console.WriteLine(item);
+                Console.WriteLine("---\n");
+                i++;
+            }
+        }
+
+        /// <summary>
         /// The visual main menu of expense queries
         /// </summary>
         private void QueryMenu()
         {
             Console.WriteLine(" === Queries ===");
+            Console.WriteLine("1. Last Week");
 
             Console.WriteLine("0. Exit\n");
         }
 
+        #endregion
         /// <summary>
         /// Method that will list all of expenses in repository
         /// </summary>

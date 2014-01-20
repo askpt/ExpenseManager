@@ -114,5 +114,27 @@ namespace ExpenseManager.ViewModel
         {
             return PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().All();
         }
+
+        /// <summary>
+        /// The method that will return a list with all expenses from last week
+        /// </summary>
+        /// <returns>a list with all expenses from last week</returns>
+        public List<Expense> GetExpensesFromLastWeek()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expWeek = new List<Expense>();
+
+            DateTime thisWeek = DateTime.Now.Subtract(new TimeSpan(7, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisWeek) == 1)
+                {
+                    expWeek.Add(item);
+                }
+            }
+
+            return expWeek;
+        }
     }
 }

@@ -160,6 +160,28 @@ namespace ExpenseManager.ViewModel
         }
 
         /// <summary>
+        /// The method that will return a list with all expenses from last two month
+        /// </summary>
+        /// <returns>a list with all expenses from last two month</returns>
+        public List<Expense> GetExpensesFromLastTwoMonths()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expMonth = new List<Expense>();
+
+            DateTime thisMonth = DateTime.Now.Subtract(new TimeSpan(60, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisMonth) == 1)
+                {
+                    expMonth.Add(item);
+                }
+            }
+
+            return expMonth;
+        }
+
+        /// <summary>
         /// The method that will return a list with all expenses from a given month, year and type
         /// </summary>
         /// <param name="type">the expense type</param>
@@ -182,14 +204,43 @@ namespace ExpenseManager.ViewModel
             return expRet;
         }
 
+        /// <summary>
+        /// The method that will return the diference between last month and the previous month
+        /// </summary>
+        /// <returns>the diference value</returns>
         public double GetMonthStats()
         {
-            throw new NotImplementedException();
+            double sumLastMonth = SumExpenses(GetExpensesFromLastMonth());
+            double sumLastTwoMonths = SumExpenses(GetExpensesFromLastTwoMonths());
+
+            if (sumLastTwoMonths == 0)
+            {
+                return sumLastMonth * -1;
+            }
+
+            return sumLastTwoMonths - 2 * sumLastMonth;
         }
 
         public double GetWeekStats()
         {
             throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// The method that will calculate a sum of expenses from a given list
+        /// </summary>
+        /// <param name="expenses">the list of expenses</param>
+        /// <returns>a sum with of all expenses</returns>
+        private double SumExpenses(List<Expense> expenses)
+        {
+            double retSum = 0;
+
+            foreach (Expense item in expenses)
+            {
+                retSum += item.payment.amount;
+            }
+
+            return retSum;
         }
     }
 }

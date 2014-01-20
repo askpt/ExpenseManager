@@ -159,9 +159,27 @@ namespace ExpenseManager.ViewModel
             return expMonth;
         }
 
-        internal List<Expense> GetExpensesByTypeAndMonth(ExpenseType type, int month, int year)
+        /// <summary>
+        /// The method that will return a list with all expenses from a given month, year and type
+        /// </summary>
+        /// <param name="type">the expense type</param>
+        /// <param name="month">the month</param>
+        /// <param name="year">the year</param>
+        /// <returns>a list with expenses</returns>
+        public List<Expense> GetExpensesByTypeAndMonth(ExpenseType type, int month, int year)
         {
-            throw new NotImplementedException();
+            List<Expense> expRet = new List<Expense>();
+            List<Expense> expenses = GetAllExpenses();
+
+            foreach (Expense item in expenses)
+            {
+                if (item.type.key == type.key && item.date.Year == year && item.date.Month == month)
+                {
+                    expRet.Add(item);
+                }
+            }
+
+            return expRet;
         }
     }
 }

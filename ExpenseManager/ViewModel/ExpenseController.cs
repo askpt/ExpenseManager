@@ -138,6 +138,28 @@ namespace ExpenseManager.ViewModel
         }
 
         /// <summary>
+        /// The method that will return a list with all expenses from last two weeks
+        /// </summary>
+        /// <returns>a list with all expenses from last two weeks</returns>
+        public List<Expense> GetExpensesFromLastTwoWeeks()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expWeek = new List<Expense>();
+
+            DateTime thisWeek = DateTime.Now.Subtract(new TimeSpan(14, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisWeek) == 1)
+                {
+                    expWeek.Add(item);
+                }
+            }
+
+            return expWeek;
+        }
+
+        /// <summary>
         /// The method that will return a list with all expenses from last month
         /// </summary>
         /// <returns>a list with all expenses from last month</returns>
@@ -205,7 +227,7 @@ namespace ExpenseManager.ViewModel
         }
 
         /// <summary>
-        /// The method that will return the diference between last month and the previous month
+        /// The method that will return the diference between last month and the previous two months
         /// </summary>
         /// <returns>the diference value</returns>
         public double GetMonthStats()
@@ -221,10 +243,24 @@ namespace ExpenseManager.ViewModel
             return sumLastTwoMonths - 2 * sumLastMonth;
         }
 
+        /// <summary>
+        /// The method that will return the diference between last week and the previous two weeks
+        /// </summary>
+        /// <returns>the diference value</returns>
         public double GetWeekStats()
         {
-            throw new NotImplementedException();
+            double sumLastWeek = SumExpenses(GetExpensesFromLastWeek());
+            double sumLastTwoWeeks = SumExpenses(GetExpensesFromLastTwoWeeks());
+
+            if (sumLastTwoWeeks == 0)
+            {
+                return sumLastWeek * -1;
+            }
+
+            return sumLastTwoWeeks - 2 * sumLastWeek;
         }
+
+        
 
         /// <summary>
         /// The method that will calculate a sum of expenses from a given list

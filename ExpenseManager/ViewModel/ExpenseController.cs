@@ -267,7 +267,7 @@ namespace ExpenseManager.ViewModel
         /// </summary>
         /// <param name="expenses">the list of expenses</param>
         /// <returns>a sum with of all expenses</returns>
-        private double SumExpenses(List<Expense> expenses)
+        public double SumExpenses(List<Expense> expenses)
         {
             double retSum = 0;
 

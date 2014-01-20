@@ -127,10 +127,12 @@ namespace ExpenseManager
             IExpenseRepository repo = PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository();
 
             Payment pay1 = new Payment(methods[0], 15);
-            repo.Save(new Expense(types[0], pay1, new DateTime(2012, 12, 1, 15, 30, 00), "MacDonalds"));
+            repo.Save(new Expense(types[0], pay1, new DateTime(2013, 12, 30, 15, 30, 00), "MacDonalds"));
 
             PaymentCheque pay2 = new PaymentCheque(methods[2], 23, 1257);
             repo.Save(new Expense(types[2], pay2, new DateTime(2013, 08, 03, 10, 58, 00), "Soccer"));
+
+            repo.Save(new Expense(types[2], pay2, new DateTime(2014, 01, 19, 10, 58, 00), "Soccer 2"));
         }
 
     }

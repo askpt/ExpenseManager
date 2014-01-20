@@ -18,7 +18,7 @@ namespace ExpenseManager.View
         public void Show()
         {
             int option = 999;
-            const int EXIT = 0, REGISTER = 1, LIST = 2;
+            const int EXIT = 0, REGISTER = 1, LIST = 2, QUERY = 3;
             do
             {
                 Menu();
@@ -34,6 +34,9 @@ namespace ExpenseManager.View
                         case LIST:
                             List();
                             break;
+                        case QUERY:
+                            ListAvailableQueries();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -44,6 +47,14 @@ namespace ExpenseManager.View
                 }
 
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// Method that will list all of available queries for expenses
+        /// </summary>
+        private void ListAvailableQueries()
+        {
+            Console.WriteLine(" === Queries ===");
         }
 
         /// <summary>
@@ -223,6 +234,7 @@ namespace ExpenseManager.View
             Console.WriteLine(" === Register Expense Menu ===");
             Console.WriteLine("1. Register");
             Console.WriteLine("2. List");
+            Console.WriteLine("3. Queries");
 
             Console.WriteLine("0. Exit\n");
         }

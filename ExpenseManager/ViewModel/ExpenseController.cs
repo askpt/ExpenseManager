@@ -158,5 +158,10 @@ namespace ExpenseManager.ViewModel
 
             return expMonth;
         }
+
+        internal List<Expense> GetExpensesByTypeAndMonth(ExpenseType type, int month, int year)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

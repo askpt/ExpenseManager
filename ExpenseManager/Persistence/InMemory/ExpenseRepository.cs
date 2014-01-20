@@ -68,7 +68,19 @@ namespace ExpenseManager.Persistence.InMemory
         /// <returns>the list of expenses from last week</returns>
         public List<Expense> GetFromLastWeek()
         {
-            throw new NotImplementedException();
+            List<Expense> expWeek = new List<Expense>();
+
+            DateTime thisWeek = DateTime.Now.Subtract(new TimeSpan(7,0,0,0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisWeek) == 1)
+                {
+                    expWeek.Add(item);
+                }
+            }
+
+            return expWeek;
         }
     }
 }

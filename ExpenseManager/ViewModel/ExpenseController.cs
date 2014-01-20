@@ -136,5 +136,14 @@ namespace ExpenseManager.ViewModel
 
             return expWeek;
         }
+
+        /// <summary>
+        /// The method that will return a list with all expenses from last month
+        /// </summary>
+        /// <returns>a list with all expenses from last month</returns>
+        public List<Expense> GetExpensesFromLastMonth()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

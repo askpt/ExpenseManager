@@ -56,7 +56,7 @@ namespace ExpenseManager.View
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3;
+            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3, TYPEANDMONTHGRAPH = 4;
             do
             {
                 QueryMenu();
@@ -75,6 +75,9 @@ namespace ExpenseManager.View
                         case TYPEANDMONTH:
                             ListByTypeAndMonth();
                             break;
+                        case TYPEANDMONTHGRAPH:
+                            GraphByTypeAndMonth();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -84,6 +87,32 @@ namespace ExpenseManager.View
                     }
                 }
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// Show a graph of the expenses by type from a given month
+        /// </summary>
+        private void GraphByTypeAndMonth()
+        {
+            int month = 99, year = 99;
+            do
+            {
+                Console.WriteLine("Choose a month.\nPress 0 to exit.");
+                int.TryParse(Console.ReadLine(), out month);
+            } while (month > 12 || month < 0);
+
+            if (month > 0)
+            {
+                do
+                {
+                    Console.WriteLine("Choose a year.\nPress 0 to exit.");
+                    int.TryParse(Console.ReadLine(), out year);
+                } while (year > DateTime.Now.Year || year < 0);
+
+                if (year > 0)
+                {
+                }
+            }
         }
 
         /// <summary>

@@ -136,5 +136,27 @@ namespace ExpenseManager.ViewModel
 
             return expWeek;
         }
+
+        /// <summary>
+        /// The method that will return a list with all expenses from last month
+        /// </summary>
+        /// <returns>a list with all expenses from last month</returns>
+        public List<Expense> GetExpensesFromLastMonth()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expMonth = new List<Expense>();
+
+            DateTime thisMonth = DateTime.Now.Subtract(new TimeSpan(30, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisMonth) == 1)
+                {
+                    expMonth.Add(item);
+                }
+            }
+
+            return expMonth;
+        }
     }
 }

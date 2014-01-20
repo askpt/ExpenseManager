@@ -56,7 +56,7 @@ namespace ExpenseManager.View
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0, WEEK = 1;
+            const int EXIT = 0, WEEK = 1, MONTH = 2;
             do
             {
                 QueryMenu();
@@ -68,6 +68,9 @@ namespace ExpenseManager.View
                     {
                         case WEEK:
                             ListLastWeek();
+                            break;
+                        case MONTH:
+                            ListLastMonth();
                             break;
                         case EXIT:
                             Console.WriteLine("Exiting");
@@ -101,12 +104,33 @@ namespace ExpenseManager.View
         }
 
         /// <summary>
+        /// List the expenses from last month
+        /// </summary>
+        private void ListLastMonth()
+        {
+            ExpenseController ec = new ExpenseController();
+
+            Console.WriteLine(" === Expense List ===");
+
+            List<Expense> expenses = ec.GetExpensesFromLastMonth();
+            int i = 0;
+            foreach (Expense item in expenses)
+            {
+                Console.WriteLine(i);
+                Console.WriteLine(item);
+                Console.WriteLine("---\n");
+                i++;
+            }
+        }
+
+        /// <summary>
         /// The visual main menu of expense queries
         /// </summary>
         private void QueryMenu()
         {
             Console.WriteLine(" === Queries ===");
             Console.WriteLine("1. Last Week");
+            Console.WriteLine("2. Last Month");
 
             Console.WriteLine("0. Exit\n");
         }

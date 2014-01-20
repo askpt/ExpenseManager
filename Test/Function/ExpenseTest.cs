@@ -31,5 +31,24 @@ namespace Test.Function
             Assert.AreEqual("Expense:\nDescription: AAA\nType: AAA - aaa\nPayment: Payment: Money\nCurrency: EUR\nAmount: 15\nDate: 21/12/2012 15:30:00", list[0].ToString());
         }
 
+        /// <summary>
+        /// The test method for the list of the last week expenses
+        /// </summary>
+        [TestMethod]
+        public void TestGetExpensesLastWeek()
+        {
+            ExpenseController ec = new ExpenseController();
+            ExpenseType type = new ExpenseType("AAA", "aaa");
+            Money money1 = new Money("EUR");
+            Payment pay1 = new Payment(money1, 15);
+            DateTime date = new DateTime(2012, 12, 21, 15, 30, 00);
+            ec.RegisterExpense(type, pay1, date, "AAA");
+
+            DateTime date1 = DateTime.Now;
+            ec.RegisterExpense(type, pay1, date1, "BBB");
+
+            List<Expense> list = ec.GetExpensesFromLastWeek();
+            Assert.AreEqual(String.Format("Expense:\nDescription: BBB\nType: AAA - aaa\nPayment: Payment: Money\nCurrency: EUR\nAmount: 15\nDate: {0}", date1), list[0].ToString());
+        }
     }
 }

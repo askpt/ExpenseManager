@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExpenseManager.Model;
+using System.Globalization;
 
 namespace ExpenseManager.Persistence.InMemory
 {
@@ -59,6 +60,15 @@ namespace ExpenseManager.Persistence.InMemory
         public List<Model.Expense> All()
         {
             return expenses;
+        }
+
+        /// <summary>
+        /// Method to get all of expenses from last week
+        /// </summary>
+        /// <returns>the list of expenses from last week</returns>
+        public List<Expense> GetFromLastWeek()
+        {
+            throw new NotImplementedException();
         }
     }
 }

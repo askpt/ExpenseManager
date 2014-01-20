@@ -22,5 +22,11 @@ namespace ExpenseManager.Persistence
         /// </summary>
         /// <returns>the list of expenses</returns>
         List<Expense> All();
+
+        /// <summary>
+        /// Method to get all of expenses from last week
+        /// </summary>
+        /// <returns>the list of expenses from last week</returns>
+        List<Expense> GetFromLastWeek();
     }
 }

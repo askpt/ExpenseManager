@@ -181,5 +181,15 @@ namespace ExpenseManager.ViewModel
 
             return expRet;
         }
+
+        public double GetMonthStats()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetWeekStats()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

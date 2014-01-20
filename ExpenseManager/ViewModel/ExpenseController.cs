@@ -143,7 +143,20 @@ namespace ExpenseManager.ViewModel
         /// <returns>a list with all expenses from last month</returns>
         public List<Expense> GetExpensesFromLastMonth()
         {
-            throw new NotImplementedException();
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expMonth = new List<Expense>();
+
+            DateTime thisMonth = DateTime.Now.Subtract(new TimeSpan(30, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisMonth) == 1)
+                {
+                    expMonth.Add(item);
+                }
+            }
+
+            return expMonth;
         }
     }
 }

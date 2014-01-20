@@ -56,7 +56,7 @@ namespace ExpenseManager.View
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0, WEEK = 1, MONTH = 2;
+            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3;
             do
             {
                 QueryMenu();
@@ -72,6 +72,9 @@ namespace ExpenseManager.View
                         case MONTH:
                             ListLastMonth();
                             break;
+                        case TYPEANDMONTH:
+                            ListByTypeAndMonth();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -81,6 +84,14 @@ namespace ExpenseManager.View
                     }
                 }
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// List the expenses by category from given month
+        /// </summary>
+        private void ListByTypeAndMonth()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -131,6 +142,7 @@ namespace ExpenseManager.View
             Console.WriteLine(" === Queries ===");
             Console.WriteLine("1. Last Week");
             Console.WriteLine("2. Last Month");
+            Console.WriteLine("3. Expense Type by Month");
 
             Console.WriteLine("0. Exit\n");
         }

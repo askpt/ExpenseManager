@@ -56,7 +56,7 @@ namespace ExpenseManager.View
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3;
+            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3, TYPEANDMONTHGRAPH = 4;
             do
             {
                 QueryMenu();
@@ -75,6 +75,9 @@ namespace ExpenseManager.View
                         case TYPEANDMONTH:
                             ListByTypeAndMonth();
                             break;
+                        case TYPEANDMONTHGRAPH:
+                            GraphByTypeAndMonth();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -84,6 +87,70 @@ namespace ExpenseManager.View
                     }
                 }
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// Show a graph of the expenses by type from a given month
+        /// </summary>
+        private void GraphByTypeAndMonth()
+        {
+            int month = 99, year = 99;
+            do
+            {
+                Console.WriteLine("Choose a month.\nPress 0 to exit.");
+                int.TryParse(Console.ReadLine(), out month);
+            } while (month > 12 || month < 0);
+
+            if (month > 0)
+            {
+                do
+                {
+                    Console.WriteLine("Choose a year.\nPress 0 to exit.");
+                    int.TryParse(Console.ReadLine(), out year);
+                } while (year > DateTime.Now.Year || year < 0);
+
+                if (year > 0)
+                {
+                    List<string> typeStr = new List<string>();
+                    List<double> sums = new List<double>();
+                    double max = 0;
+
+                    ExpenseTypeController etc = new ExpenseTypeController();
+                    List<ExpenseType> expenseTypes = etc.GetAllExpenseTypes();
+
+                    ExpenseController ec = new ExpenseController();
+                    foreach (ExpenseType type in expenseTypes)
+                    {
+                        List<Expense> expenses = ec.GetExpensesByTypeAndMonth(type, month, year);
+                        if (expenses.Count > 0)
+                        {
+                            typeStr.Add(type.key);
+                            double tmpAmount = 0;
+                            foreach (Expense exp in expenses)
+                            {
+                                tmpAmount += exp.payment.amount;   
+                            }
+                            if (tmpAmount > max)
+                            {
+                                max = tmpAmount;
+                            }
+
+                            sums.Add(tmpAmount);
+                        }
+                    }
+
+                    for (int i = 0; i < typeStr.Count; i++)
+                    {
+                        Console.Write(typeStr[i] + "\t");
+                        int nrStar = (int)sums[i] * 10 / (int)max;
+                        for (int j = 0; j < nrStar; j++)
+                        {
+                            Console.Write("*");
+                        }
+                        Console.WriteLine();
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -178,6 +245,7 @@ namespace ExpenseManager.View
             Console.WriteLine("1. Last Week");
             Console.WriteLine("2. Last Month");
             Console.WriteLine("3. Expense Type by Month");
+            Console.WriteLine("4. Graph for Expense Type by Given Month");
 
             Console.WriteLine("0. Exit\n");
         }

@@ -138,6 +138,28 @@ namespace ExpenseManager.ViewModel
         }
 
         /// <summary>
+        /// The method that will return a list with all expenses from last two weeks
+        /// </summary>
+        /// <returns>a list with all expenses from last two weeks</returns>
+        public List<Expense> GetExpensesFromLastTwoWeeks()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expWeek = new List<Expense>();
+
+            DateTime thisWeek = DateTime.Now.Subtract(new TimeSpan(14, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisWeek) == 1)
+                {
+                    expWeek.Add(item);
+                }
+            }
+
+            return expWeek;
+        }
+
+        /// <summary>
         /// The method that will return a list with all expenses from last month
         /// </summary>
         /// <returns>a list with all expenses from last month</returns>
@@ -147,6 +169,28 @@ namespace ExpenseManager.ViewModel
             List<Expense> expMonth = new List<Expense>();
 
             DateTime thisMonth = DateTime.Now.Subtract(new TimeSpan(30, 0, 0, 0));
+
+            foreach (Expense item in expenses)
+            {
+                if (item.date.CompareTo(thisMonth) == 1)
+                {
+                    expMonth.Add(item);
+                }
+            }
+
+            return expMonth;
+        }
+
+        /// <summary>
+        /// The method that will return a list with all expenses from last two month
+        /// </summary>
+        /// <returns>a list with all expenses from last two month</returns>
+        public List<Expense> GetExpensesFromLastTwoMonths()
+        {
+            List<Expense> expenses = GetAllExpenses();
+            List<Expense> expMonth = new List<Expense>();
+
+            DateTime thisMonth = DateTime.Now.Subtract(new TimeSpan(60, 0, 0, 0));
 
             foreach (Expense item in expenses)
             {
@@ -180,6 +224,59 @@ namespace ExpenseManager.ViewModel
             }
 
             return expRet;
+        }
+
+        /// <summary>
+        /// The method that will return the diference between last month and the previous two months
+        /// </summary>
+        /// <returns>the diference value</returns>
+        public double GetMonthStats()
+        {
+            double sumLastMonth = SumExpenses(GetExpensesFromLastMonth());
+            double sumLastTwoMonths = SumExpenses(GetExpensesFromLastTwoMonths());
+
+            if (sumLastTwoMonths == 0)
+            {
+                return sumLastMonth * -1;
+            }
+
+            return sumLastTwoMonths - 2 * sumLastMonth;
+        }
+
+        /// <summary>
+        /// The method that will return the diference between last week and the previous two weeks
+        /// </summary>
+        /// <returns>the diference value</returns>
+        public double GetWeekStats()
+        {
+            double sumLastWeek = SumExpenses(GetExpensesFromLastWeek());
+            double sumLastTwoWeeks = SumExpenses(GetExpensesFromLastTwoWeeks());
+
+            if (sumLastTwoWeeks == 0)
+            {
+                return sumLastWeek * -1;
+            }
+
+            return sumLastTwoWeeks - 2 * sumLastWeek;
+        }
+
+        
+
+        /// <summary>
+        /// The method that will calculate a sum of expenses from a given list
+        /// </summary>
+        /// <param name="expenses">the list of expenses</param>
+        /// <returns>a sum with of all expenses</returns>
+        public double SumExpenses(List<Expense> expenses)
+        {
+            double retSum = 0;
+
+            foreach (Expense item in expenses)
+            {
+                retSum += item.payment.amount;
+            }
+
+            return retSum;
         }
     }
 }

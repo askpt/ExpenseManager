@@ -56,7 +56,7 @@ namespace ExpenseManager.View
         private void ListAvailableQueries()
         {
             int option = 999;
-            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3, TYPEANDMONTHGRAPH = 4;
+            const int EXIT = 0, WEEK = 1, MONTH = 2, TYPEANDMONTH = 3, TYPEANDMONTHGRAPH = 4, STATSMONTHANDWEEK = 5;
             do
             {
                 QueryMenu();
@@ -78,6 +78,9 @@ namespace ExpenseManager.View
                         case TYPEANDMONTHGRAPH:
                             GraphByTypeAndMonth();
                             break;
+                        case STATSMONTHANDWEEK:
+                            ShowLastMonthAndWeekStats();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -87,6 +90,20 @@ namespace ExpenseManager.View
                     }
                 }
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// Show the stats of the previous week and month
+        /// </summary>
+        private void ShowLastMonthAndWeekStats()
+        {
+            ExpenseController ec = new ExpenseController();
+
+            double monthStats = ec.GetMonthStats();
+            double weekStats = ec.GetWeekStats();
+
+            Console.WriteLine("Month stats: {0}", monthStats);
+            Console.WriteLine("Week stats: {0}", weekStats);
         }
 
         /// <summary>
@@ -246,6 +263,7 @@ namespace ExpenseManager.View
             Console.WriteLine("2. Last Month");
             Console.WriteLine("3. Expense Type by Month");
             Console.WriteLine("4. Graph for Expense Type by Given Month");
+            Console.WriteLine("5. Show Last Month and Week Stats");
 
             Console.WriteLine("0. Exit\n");
         }

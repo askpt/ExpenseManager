@@ -33,6 +33,6 @@ namespace ExpenseManager.Persistence
         /// Gets the Income Type Repository
         /// </summary>
         /// <returns>the instance of this repository</returns>
-        IIncomeType GetIncomeTypeRepository();
+        IIncomeTypeRepository GetIncomeTypeRepository();
     }
 }

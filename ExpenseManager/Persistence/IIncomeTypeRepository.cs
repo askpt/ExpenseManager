@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence
     /// <summary>
     /// The interface for the income type repository
     /// </summary>
-    public interface IIncomeType
+    public interface IIncomeTypeRepository
     {
         /// <summary>
         /// Saves an income type object in the repository

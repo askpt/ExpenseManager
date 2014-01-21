@@ -98,7 +98,7 @@ namespace ExpenseManager
         /// </summary>
         private void IncomeTypeBoot()
         {
-            IIncomeType repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository();
+            IIncomeTypeRepository repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository();
 
             repo.Save(new IncomeType("SAL", "Salary"));
             repo.Save(new IncomeType("GIF", "Gift"));

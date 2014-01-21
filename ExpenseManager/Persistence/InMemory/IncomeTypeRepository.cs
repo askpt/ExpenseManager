@@ -10,7 +10,7 @@ namespace ExpenseManager.Persistence.InMemory
     /// <summary>
     /// The income type in memory repository
     /// </summary>
-    public class IncomeTypeRepository : IIncomeType
+    public class IncomeTypeRepository : IIncomeTypeRepository
     {
         /// <summary>
         /// the singleton instance of income type

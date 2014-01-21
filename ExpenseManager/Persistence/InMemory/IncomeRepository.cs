@@ -56,7 +56,7 @@ namespace ExpenseManager.Persistence.InMemory
         /// Method to get all of incomes
         /// </summary>
         /// <returns>the list of incomes</returns>
-        public IList<Model.Income> All()
+        public List<Model.Income> All()
         {
             return incomes;
         }

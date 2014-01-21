@@ -50,8 +50,10 @@
     <Compile Include="ExpenseManager.cs" />
     <Compile Include="Persistence\IExpenseRepository.cs" />
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
+    <Compile Include="Persistence\IIncomeType.cs" />
     <Compile Include="Persistence\InMemory\ExpenseRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />
+    <Compile Include="Persistence\InMemory\IncomeTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\InMemoryFactory.cs" />
     <Compile Include="Persistence\InMemory\PaymentMethodRepository.cs" />
     <Compile Include="Persistence\IPaymentMethodRepository.cs" />

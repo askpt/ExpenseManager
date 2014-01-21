@@ -28,5 +28,11 @@ namespace ExpenseManager.Persistence
         /// </summary>
         /// <returns>the instance of this repository</returns>
         IExpenseRepository GetExpenseRepository();
+
+        /// <summary>
+        /// Gets the Income Type Repository
+        /// </summary>
+        /// <returns>the instance of this repository</returns>
+        IIncomeType GetIncomeTypeRepository();
     }
 }

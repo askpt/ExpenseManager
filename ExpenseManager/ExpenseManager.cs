@@ -88,8 +88,18 @@ namespace ExpenseManager
         public void StartBootstrap()
         {
             ExpenseTypeBoot();
+            IncomeTypeBoot();
             PaymentMethodBoot();
             ExpenseBoot();
+        }
+
+        private void IncomeTypeBoot()
+        {
+            IIncomeType repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository();
+
+            repo.Save(new IncomeType("SAL", "Salary"));
+            repo.Save(new IncomeType("GIF", "Gift"));
+            repo.Save(new IncomeType("REI", "Reimbursements"));
         }
 
         /// <summary>

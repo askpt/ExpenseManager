@@ -53,7 +53,9 @@
     <Compile Include="Function\ExpenseTest.cs" />
     <Compile Include="Function\ExpenseTypeTest.cs" />
     <Compile Include="Function\PaymentMethodTest.cs" />
+    <Compile Include="Function\IncomeTypeTest.cs" />
     <Compile Include="Model\ExpenseTypeTest.cs" />
+    <Compile Include="Model\IncomeTypeTest.cs" />
     <Compile Include="Model\MoneyTest.cs" />
     <Compile Include="Model\DebitCardTest.cs" />
     <Compile Include="Model\CreditCardTest.cs" />

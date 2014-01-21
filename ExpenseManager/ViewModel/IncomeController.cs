@@ -35,5 +35,33 @@ namespace ExpenseManager.ViewModel
 
             PersistenceFactory.GetFactory().GetRepository().GetIncomeRepository().Save(inc);
         }
+
+        /// <summary>
+        /// The method that will return the size of income type repository
+        /// </summary>
+        /// <returns>the size of income type repository</returns>
+        public int GetIncomeTypeRepositorySize()
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository().All().Count;
+        }
+
+        /// <summary>
+        /// The method that will return the last income type of the repository
+        /// </summary>
+        /// <returns>the last income type of repository</returns>
+        public IncomeType GetLastExpenseType()
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository().All().Last();
+        }
+
+        /// <summary>
+        /// The method that will return the choosen income type
+        /// </summary>
+        /// <param name="option">the option in the list of income types</param>
+        /// <returns>a income type</returns>
+        public IncomeType GetIncomeType(int option)
+        {
+            return PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository().All()[option];
+        }
     }
 }

@@ -68,5 +68,14 @@ namespace ExpenseManager.Persistence.InMemory
         {
             return IncomeTypeRepository.GetInstance();
         }
+
+        /// <summary>
+        /// Gets the income repository
+        /// </summary>
+        /// <returns>the instance of this repository</returns>
+        public IIncomeRepository GetIncomeRepository()
+        {
+            return IncomeRepository.GetInstance();
+        }
     }
 }

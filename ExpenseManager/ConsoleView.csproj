@@ -51,8 +51,10 @@
     <Compile Include="Persistence\IExpenseRepository.cs" />
     <Compile Include="Persistence\IExpenseTypeRepository.cs" />
     <Compile Include="Persistence\IIncomeTypeRepository.cs" />
+    <Compile Include="Persistence\IIncomeRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseRepository.cs" />
     <Compile Include="Persistence\InMemory\ExpenseTypeRepository.cs" />
+    <Compile Include="Persistence\InMemory\IncomeRepository.cs" />
     <Compile Include="Persistence\InMemory\IncomeTypeRepository.cs" />
     <Compile Include="Persistence\InMemory\InMemoryFactory.cs" />
     <Compile Include="Persistence\InMemory\PaymentMethodRepository.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="Persistence\PersistenceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ExpenseController.cs" />
+    <Compile Include="ViewModel\IncomeController.cs" />
     <Compile Include="ViewModel\IncomeTypeController.cs" />
     <Compile Include="ViewModel\PaymentMethodController.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="View\ExpenseTypeUI.cs" />
     <Compile Include="View\ExpenseUI.cs" />
     <Compile Include="View\IncomeTypeUI.cs" />
+    <Compile Include="View\IncomeUI.cs" />
     <Compile Include="View\PaymentMethodUI.cs" />
   </ItemGroup>
   <ItemGroup>

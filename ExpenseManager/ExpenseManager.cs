@@ -93,6 +93,9 @@ namespace ExpenseManager
             ExpenseBoot();
         }
 
+        /// <summary>
+        /// Bootstrapper for the income type
+        /// </summary>
         private void IncomeTypeBoot()
         {
             IIncomeType repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository();

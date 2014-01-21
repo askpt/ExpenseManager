@@ -42,6 +42,8 @@
     <Compile Include="DebitCard.cs" />
     <Compile Include="Expense.cs" />
     <Compile Include="ExpenseType.cs" />
+    <Compile Include="Income.cs" />
+    <Compile Include="IncomeType.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="PaymentCheque.cs" />

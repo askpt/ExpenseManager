@@ -62,6 +62,7 @@
     <Compile Include="Model\ChequeTest.cs" />
     <Compile Include="Model\PaymentTest.cs" />
     <Compile Include="Model\ExpenseTest.cs" />
+    <Compile Include="Model\IncomeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

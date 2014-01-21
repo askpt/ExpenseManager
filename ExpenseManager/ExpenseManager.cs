@@ -88,8 +88,22 @@ namespace ExpenseManager
         public void StartBootstrap()
         {
             ExpenseTypeBoot();
+            IncomeTypeBoot();
             PaymentMethodBoot();
             ExpenseBoot();
+            IncomeBoot();
+        }
+
+        /// <summary>
+        /// Bootstrapper for the income type
+        /// </summary>
+        private void IncomeTypeBoot()
+        {
+            IIncomeTypeRepository repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository();
+
+            repo.Save(new IncomeType("SAL", "Salary"));
+            repo.Save(new IncomeType("GIF", "Gift"));
+            repo.Save(new IncomeType("REI", "Reimbursements"));
         }
 
         /// <summary>
@@ -135,5 +149,16 @@ namespace ExpenseManager
             repo.Save(new Expense(types[2], pay2, new DateTime(2014, 01, 19, 10, 58, 00), "Soccer 2"));
         }
 
+        /// <summary>
+        /// Bootstrapper for the income
+        /// </summary>
+        private void IncomeBoot()
+        {
+            List<IncomeType> types = PersistenceFactory.GetFactory().GetRepository().GetIncomeTypeRepository().All();
+            IIncomeRepository repo = PersistenceFactory.GetFactory().GetRepository().GetIncomeRepository();
+
+            repo.Save(new Income("AAA", DateTime.Now, 15, types[0]));
+            repo.Save(new Income("BBB", new DateTime(2013, 12, 31, 21, 20, 00), 17, types[1]));
+        }
     }
 }

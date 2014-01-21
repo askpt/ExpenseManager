@@ -53,13 +53,17 @@
     <Compile Include="Function\ExpenseTest.cs" />
     <Compile Include="Function\ExpenseTypeTest.cs" />
     <Compile Include="Function\PaymentMethodTest.cs" />
+    <Compile Include="Function\IncomeTypeTest.cs" />
+    <Compile Include="Function\IncomeTest.cs" />
     <Compile Include="Model\ExpenseTypeTest.cs" />
+    <Compile Include="Model\IncomeTypeTest.cs" />
     <Compile Include="Model\MoneyTest.cs" />
     <Compile Include="Model\DebitCardTest.cs" />
     <Compile Include="Model\CreditCardTest.cs" />
     <Compile Include="Model\ChequeTest.cs" />
     <Compile Include="Model\PaymentTest.cs" />
     <Compile Include="Model\ExpenseTest.cs" />
+    <Compile Include="Model\IncomeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

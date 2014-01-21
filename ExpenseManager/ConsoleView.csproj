@@ -71,6 +71,7 @@
     <Compile Include="View\ExpenseTypeUI.cs" />
     <Compile Include="View\ExpenseUI.cs" />
     <Compile Include="View\IncomeTypeUI.cs" />
+    <Compile Include="View\IncomeUI.cs" />
     <Compile Include="View\PaymentMethodUI.cs" />
   </ItemGroup>
   <ItemGroup>

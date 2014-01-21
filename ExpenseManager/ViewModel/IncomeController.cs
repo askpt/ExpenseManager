@@ -17,7 +17,7 @@ namespace ExpenseManager.ViewModel
         /// The method that will return the list with all incomes
         /// </summary>
         /// <returns>a list with all incomes</returns>
-        public IList<Income> GetAllIncomes()
+        public List<Income> GetAllIncomes()
         {
             return PersistenceFactory.GetFactory().GetRepository().GetIncomeRepository().All();
         }

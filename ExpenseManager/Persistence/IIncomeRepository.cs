@@ -22,6 +22,6 @@ namespace ExpenseManager.Persistence
         /// Method to get all of incomes
         /// </summary>
         /// <returns>the list of incomes</returns>
-        IList<Income> All();
+        List<Income> All();
     }
 }

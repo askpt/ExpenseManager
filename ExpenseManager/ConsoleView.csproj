@@ -67,6 +67,7 @@
     <Compile Include="ViewModel\IncomeController.cs" />
     <Compile Include="ViewModel\IncomeTypeController.cs" />
     <Compile Include="ViewModel\PaymentMethodController.cs" />
+    <Compile Include="View\BalanceUI.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="ViewModel\ExpenseTypeController.cs" />
     <Compile Include="View\ExpenseTypeUI.cs" />

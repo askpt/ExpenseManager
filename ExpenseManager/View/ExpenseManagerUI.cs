@@ -17,7 +17,7 @@ namespace ExpenseManager.View
         public void Show()
         {
             int option;
-            const int EXIT = 0, EXPENSE = 1, EXPENSE_TYPE = 2, PAYMENT_METHOD = 3, INCOME_TYPE = 4, INCOME = 5;
+            const int EXIT = 0, EXPENSE = 1, EXPENSE_TYPE = 2, PAYMENT_METHOD = 3, INCOME_TYPE = 4, INCOME = 5, BALANCE = 6;
             do
             {
                 Menu();
@@ -47,6 +47,10 @@ namespace ExpenseManager.View
                             IncomeUI incUI = new IncomeUI();
                             incUI.Show();
                             break;
+                        case BALANCE:
+                            BalanceUI balUI = new BalanceUI();
+                            balUI.Show();
+                            break;
                         case EXIT:
                             Console.WriteLine("Bye! Bye!");
                             break;
@@ -72,6 +76,7 @@ namespace ExpenseManager.View
             Console.WriteLine("3. Payment Method");
             Console.WriteLine("4. Income Type");
             Console.WriteLine("5. Income");
+            Console.WriteLine("6. Balance");
 
             Console.WriteLine("0. Exit\n");
         }

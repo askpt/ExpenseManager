@@ -14,19 +14,37 @@ namespace ExpenseManager.ViewModel
     public class BalanceController
     {
         /// <summary>
+        /// The method that will define a new startup balance
+        /// </summary>
+        /// <param name="amount">the amount to be the startup balance</param>
+        /// <returns>true if success</returns>
+        public bool SetUpStartupBalance(double amount)
+        {
+            if (amount >= 0)
+            {
+                Properties.GetInstance().startupBalance = amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
         /// The method that will calculate the balance
         /// </summary>
         /// <returns>the actual balance</returns>
         public double CalculateBalance()
         {
-            double retBal = 0;
+            double retBal = Properties.GetInstance().startupBalance;
             List<Income> incomes = PersistenceFactory.GetFactory().GetRepository().GetIncomeRepository().All();
             List<Expense> expenses = PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().All();
 
             double sumInc = SumIncomes(incomes);
             double sumExp = SumExpenses(expenses);
 
-            retBal = sumInc - sumExp;
+            retBal += sumInc - sumExp;
 
             return retBal;
         }

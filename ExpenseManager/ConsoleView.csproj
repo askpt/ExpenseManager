@@ -62,10 +62,12 @@
     <Compile Include="Persistence\IPersistenceFactory.cs" />
     <Compile Include="Persistence\PersistenceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\BalanceController.cs" />
     <Compile Include="ViewModel\ExpenseController.cs" />
     <Compile Include="ViewModel\IncomeController.cs" />
     <Compile Include="ViewModel\IncomeTypeController.cs" />
     <Compile Include="ViewModel\PaymentMethodController.cs" />
+    <Compile Include="View\BalanceUI.cs" />
     <Compile Include="View\ExpenseManagerUI.cs" />
     <Compile Include="ViewModel\ExpenseTypeController.cs" />
     <Compile Include="View\ExpenseTypeUI.cs" />

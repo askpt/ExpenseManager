@@ -14,6 +14,24 @@ namespace ExpenseManager.ViewModel
     public class BalanceController
     {
         /// <summary>
+        /// The method that will define a new startup balance
+        /// </summary>
+        /// <param name="amount">the amount to be the startup balance</param>
+        /// <returns>true if success</returns>
+        public bool SetUpStartupBalance(double amount)
+        {
+            if (amount >= 0)
+            {
+                Properties.GetInstance().startupBalance = amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
         /// The method that will calculate the balance
         /// </summary>
         /// <returns>the actual balance</returns>

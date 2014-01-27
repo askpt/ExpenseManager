@@ -37,6 +37,10 @@ namespace ExpenseManager
     class Properties
     {
         /// <summary>
+        /// This will allow the user to setup the startup balance
+        /// </summary>
+        public double startupBalance { get; set; }
+        /// <summary>
         /// The source repository (InMemory, Database, ...)
         /// </summary>
         public string repositorySource { get; set; }

@@ -19,14 +19,14 @@ namespace ExpenseManager.ViewModel
         /// <returns>the actual balance</returns>
         public double CalculateBalance()
         {
-            double retBal = 0;
+            double retBal = Properties.GetInstance().startupBalance;
             List<Income> incomes = PersistenceFactory.GetFactory().GetRepository().GetIncomeRepository().All();
             List<Expense> expenses = PersistenceFactory.GetFactory().GetRepository().GetExpenseRepository().All();
 
             double sumInc = SumIncomes(incomes);
             double sumExp = SumExpenses(expenses);
 
-            retBal = sumInc - sumExp;
+            retBal += sumInc - sumExp;
 
             return retBal;
         }

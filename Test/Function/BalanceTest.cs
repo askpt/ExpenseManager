@@ -33,5 +33,32 @@ namespace Test.Function
             double actual = bc.CalculateBalance();
             Assert.AreEqual(10, actual);
         }
+
+        /// <summary>
+        /// The test method for the set up startup balance
+        /// </summary>
+        [TestMethod]
+        public void TestSetUpBalance()
+        {
+            IncomeController ic = new IncomeController();
+            IncomeType typeI = new IncomeType("AAA", "aaa");
+            DateTime dateI = new DateTime(2012, 12, 21, 15, 30, 00);
+            ic.RegisterIncome(typeI, dateI, 25, "AAA");
+
+            ExpenseController ec = new ExpenseController();
+            ExpenseType typeE = new ExpenseType("AAA", "aaa");
+            Money moneyE = new Money("EUR");
+            Payment payE = new Payment(moneyE, 15);
+            DateTime dateE = new DateTime(2012, 12, 21, 15, 30, 00);
+            ec.RegisterExpense(typeE, payE, dateE, "AAA");
+
+            BalanceController bc = new BalanceController();
+            double actual = bc.CalculateBalance();
+            Assert.AreEqual(10, actual);
+
+            bc.SetUpStartupBalance(15);
+            actual = bc.CalculateBalance();
+            Assert.AreEqual(25, actual);
+        }
     }
 }

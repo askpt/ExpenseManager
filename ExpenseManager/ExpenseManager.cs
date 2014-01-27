@@ -71,6 +71,7 @@ namespace ExpenseManager
         {
             repositorySource = "InMemory";
             useBootstrap = true;
+            startupBalance = 0;
         }
         /// <summary>
         /// this method will load the user file configuration properties

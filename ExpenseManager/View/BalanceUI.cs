@@ -19,7 +19,7 @@ namespace ExpenseManager.View
         public void Show()
         {
             int option = 999;
-            const int EXIT = 0, VIEW = 1;
+            const int EXIT = 0, VIEW = 1, SETUP = 2;
             do
             {
                 Menu();
@@ -32,6 +32,9 @@ namespace ExpenseManager.View
                         case VIEW:
                             ViewBalance();
                             break;
+                        case SETUP:
+                            SetupStartupBalance();
+                            break;
                         case EXIT:
                             Console.WriteLine("Exiting");
                             break;
@@ -42,6 +45,30 @@ namespace ExpenseManager.View
                 }
 
             } while (option != 0);
+        }
+
+        /// <summary>
+        /// Method that will set a new startup balance
+        /// </summary>
+        private void SetupStartupBalance()
+        {
+            double balance = -1;
+            do
+            {
+                Console.WriteLine("Insert a new startup balance.");
+                double.TryParse(Console.ReadLine(), out balance);
+            } while (balance < 0);
+
+            BalanceController bc = new BalanceController();
+
+            if (bc.SetUpStartupBalance(balance))
+            {
+                Console.WriteLine("Startup balance changed successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Error!");
+            }
         }
 
         /// <summary>
@@ -64,6 +91,7 @@ namespace ExpenseManager.View
         {
             Console.WriteLine(" === Balance Menu ===");
             Console.WriteLine("1. View");
+            Console.WriteLine("2. Setup Startup Balance");
 
             Console.WriteLine("0. Exit\n");
         }
